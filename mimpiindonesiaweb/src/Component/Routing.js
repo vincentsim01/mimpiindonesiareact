@@ -4,6 +4,7 @@ import Home from './Home/Home';
 import Main from './Main';
 import About from './About/About';
 import Character from './Character/Character';
+import Dream from './Dream/Dream';
 
 const Routing = ()=>{
 
@@ -15,6 +16,7 @@ const Routing = ()=>{
             <Route index element={<Home/>}/>
             <Route path="About" element={<About/>}/>
             <Route path="Character" element={<Character/>}/>
+            <Route path="Dream" element={<Dream/>}/>
         </Route>
 
         </Routes>
