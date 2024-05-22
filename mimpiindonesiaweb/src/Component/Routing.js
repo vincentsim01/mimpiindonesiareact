@@ -5,6 +5,7 @@ import Main from './Main';
 import About from './About/About';
 import Character from './Character/Character';
 import Dream from './Dream/Dream';
+import Event from './Event/Event';
 
 const Routing = ()=>{
 
@@ -17,6 +18,7 @@ const Routing = ()=>{
             <Route path="About" element={<About/>}/>
             <Route path="Character" element={<Character/>}/>
             <Route path="Dream" element={<Dream/>}/>
+            <Route path="Event" element={<Event/>}/>
         </Route>
 
         </Routes>
