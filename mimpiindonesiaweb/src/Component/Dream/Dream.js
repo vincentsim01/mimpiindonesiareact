@@ -20,7 +20,7 @@ const Dream= () =>{
 
     return(
         <>
-        This is Dream
+        This is Dream<br></br>
         <DreamDisplay thedream={dream}/>
         </>
     )

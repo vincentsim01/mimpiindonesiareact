@@ -28,7 +28,7 @@ const DreamDisplay = (props) => {
 
     return(
         <>
-        This is Character Display
+   
         {dreamList(props)}
         
         </>
