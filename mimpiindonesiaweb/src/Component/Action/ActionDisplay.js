@@ -5,10 +5,13 @@ import {Link} from 'react-router-dom';
 const actionDisplay = (props) =>{
     const actionsList = ({theAction})=>{
         if (theAction){
-            theAction.map((item) =>{
+           return theAction.map((item) =>{
                 return(
+                    <>
+                    This is Action List
                     {item.name}
-                    {item.image}
+                    <img src={item.image}/>
+                    </>
                 )
             })
         }
@@ -18,7 +21,8 @@ const actionDisplay = (props) =>{
     return(
 
         <>
-        This is EventDisplay
+        This is ActionDisplay
+        {actionsList(props)}
         
         </>
     )
