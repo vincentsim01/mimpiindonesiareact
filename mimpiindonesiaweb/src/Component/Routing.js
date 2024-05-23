@@ -7,6 +7,7 @@ import Character from './Character/Character';
 import Dream from './Dream/Dream';
 import Event from './Event/Event';
 import Header from './Header';
+import Footer from './Footer';
 import Actions from './Action/Action';
 
 const Routing = ()=>{
@@ -27,6 +28,8 @@ const Routing = ()=>{
         </Route>
 
         </Routes>
+
+        <Footer/>
 
 
 
