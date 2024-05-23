@@ -7,6 +7,7 @@ import Character from './Character/Character';
 import Dream from './Dream/Dream';
 import Event from './Event/Event';
 import Header from './Header';
+import Actions from './Action/Action';
 
 const Routing = ()=>{
 
@@ -22,6 +23,7 @@ const Routing = ()=>{
             <Route path="Character" element={<Character/>}/>
             <Route path="Dream" element={<Dream/>}/>
             <Route path="Event" element={<Event/>}/>
+            <Route path="Actions" element={<Actions/>}/>
         </Route>
 
         </Routes>
