@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import Banner from './Banner';
 
 
 
@@ -52,6 +53,8 @@ const Home = () => {
                 <p> Discount 50% Off Today!</p>
 
             </div>
+
+            <Banner/>
 
         </>
     )
