@@ -1,15 +1,15 @@
 import React, { useState,useEffect } from 'react';
-import actionDisplay from './ActionDisplay';
-const baseUrl="localhost:9120/";
+import ActionDisplay from './ActionDisplay';
+const baseUrl="http://localhost:9120";
 
 const Actions = () =>{
 
     const [actions,setactions]=useState([]);
 
     useEffect(() =>{
-        fetch(`${baseUrl}/event`,{method:'GET'})
+        fetch(`${baseUrl}/actioning`,{method:'GET'})
         .then((res) => res.json())
-        .then((data) => setactions(data))
+        .then((data) => {setactions(data)})
 
 
     },[]);
@@ -18,7 +18,7 @@ const Actions = () =>{
         <>
 
         This is Action
-        <actionDisplay theAction={actions}/>
+        <ActionDisplay theAction={actions}/>
         </>
     )
 }

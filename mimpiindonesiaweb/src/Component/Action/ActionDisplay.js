@@ -2,15 +2,17 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 
-const actionDisplay = (props) =>{
+const ActionDisplay = (props) =>{
     const actionsList = ({theAction})=>{
         if (theAction){
            return theAction.map((item) =>{
                 return(
                     <>
-                    This is Action List
-                    {item.name}
-                    <img src={item.image}/>
+                    This is Action List<br></br>
+                    {item.name}<br></br>
+                    <img src={item.image}/><br>
+                    </br>
+                    {item.effect}
                     </>
                 )
             })
@@ -26,6 +28,6 @@ const actionDisplay = (props) =>{
         
         </>
     )
-}
+};
 
-export default actionDisplay;
+export default ActionDisplay;
