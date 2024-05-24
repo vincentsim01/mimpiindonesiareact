@@ -10,8 +10,7 @@ const ActionDisplay = (props) =>{
                     <>
                     This is Action List<br></br>
                     {item.name}<br></br>
-                    <img src={item.image}/><br>
-                    </br>
+                    <img src={item.image}/><br></br>
                     {item.effect}
                     </>
                 )
@@ -25,7 +24,6 @@ const ActionDisplay = (props) =>{
         <>
         This is ActionDisplay
         {actionsList(props)}
-        
         </>
     )
 };

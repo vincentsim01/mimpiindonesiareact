@@ -10,13 +10,10 @@ const Actions = () =>{
         fetch(`${baseUrl}/actioning`,{method:'GET'})
         .then((res) => res.json())
         .then((data) => {setactions(data)})
-
-
     },[]);
 
     return(
         <>
-
         This is Action
         <ActionDisplay theAction={actions}/>
         </>
