@@ -2,6 +2,7 @@ import React from 'react';
 import './Home.css';
 import Banner from './Banner';
 import Count from '../Count/Count';
+import Category from '../Category/Category';
 
 
 
@@ -58,6 +59,8 @@ const Home = () => {
 
 
             <Banner/>
+            <Category/>
+            <br></br><br></br>
 
 
             <Count/>
