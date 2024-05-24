@@ -9,6 +9,7 @@ import Event from './Event/Event';
 import Header from './Header';
 import Footer from './Footer';
 import Actions from './Action/Action';
+import Money from '../Component/Money/Money';
 
 const Routing = ()=>{
 
@@ -25,6 +26,7 @@ const Routing = ()=>{
             <Route path="Dream" element={<Dream/>}/>
             <Route path="Event" element={<Event/>}/>
             <Route path="Actions" element={<Actions/>}/>
+            <Route path="Money" element={<Money/>}/>
         </Route>
 
         </Routes>

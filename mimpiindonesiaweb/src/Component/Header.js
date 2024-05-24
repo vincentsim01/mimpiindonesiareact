@@ -12,7 +12,7 @@ const Header = () =>{
             <Link to="/Dream"><span>Dream</span></Link>
             <Link to="/Event"><span>Event</span></Link>
             <Link to="/Actions"><span>Action</span></Link>
-            <span>Money</span>
+            <Link to="/Money"><span>Money</span></Link>
         </div>
     )
 
