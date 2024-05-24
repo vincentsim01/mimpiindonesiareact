@@ -3,7 +3,7 @@ import React, { useState,useEffect } from 'react';
 
 const Count = () => {
 
-    const [count,setcount]=useState([0]);
+    const [count,setcount]=useState(0);
 
     function pluscount(){
         setcount(count+1);
@@ -26,7 +26,7 @@ const Count = () => {
             <button onClick={minuscount}>Minus</button>
             <br></br>
 
-            {count}
+            This is the: {count}
 
         
         
