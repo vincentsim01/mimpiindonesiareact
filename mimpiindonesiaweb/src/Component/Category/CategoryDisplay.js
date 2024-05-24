@@ -8,8 +8,10 @@ const CategoryDisplay = (props) =>{
             return thecategory.map((item)=>{
                 return (
                     <>
+                    <Link to={`/${item.name}`}>
                     <img src={item.image}/>
                     {item.name}
+                    </Link>
                     
                     </>
                 )
