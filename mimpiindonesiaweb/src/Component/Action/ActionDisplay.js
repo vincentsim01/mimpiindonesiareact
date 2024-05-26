@@ -2,16 +2,24 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 
+
 const ActionDisplay = (props) =>{
     const actionsList = ({theAction})=>{
         if (theAction){
            return theAction.map((item) =>{
                 return(
                     <>
-                    This is Action List<br></br>
-                    {item.name}<br></br>
-                    <img src={item.image}/><br></br>
+                    <br></br>
+                    <div className="container-fluid">
+                    <div class="row">
+
+                
+                    <div className="actioncontent col-md-7">{item.name}<br></br>
+                    <span ><img className="imageAction" src={item.image}/></span><br></br>
                     {item.effect}
+                    </div>
+                    </div>
+                    </div>
                     </>
                 )
             })
@@ -22,7 +30,7 @@ const ActionDisplay = (props) =>{
     return(
 
         <>
-        This is ActionDisplay
+
         {actionsList(props)}
         </>
     )

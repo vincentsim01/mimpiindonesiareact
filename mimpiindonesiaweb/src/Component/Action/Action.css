@@ -1,0 +1,12 @@
+.actioncontent{
+    text-align:center;
+    border: black solid 2px;
+    width:30%;
+    display:inline-block;
+
+}
+
+.imageAction{
+    width:50%;
+    display:inline-block;
+}

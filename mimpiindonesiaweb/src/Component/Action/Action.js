@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from 'react';
 import ActionDisplay from './ActionDisplay';
+import './Action.css';
 const baseUrl="http://localhost:9120";
 
 const Actions = () =>{
@@ -14,7 +15,7 @@ const Actions = () =>{
 
     return(
         <>
-        This is Action
+
         <ActionDisplay theAction={actions}/>
         </>
     )
