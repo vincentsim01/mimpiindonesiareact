@@ -8,18 +8,18 @@ const ActionDisplay = (props) =>{
         if (theAction){
            return theAction.map((item) =>{
                 return(
-                    <>
-                    <br></br>
-                    <div className="container-fluid">
-                    <div class="row">
+                    <>                    {/* <div className="container-fluid rowi"> */}
+                    <div className="row rowi">
 
                 
-                    <div className="actioncontent col-md-7">{item.name}<br></br>
+                    <div className="actioncontent">{item.name}<br></br>
                     <span ><img className="imageAction" src={item.image}/></span><br></br>
                     {item.effect}
+
+             
                     </div>
                     </div>
-                    </div>
+                    {/* </div> */}
                     </>
                 )
             })
