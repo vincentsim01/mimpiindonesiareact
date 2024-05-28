@@ -1,0 +1,23 @@
+.categorycontent{
+    display:inline-block;
+    width:17%;
+    margin:5px;
+    border: 1px solid black;
+}
+
+.categorycontainer{
+    display:inline;
+    border: 1px solid black;
+    width:100%;
+}
+
+.categoryimage{
+    display:inline;
+    width:50%;
+    
+}
+
+.categoryname{
+    display:inline;
+    width:50%;
+}

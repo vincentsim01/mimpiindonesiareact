@@ -59,6 +59,7 @@ const Home = () => {
 
 
             <Banner/>
+            <br></br>
             <Category/>
             <br></br><br></br>
 

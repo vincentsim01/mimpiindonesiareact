@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from 'react';
 import CategoryDisplay from './CategoryDisplay';
+import './Category.css';
 const baseUrl="http://localhost:9120";
 
 
@@ -14,9 +15,7 @@ const Category = () =>{
 
     return (
         <>
-        This is Category
-        <br>
-        </br>
+
         <CategoryDisplay thecategory={category}/>
         
         
