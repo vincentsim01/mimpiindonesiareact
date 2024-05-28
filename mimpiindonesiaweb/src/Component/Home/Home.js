@@ -3,6 +3,7 @@ import './Home.css';
 import Banner from './Banner';
 import Count from '../Count/Count';
 import Category from '../Category/Category';
+import Name from '../InsertName/Name';
 
 
 
@@ -64,7 +65,12 @@ const Home = () => {
             <br></br><br></br>
 
 
-            <Count/>
+
+            <Count/><br></br>
+            <p id="thetext">This text must change</p>
+            <Name/>
+            <br></br>
+  
 
         </>
     )
