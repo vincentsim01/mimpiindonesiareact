@@ -8,12 +8,17 @@
 .categorycontainer{
     display:inline;
     border: 1px solid orange;
+    margin:10px;
+
+
 
 }
 
 .categoryimage{
-    width:90%;
+
     display:inline;
+    border: 1px solid pink;
+    width:100%;
 
 
     
@@ -22,4 +27,12 @@
 .categoryname{
     display:inline;
     width:50%;
+    border:1px solid blue;
 }
+
+/* #categorymastercontainer{
+    display:inline-block;
+    width:100%;
+    margin:10px;
+    border:1px solid blue;
+} */
