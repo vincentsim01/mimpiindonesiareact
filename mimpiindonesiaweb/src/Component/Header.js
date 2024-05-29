@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from 'react';
 import {useNavigate,Link} from 'react-router-dom';
+import Logo from '../Component/Logo/Logo';
 
 
 const Header = () =>{
@@ -13,6 +14,8 @@ const Header = () =>{
             <Link to="/Event"><span>Event</span></Link>
             <Link to="/Actions"><span>Action</span></Link>
             <Link to="/Money"><span>Money</span></Link>
+            <Link to="/"><Logo/></Link>
+            
         </div>
     )
 
