@@ -1,3 +1,11 @@
 .LogoContainer{
     border: 1px solid black;
+    display:inline;
+    text-align:right;
+
+}
+
+.LogoImage{
+    width:100px;
+    display:inline-block;
 }
