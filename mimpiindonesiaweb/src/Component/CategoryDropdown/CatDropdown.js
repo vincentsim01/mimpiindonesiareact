@@ -5,6 +5,7 @@ const baseUrl = "http://localhost:9120";
 const CatDropdown = () =>{
 
     const [categ, setcateg]=useState([]);
+    const [categspecific, setcategspecific]=useState([]);
 
     useEffect(() =>{
         fetch(`${baseUrl}/cardcategory`,{method:'GET'})
@@ -19,7 +20,33 @@ const CatDropdown = () =>{
 
                 return(
                     <>
-                    <option value={item.id} key={item.id}>
+                    <option value={item.name} key={item.id}>
+                        {item.name}
+
+                    </option>
+                    </>
+                )
+            }
+            )
+        }
+
+    }
+
+    const handleCategory = (event) =>{
+        let dacategory=event.target.value;
+        fetch(`${baseUrl}/${dacategory}`,{method:'GET'})
+        .then((res) => res.json())
+        .then((data) => setcategspecific(data))
+    }
+
+
+    const renderCategSpecific= (data) => {
+        if(data){
+            return data.map((item)=>{
+
+                return(
+                    <>
+                    <option value={item.name} key={item.id}>
                         {item.name}
 
                     </option>
@@ -34,8 +61,13 @@ const CatDropdown = () =>{
     return(
         <>
 
-        <select>
+        <select onChange={handleCategory}>
             {renderCategory(categ)}
+        </select>
+
+
+        <select>
+            {renderCategSpecific(categspecific)}
         </select>
         </>
 
