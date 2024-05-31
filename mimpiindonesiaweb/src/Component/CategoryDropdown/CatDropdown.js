@@ -1,4 +1,5 @@
 import React, { useState,useEffect } from 'react';
+import {Link} from 'react-router-dom';
 const baseUrl = "http://localhost:9120";
 
 
@@ -6,6 +7,7 @@ const CatDropdown = () =>{
 
     const [categ, setcateg]=useState([]);
     const [categspecific, setcategspecific]=useState([]);
+    const [value,setvalue]=useState([]);
 
     useEffect(() =>{
         fetch(`${baseUrl}/cardcategory`,{method:'GET'})
@@ -58,6 +60,15 @@ const CatDropdown = () =>{
 
     }
 
+
+    const handleCategSpecific = (event) =>{
+        setvalue=event.target.value;
+
+
+
+
+    }
+
     return(
         <>
 
@@ -66,9 +77,14 @@ const CatDropdown = () =>{
         </select>
 
 
-        <select>
+        <select onChange={handleCategSpecific}>
             {renderCategSpecific(categspecific)}
         </select>
+        <Link to={`/`}>
+        <button>GO
+
+        </button>
+        </Link>
         </>
 
     )
