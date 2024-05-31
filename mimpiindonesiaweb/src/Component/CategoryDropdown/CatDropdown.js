@@ -11,16 +11,31 @@ const CatDropdown = () =>{
         .then((res)=>res.json())
         .then((data)=>setcateg(data))
     },[]
-)
+    )
+
+    const renderCategory = (data) => {
+        if(data){
+            return data.map((item)=>{
+
+                return(
+                    <>
+                    <option value={item.id} key={item.id}>
+                        {item.name}
+
+                    </option>
+                    </>
+                )
+            }
+            )
+        }
+
+    }
 
     return(
         <>
 
         <select>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
+            {renderCategory(categ)}
         </select>
         </>
 
