@@ -4,6 +4,7 @@ import Banner from './Banner';
 import Count from '../Count/Count';
 import Category from '../Category/Category';
 import Name from '../InsertName/Name';
+import CatDropdown from '../CategoryDropdown/CatDropdown';
 
 
 
@@ -70,6 +71,9 @@ const Home = () => {
             <Count/><br></br>
             <p id="thetext">This text must change</p>
             <Name/>
+            <br>
+            </br>
+            <CatDropdown/>
             <br></br>
   
 
