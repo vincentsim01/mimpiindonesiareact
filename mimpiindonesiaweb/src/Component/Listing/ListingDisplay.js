@@ -10,7 +10,7 @@ const ListingDisplay = (props) =>{
                 return(
                     <>
                     {item.name}<br></br><br></br>
-                    {item.image}
+                    <img src={item.image}/>
                     
                     
                     </>
