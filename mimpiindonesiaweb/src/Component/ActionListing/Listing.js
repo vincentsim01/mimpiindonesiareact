@@ -1,19 +1,17 @@
 
 import React, { useState,useEffect } from 'react';
 import {useParams,useSearchParams,useNavigate,Link, Navigate} from 'react-router-dom';
-// import { useQuery } from "react-query";
 import ListingDisplay from './ListingDisplay';
 const baseUrl = "http://localhost:9120";
 
 
-const Listing = () =>{
+const ActionListing = () =>{
     const [category,setcategory]=useState([]);
     let [searchParams] = useSearchParams();
     let params = useParams();
-    // let queries = useQuery();
+
 
     let cardnameparam = params.name;
-    // let cardnamequery = queries.name;
     let cardnamequery = searchParams.getAll('name');
 
     useEffect(() => {
@@ -34,4 +32,4 @@ const Listing = () =>{
     )
 }
 
-export default Listing;
+export default ActionListing;
