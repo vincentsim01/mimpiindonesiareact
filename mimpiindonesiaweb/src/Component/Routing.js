@@ -10,6 +10,7 @@ import Header from './Header';
 import Footer from './Footer';
 import Actions from './Action/Action';
 import Money from '../Component/Money/Money';
+import Listing from '../Component/Listing/Listing';
 
 const Routing = ()=>{
 
@@ -27,6 +28,7 @@ const Routing = ()=>{
             <Route path="Event" element={<Event/>}/>
             <Route path="Actions" element={<Actions/>}/>
             <Route path="Money" element={<Money/>}/>
+            <Route path="ActionListing" element={<Listing/>}/>
         </Route>
 
         </Routes>
