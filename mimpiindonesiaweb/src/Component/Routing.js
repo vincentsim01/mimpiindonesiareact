@@ -13,7 +13,7 @@ import Money from '../Component/Money/Money';
 import ActionListing from './ActionListing/Listing';
 import DreamListing from './DreamListing/DreamListing';
 import EventListing from './EventListing/EventListing';
-import CharacterListing from './CharacterListing/CharacterListing';
+import CharacterListingX from './CharacterListing/CharacterListing';
 
 const Routing = ()=>{
 
@@ -33,8 +33,9 @@ const Routing = ()=>{
             <Route path="Money" element={<Money/>}/>
             <Route path="ActionListing" element={<ActionListing/>}/>
             <Route path="DreamListing" element={<DreamListing/>}/>
+            <Route Path="CharacterListingX" element={<CharacterListingX/>}/>
             <Route path="EventListing" element={<EventListing/>}/>
-            <Route Path="CharacterListing" element={<CharacterListing/>}/>
+
         </Route>
 
         </Routes>

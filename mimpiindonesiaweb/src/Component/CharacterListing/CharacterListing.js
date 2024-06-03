@@ -1,24 +1,23 @@
-import React, {useState, useEffect} from 'react';
-import {useParams, useSearchParams} from 'react-router-dom';
+import React, { useState,useEffect } from 'react';
+import {useParams,useSearchParams,useNavigate,Link, Navigate} from 'react-router-dom';
 import CharacterListingDisplay from './CharacterListingDisplay';
 const baseUrl = "http://localhost:9120";
 
 
-const CharacterListing = () => {
+const CharacterListingX = () => {
 
-    const [category,setcategory] = useState([]);
+    const [category,setcategory] =useState([]);
     let [searchParams] = useSearchParams();
 
-    let cardname = searchParams.getAll('name');
 
-    useEffect(()=>{
-        fetch(`${baseUrl}/character?name=${cardname}`, {method:'GET'})
+    let cardnamequery = searchParams.getAll('name');
+
+    useEffect(() => {
+        fetch(`${baseUrl}/character?name=${cardnamequery}`,{method: 'GET'})
         .then((res)=>res.json())
         .then((data)=>setcategory(data))
 
-    },[]
-
-    )
+    },[]);
 
 
 
@@ -26,7 +25,8 @@ const CharacterListing = () => {
 
 
         <>
-        <CharacterListingDisplay cardname={category}/>
+        <span>This is Character Listing</span>
+        {/* <CharacterListingDisplay thecard={category}/> */}
         
         
         
@@ -36,4 +36,4 @@ const CharacterListing = () => {
 }
 
 
-export default CharacterListing;
+export default CharacterListingX;

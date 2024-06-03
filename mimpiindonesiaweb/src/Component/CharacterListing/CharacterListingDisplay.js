@@ -1,9 +1,9 @@
 import React from 'react';
 
 const CharacterListingDisplay = (props) => {
-    const CharacterDisplayListing = ({cardname}) =>{
-        if(cardname){
-            return cardname.map((item)=>{
+    const CharacterDisplayListing = ({thecard}) =>{
+        if(thecard){
+            return thecard.map((item)=>{
                 return(
                     <>
                     {item.name}
