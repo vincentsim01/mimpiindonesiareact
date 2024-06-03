@@ -32,11 +32,11 @@ const Routing = ()=>{
             <Route path="Event" element={<Event/>}/>
             <Route path="Actions" element={<Actions/>}/>
             <Route path="Money" element={<Money/>}/>
-            <Route path="ActionListing" element={<ActionListing/>}/>
+            <Route path="ActioningListing" element={<ActionListing/>}/>
             <Route path="DreamListing" element={<DreamListing/>}/>
-            <Route Path="CharList" element={<CharacterListing/>}/>
+            {/* <Route Path="CharList" element={<CharacterListing/>}/> */}
             <Route path="EventListing" element={<EventListing/>}/>
-            <Route path="Charlist" element={<Charlist/>}/>
+            <Route path="CharacterListing" element={<Charlist/>}/>
 
         </Route>
 

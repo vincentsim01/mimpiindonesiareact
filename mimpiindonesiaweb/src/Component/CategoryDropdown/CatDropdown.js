@@ -1,13 +1,16 @@
 import React, { useState,useEffect } from 'react';
 import {Link} from 'react-router-dom';
 const baseUrl = "http://localhost:9120";
+const baseUrl2 = "http://localhost:3000";
+
 
 
 const CatDropdown = () =>{
 
     const [categ, setcateg]=useState([]);
     const [categspecific, setcategspecific]=useState([]);
-    const [value,setvalue]=useState([]);
+    var [value,setvalue]=useState([]);
+    var [dacateg,setdacateg]=useState([]);
 
     useEffect(() =>{
         fetch(`${baseUrl}/cardcategory`,{method:'GET'})
@@ -36,6 +39,7 @@ const CatDropdown = () =>{
 
     const handleCategory = (event) =>{
         let dacategory=event.target.value;
+        setdacateg(dacategory);
         fetch(`${baseUrl}/${dacategory}`,{method:'GET'})
         .then((res) => res.json())
         .then((data) => setcategspecific(data))
@@ -62,7 +66,10 @@ const CatDropdown = () =>{
 
 
     const handleCategSpecific = (event) =>{
-        setvalue=event.target.value;
+        let sevalue=event.target.value;
+        setvalue(sevalue);
+
+        console.log (sevalue);
 
 
 
@@ -80,7 +87,7 @@ const CatDropdown = () =>{
         <select onChange={handleCategSpecific}>
             {renderCategSpecific(categspecific)}
         </select>
-        <Link to={`/`}>
+        <Link to={`/${dacateg}Listing?name=${value}`}>
         <button>GO
 
         </button>

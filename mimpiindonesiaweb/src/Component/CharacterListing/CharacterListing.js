@@ -26,6 +26,7 @@ const CharacterListing = () => {
 
         
         <>This is Character Listing
+        aaaaaaaaaaaa
         {/* <CharacterListingDisplay thecard={category}/> */}
         </>
         
