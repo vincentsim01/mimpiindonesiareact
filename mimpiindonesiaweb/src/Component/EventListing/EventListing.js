@@ -9,7 +9,7 @@ const baseUrl = "http://localhost:9120";
 const EventListing = () =>{
 
     const [category,setcategory] =useState([]);
-    const [searchParams] = useSearchParams;
+    let [searchParams] = useSearchParams();
 
 
     let cardnamequery = searchParams.getAll('name');
