@@ -27,8 +27,8 @@ const DreamFilter = (props) =>{
 
 
             // fetch(dreamUrl, {method: 'GET'})
-            // .then((res)=>res.json())
-            // .then((data)=>setdreamcharacter(data))
+            // .then((res)=> {props.dreamfiltering(res.data)})
+  
 
 
             axios.get(dreamUrl)
