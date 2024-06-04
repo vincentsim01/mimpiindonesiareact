@@ -11,6 +11,14 @@ const baseUrl = "http://localhost:9120";
 const DreamFilter = (props) =>{
     let dreamUrl = "";
     const [dreamcharacter,setdreamcharacter] = useState([]);
+    const [dreamcharacter2,setdreamcharacter2] = useState([]);
+
+    useEffect(() =>{
+        fetch(`${baseUrl}/dream`,{method: 'GET'})
+        .then((res)=>res.json())
+        .then((data)=> setdreamcharacter2(data))
+
+    },[])
 
     const handlefilter = (event) =>{
 
@@ -30,9 +38,9 @@ const DreamFilter = (props) =>{
     }
 
 
-    const DreamDropdown = ({thedream}) =>{
-        if(thedream){
-            return thedream.map((data)=>{
+    const DreamDropdown = ({dreamcharacter2}) =>{
+        if(dreamcharacter2){
+            return dreamcharacter2.map((data)=>{
                 return(
                     <>
 
@@ -43,6 +51,16 @@ const DreamFilter = (props) =>{
             })
         }
 
+    }
+
+    const DreamDropdown2 = () =>{
+        return dreamcharacter2.map((data)=>{
+            return(<>
+                <option value={data.character}>{data.character}</option>
+                </>
+
+            )
+        })
     }
 
 
@@ -58,6 +76,7 @@ const DreamFilter = (props) =>{
         <select onChange={handlefilter}>
 
             {DreamDropdown(props)}
+            {DreamDropdown2(props)}
 
             </select>
 

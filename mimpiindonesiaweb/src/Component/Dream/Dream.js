@@ -12,6 +12,7 @@ const Dream= () =>{
 
     const setDataPerFilter = (data) => {
         setdreamfilter(data)
+        setdream(data)
     }
 
     useEffect(() => {
@@ -31,7 +32,7 @@ const Dream= () =>{
         <DreamDisplay thedream={dream}/>
 
 
-        <DreamFilterDisplay filtereddream={dreamfilter}/>
+        {/* <DreamFilterDisplay filtereddream={dreamfilter}/> */}
         <br></br>
         </>
     )
