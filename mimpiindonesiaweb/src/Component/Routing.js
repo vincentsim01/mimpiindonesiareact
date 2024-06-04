@@ -15,6 +15,7 @@ import DreamListing from './DreamListing/DreamListing';
 import EventListing from './EventListing/EventListing';
 import CharacterListing from './CharacterListing/CharacterListing';
 import Charlist from './CharList/charlist';
+import MoneyListing from './MoneyListing/MoneyListing';
 
 const Routing = ()=>{
 
@@ -37,6 +38,7 @@ const Routing = ()=>{
             {/* <Route Path="CharList" element={<CharacterListing/>}/> */}
             <Route path="EventListing" element={<EventListing/>}/>
             <Route path="CharacterListing" element={<Charlist/>}/>
+            <Route path="MoneyListing" element={<MoneyListing/>}/>
 
         </Route>
 
