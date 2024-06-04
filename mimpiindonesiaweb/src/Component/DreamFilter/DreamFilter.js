@@ -74,8 +74,9 @@ const DreamFilter = (props) =>{
         <div>Dream Filter</div>
 
         <select onChange={handlefilter}>
+            <option value="">Select All</option>
 
-            {DreamDropdown(props)}
+            {/* {DreamDropdown(props)} */}
             {DreamDropdown2(props)}
 
             </select>
