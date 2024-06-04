@@ -31,7 +31,7 @@ const Routing = ()=>{
             <Route path="Character" element={<Character/>}/>
             <Route path="Dream" element={<Dream/>}/>
             <Route path="Event" element={<Event/>}/>
-            <Route path="Actions" element={<Actions/>}/>
+            <Route path="Actioning" element={<Actions/>}/>
             <Route path="Money" element={<Money/>}/>
             <Route path="ActioningListing" element={<ActionListing/>}/>
             <Route path="DreamListing" element={<DreamListing/>}/>
