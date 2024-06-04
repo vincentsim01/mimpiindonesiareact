@@ -20,6 +20,7 @@ const CatDropdown = () =>{
     )
 
     const renderCategory = (data) => {
+
         if(data){
             return data.map((item)=>{
 
@@ -28,7 +29,11 @@ const CatDropdown = () =>{
                     <option value={item.name} key={item.id}>
                         {item.name}
 
+                        
+
                     </option>
+
+
                     </>
                 )
             }
@@ -48,6 +53,7 @@ const CatDropdown = () =>{
 
     const renderCategSpecific= (data) => {
         if(data){
+   
             return data.map((item)=>{
 
                 return(
@@ -56,6 +62,8 @@ const CatDropdown = () =>{
                         {item.name}
 
                     </option>
+
+
                     </>
                 )
             }
@@ -80,11 +88,13 @@ const CatDropdown = () =>{
         <>
 
         <select onChange={handleCategory}>
+        <option value="0">Please Select A Value</option>
             {renderCategory(categ)}
         </select>
 
 
         <select onChange={handleCategSpecific}>
+            <option value="0">Please Select A Value</option>
             {renderCategSpecific(categspecific)}
         </select>
         <Link to={`/${dacateg}Listing?name=${value}`}>
