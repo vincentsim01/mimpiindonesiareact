@@ -1,14 +1,67 @@
 import React, {useState, useEffect} from 'react';
 import {useParams,useSearchParams,useNavigate,Link, Navigate} from 'react-router-dom';
+import axios from 'axios';
+
+import DreamFilterDisplay from './DreamFilterDisplay';
 
 
-const DreamFilter = () =>{
+const baseUrl = "http://localhost:9120";
+
+
+const DreamFilter = (props) =>{
+    let dreamUrl = "";
+    const [dreamcharacter,setdreamcharacter] = useState([]);
+
+    const handlefilter = (event) =>{
+
+
+            dreamUrl = `${baseUrl}/dreamfilter?character=${event.target.value}`;
+
+
+            // fetch(dreamUrl, {method: 'GET'})
+            // .then((res)=>res.json())
+            // .then((data)=>setdreamcharacter(data))
+
+
+            axios.get(dreamUrl)
+            .then((res) => {props.dreamfiltering(res.data)})
+
+        
+    }
+
+
+    const DreamDropdown = ({thedream}) =>{
+        if(thedream){
+            return thedream.map((data)=>{
+                return(
+                    <>
+
+                        <option value={data.character}>{data.character}</option>
+
+                    </>
+                )
+            })
+        }
+
+    }
+
+
+
+
 
 
     return (
 
         <>
-        <span>Dream Filter</span>
+        <div>Dream Filter</div>
+
+        <select onChange={handlefilter}>
+
+            {DreamDropdown(props)}
+
+            </select>
+
+
         
         </>
     )
