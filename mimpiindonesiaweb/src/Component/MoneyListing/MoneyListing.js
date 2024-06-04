@@ -13,7 +13,8 @@ const MoneyListing = () => {
     const [categ,setcateg] = useState([]);
 
 
-    let cardnamequery = searchParams.getAll('name');
+    let cardnamez = searchParams.getAll('name');
+    let cardnamequery=Number(cardnamez);
 
     useEffect(() => {
         fetch(`${baseUrl}/money?name=${cardnamequery}`)
