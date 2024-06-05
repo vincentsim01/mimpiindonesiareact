@@ -12,48 +12,59 @@ const DreamFilter = (props) =>{
     let dreamUrl = "";
     const [dreamcharacter,setdreamcharacter] = useState([]);
     const [dreamcharacter2,setdreamcharacter2] = useState([]);
+    let dreamarray = [];
 
     useEffect(() =>{
+
+
+        function removeDuplicates(a) {
+            return a.filter((item, index) => a.indexOf(item.character) === index.character);
+                console.log(a);
+        }
+
+
         fetch(`${baseUrl}/dream`,{method: 'GET'})
         .then((res)=>res.json())
         .then((data)=> setdreamcharacter2(data))
 
+        console.log(dreamcharacter2);
+
+
+
+        setdreamcharacter2(removeDuplicates(dreamcharacter2));
+
+        
+        console.log(dreamcharacter2);
+
     },[])
 
     const handlefilter = (event) =>{
-
-
             dreamUrl = `${baseUrl}/dreamfilter?character=${event.target.value}`;
+            fetch(dreamUrl, {method: 'GET'})
+            .then((data)=>data.json())
+            .then((res)=> {props.dreamfiltering(res)})
 
 
-            // fetch(dreamUrl, {method: 'GET'})
-            // .then((res)=> {props.dreamfiltering(res.data)})
-  
-
-
-            axios.get(dreamUrl)
-            .then((res) => {props.dreamfiltering(res.data)})
-
-        
-    }
-
-
-    const DreamDropdown = ({dreamcharacter2}) =>{
-        if(dreamcharacter2){
-            return dreamcharacter2.map((data)=>{
-                return(
-                    <>
-
-                        <option value={data.character}>{data.character}</option>
-
-                    </>
-                )
-            })
-        }
-
+            // axios.get(dreamUrl)
+            // .then((res) => {props.dreamfiltering(res.data)})
     }
 
     const DreamDropdown2 = () =>{
+
+        // function removeDuplicates(a) {
+        //     return a.filter((item,
+        //         index) => a.indexOf(item.character) === index.character);
+        //         console.log(a);
+        // }
+
+
+    
+
+
+
+
+
+
         return dreamcharacter2.map((data)=>{
             return(<>
                 <option value={data.character}>{data.character}</option>
@@ -63,26 +74,15 @@ const DreamFilter = (props) =>{
         })
     }
 
-
-
-
-
-
     return (
 
         <>
-        <div>Dream Filter</div>
+        <div>Dream Filter Based On Character</div>
 
         <select onChange={handlefilter}>
             <option value="">Select All</option>
-
-            {/* {DreamDropdown(props)} */}
             {DreamDropdown2(props)}
-
-            </select>
-
-
-        
+        </select>
         </>
     )
 }
