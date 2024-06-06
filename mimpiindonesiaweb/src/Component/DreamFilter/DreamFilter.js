@@ -17,24 +17,17 @@ const DreamFilter = (props) =>{
     useEffect(() =>{
 
 
-        function removeDuplicates(a) {
-            return a.filter((item, index) => a.indexOf(item.character) === index.character);
-                console.log(a);
-        }
 
 
         fetch(`${baseUrl}/dream`,{method: 'GET'})
         .then((res)=>res.json())
         .then((data)=> setdreamcharacter2(data))
 
+
         console.log(dreamcharacter2);
 
+    
 
-
-        setdreamcharacter2(removeDuplicates(dreamcharacter2));
-
-        
-        console.log(dreamcharacter2);
 
     },[])
 
@@ -58,6 +51,47 @@ const DreamFilter = (props) =>{
         // }
 
 
+
+
+
+        
+        // for (let i = 0; i < dreamcharacter2.length; i++){
+        //     thecharacter.push(dreamcharacter2[i].character);
+        //     return thecharacter;
+        // }
+
+        console.log(dreamcharacter2);
+        // thecharacter=(dreamcharacter2);
+
+        
+
+
+
+        // function removeDuplicates() {
+
+
+
+        //     // for (let i = 0; i < dreamcharacter2.length; i++){
+        //     //     thecharacter.push(dreamcharacter2[i].character);
+        //     //     return thecharacter;
+        //     // }
+
+
+
+        
+        //     let jsonObject = thecharacter.map(JSON.stringify);
+        //     let uniqueSet = new Set(jsonObject);
+        //     let uniqueArray = Array.from(uniqueSet).map(JSON.parse);
+        
+        //     console.log(uniqueArray);
+
+        //     return thecharacter.push(uniqueArray);
+        // }
+        // // removeDuplicates();
+
+        // console.log(thecharacter);
+
+
     
 
 
@@ -74,6 +108,39 @@ const DreamFilter = (props) =>{
         })
     }
 
+
+    const DreamDropdown3 = () =>{
+
+        let thecharacter = {};
+        let thecharacter3=[];
+
+        fetch(`${baseUrl}/dream`,{method: 'GET'})
+        .then((res)=>res.json())
+        .then((data)=> thecharacter=data)
+
+        console.log(thecharacter);
+
+        for (let i = 0; i < thecharacter.length; i++){
+            thecharacter3.push(thecharacter[i].character);
+            return thecharacter3;
+        }
+
+        console.log(thecharacter3);
+
+
+        return thecharacter3.map((data)=>{
+            return(
+                <>
+                <option value={data.character}>{data.character}</option>
+                
+                
+                </>
+            )
+        })
+
+
+    }
+
     return (
 
         <>
@@ -82,6 +149,12 @@ const DreamFilter = (props) =>{
         <select onChange={handlefilter}>
             <option value="">Select All</option>
             {DreamDropdown2(props)}
+
+        </select>
+
+        <select onChange={handlefilter}>
+        {DreamDropdown3(props)}
+
         </select>
         </>
     )
