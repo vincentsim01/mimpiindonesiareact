@@ -20,7 +20,6 @@ const Dream= () =>{
         .then((res) => res.json())
         .then((data) => {
             setdream(data)
-
         })
     },[])
 
@@ -30,9 +29,6 @@ const Dream= () =>{
         <>
         <DreamFilter thedream={dream} dreamfiltering={(data) => {setDataPerFilter(data)}}/><br></br>
         <DreamDisplay thedream={dream}/>
-
-
-        {/* <DreamFilterDisplay filtereddream={dreamfilter}/> */}
         <br></br>
         </>
     )

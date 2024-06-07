@@ -15,20 +15,9 @@ const DreamFilter = (props) =>{
     let dreamarray = [];
 
     useEffect(() =>{
-
-
-
-
         fetch(`${baseUrl}/character`,{method: 'GET'})
         .then((res)=>res.json())
         .then((data)=> setdreamcharacter2(data))
-
-
-        console.log(dreamcharacter2);
-
-    
-
-
     },[])
 
     const handlefilter = (event) =>{
@@ -43,102 +32,13 @@ const DreamFilter = (props) =>{
     }
 
     const DreamDropdown2 = () =>{
-
-        // function removeDuplicates(a) {
-        //     return a.filter((item,
-        //         index) => a.indexOf(item.character) === index.character);
-        //         console.log(a);
-        // }
-
-
-
-
-
-        
-        // for (let i = 0; i < dreamcharacter2.length; i++){
-        //     thecharacter.push(dreamcharacter2[i].character);
-        //     return thecharacter;
-        // }
-
-        console.log(dreamcharacter2);
-        // thecharacter=(dreamcharacter2);
-
-        
-
-
-
-        // function removeDuplicates() {
-
-
-
-        //     // for (let i = 0; i < dreamcharacter2.length; i++){
-        //     //     thecharacter.push(dreamcharacter2[i].character);
-        //     //     return thecharacter;
-        //     // }
-
-
-
-        
-        //     let jsonObject = thecharacter.map(JSON.stringify);
-        //     let uniqueSet = new Set(jsonObject);
-        //     let uniqueArray = Array.from(uniqueSet).map(JSON.parse);
-        
-        //     console.log(uniqueArray);
-
-        //     return thecharacter.push(uniqueArray);
-        // }
-        // // removeDuplicates();
-
-        // console.log(thecharacter);
-
-
-    
-
-
-
-
-
-
         return dreamcharacter2.map((data)=>{
-            return(<>
-                <option value={data.name}>{data.name}</option>
-                </>
-
-            )
-        })
-    }
-
-
-    const DreamDropdown3 = () =>{
-
-        let thecharacter = {};
-        let thecharacter3=[];
-
-        fetch(`${baseUrl}/dream`,{method: 'GET'})
-        .then((res)=>res.json())
-        .then((data)=> thecharacter=data)
-
-        console.log(thecharacter);
-
-        for (let i = 0; i < thecharacter.length; i++){
-            thecharacter3.push(thecharacter[i].character);
-            return thecharacter3;
-        }
-
-        console.log(thecharacter3);
-
-
-        return thecharacter3.map((data)=>{
             return(
-                <>
-                <option value={data.character}>{data.character}</option>
-                
-                
-                </>
+            <>
+                <option value={data.name}>{data.name}</option>
+            </>
             )
         })
-
-
     }
 
     return (
@@ -149,12 +49,10 @@ const DreamFilter = (props) =>{
         <select onChange={handlefilter}>
             <option value="">Select All</option>
             {DreamDropdown2(props)}
+            <option value="NA">NA</option>
 
         </select>
 
-
-
-        
         </>
     )
 }
