@@ -13,7 +13,7 @@ const Header = () =>{
             <Link to="/Character"><div className="HeaderContent">Character</div></Link>
             <Link to="/Dream"><div className="HeaderContent">Dream</div></Link>
             <Link to="/Event"><div className="HeaderContent">Event</div></Link>
-            <Link to="/Actions"><div className="HeaderContent">Action</div></Link>
+            <Link to="/Actioning"><div className="HeaderContent">Action</div></Link>
             <Link to="/Money"><div className="HeaderContent">Money</div></Link>
             <Link to="/"><div className="HeaderContent"><Logo/></div></Link>
             
