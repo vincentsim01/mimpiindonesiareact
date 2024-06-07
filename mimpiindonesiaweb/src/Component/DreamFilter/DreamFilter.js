@@ -19,7 +19,7 @@ const DreamFilter = (props) =>{
 
 
 
-        fetch(`${baseUrl}/dream`,{method: 'GET'})
+        fetch(`${baseUrl}/character`,{method: 'GET'})
         .then((res)=>res.json())
         .then((data)=> setdreamcharacter2(data))
 
@@ -101,7 +101,7 @@ const DreamFilter = (props) =>{
 
         return dreamcharacter2.map((data)=>{
             return(<>
-                <option value={data.character}>{data.character}</option>
+                <option value={data.name}>{data.name}</option>
                 </>
 
             )
@@ -152,10 +152,9 @@ const DreamFilter = (props) =>{
 
         </select>
 
-        <select onChange={handlefilter}>
-        {DreamDropdown3(props)}
 
-        </select>
+
+        
         </>
     )
 }
