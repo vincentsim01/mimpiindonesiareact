@@ -27,6 +27,20 @@ const ActionFilter = (props) =>{
             <option value="own turn">own Turn</option>
             <option value="anytime">anytime</option>
         </select>
+
+
+        <div onChange={handleChangePhase}>
+            <label>
+                <input type="radio" name="phase" value="own turn"/>own turn
+
+
+            </label>
+            <label>
+                <input type="radio" name="phase" value="anytime"/>anytime
+
+
+            </label>
+        </div>
         <br></br>
 
         Duration
@@ -34,6 +48,21 @@ const ActionFilter = (props) =>{
             <option value="instant">instant</option>
             <option value="multi turn">multi turn</option>
         </select>
+
+<br></br>
+
+        <div onChange={handleChangeDuration}>
+            <label> 
+                <input type="radio" name="duration" value="instant"/>instant
+
+
+            </label>
+            <label>
+                <input type="radio" name="duration" value="multi turn"/>multi turn
+
+
+            </label>
+        </div>
         </div>
         
         
