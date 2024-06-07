@@ -23,10 +23,10 @@ const ActionFilter = (props) =>{
         <>
         <div>
         Phase
-        <select onChange={handleChangePhase} type="radio">
+        {/* <select onChange={handleChangePhase} type="radio">
             <option value="own turn">own Turn</option>
             <option value="anytime">anytime</option>
-        </select>
+        </select> */}
 
 
         <div onChange={handleChangePhase}>
@@ -44,10 +44,10 @@ const ActionFilter = (props) =>{
         <br></br>
 
         Duration
-        <select onChange={handleChangeDuration} type="radio">
+        {/* <select onChange={handleChangeDuration} type="radio">
             <option value="instant">instant</option>
             <option value="multi turn">multi turn</option>
-        </select>
+        </select> */}
 
 <br></br>
 
