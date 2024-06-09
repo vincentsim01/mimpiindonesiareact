@@ -1,9 +1,10 @@
 
 import React, { useState,useEffect } from 'react';
 import EventDisplay from './EventDisplay';
+import EventFilter from '../EventFilter/EventFilter';
 const baseUrl = "http://localhost:9120";
 
-import EventFilter from '../EventFilter/EventFilter';
+
 
 
 const Event = () =>{

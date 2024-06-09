@@ -7,7 +7,7 @@ const EventFilter = (props) =>{
 
     const handleFilterChange = (event) =>{
 
-        fetch(`${baseUrl}`/event?type=${event.target.value}, {method: 'GET'})
+        fetch(`${baseUrl}/eventfilter?type=${event.target.value}`, {method: 'GET'})
         .then((res)=>res.json())
         .then((data)=>props.eventFiltering(data))
     };
