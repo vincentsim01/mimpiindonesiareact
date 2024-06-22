@@ -2,17 +2,17 @@ import React,{useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 
 
-const url = "http://localhost:9012/api/auth";
+const url = "http://localhost:9120/api/auth";
 
 const Register = () => {
 
     let navigate = useNavigate();
 
     const initialValues = {
-        name:'Arpit',
-        email:'arpit@gmail.com',
-        password:"987654322",
-        phone:"987654322"
+        name:'Arthur',
+        email:'arthur@gmail.com',
+        password:"Arthur",
+        phone:"12345678"
     }
 
     const [values,setValues] = useState(initialValues);
