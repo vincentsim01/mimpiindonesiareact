@@ -8,6 +8,7 @@ const Header = () =>{
 
     return(
         <div className="HeaderContainer">
+            <div className="HeaderLeft">
            <Link to="/"> <div className="HeaderContent">Home</div></Link>
            <Link to="/About"><div className="HeaderContent">About</div></Link>
             <Link to="/Character"><div className="HeaderContent">Character</div></Link>
@@ -16,6 +17,11 @@ const Header = () =>{
             <Link to="/Actioning"><div className="HeaderContent">Action</div></Link>
             <Link to="/Money"><div className="HeaderContent">Money</div></Link>
             <Link to="/"><div className="HeaderContent"><Logo/></div></Link>
+            </div>
+            <div className="HeaderRight">
+                <Link to="/register">Register</Link>
+                <Link to="/login">Login</Link>
+            </div>
             
         </div>
     )
