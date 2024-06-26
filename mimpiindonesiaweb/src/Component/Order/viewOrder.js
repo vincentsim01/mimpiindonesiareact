@@ -1,6 +1,6 @@
 import React,{useEffect, useState} from 'react';
 import axios from 'axios';
-import DisplayOrder from './DisplayOrder';
+import DisplayOrder from './displayOrder';
 
 
 const baseUrl = "http://localhost:9120";

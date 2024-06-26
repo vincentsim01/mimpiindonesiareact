@@ -48,7 +48,7 @@ const Routing = ()=>{
             <Route path="login" element={<Login/>}/>
             <Route path="test" element={<Test/>}/>
             <Route path="ViewOrder" element={<ViewOrder/>}/>
-            <Route path="placeOrder/:restName" element={<PlaceOrder/>}/>
+            <Route path="placeOrder" element={<PlaceOrder/>}/>
 
 
         </Route>
