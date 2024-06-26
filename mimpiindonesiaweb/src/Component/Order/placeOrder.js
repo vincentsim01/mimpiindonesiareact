@@ -132,7 +132,7 @@ export default PlaceOrder
 // "orderId": 9,
 // "name":"Arthur",
 // "email":"arthur@gmail.com",
-// "address":"Bob 65".
+// "address":"Bob 65",
 // "phone":55556666,
 // "cost":1200,
 // "menuItem":"Chili Crab"
