@@ -2,10 +2,10 @@ import React,{useState} from 'react';
 
 
 const Test = () => {
-    const [items, setItems] = useState(['Item 1', 'Item 2', 'Item 3']);
+    const [items, setItems] = useState(['kaos kaki pria','kaos kaki wanita','kaos kaki olah raga']);
 
     const addItem = () => {
-        const newItem = `Item ${items.length + 1}`;
+        const newItem = `Kaos Kaki ${items.length + 1}`;
         setItems([...items, newItem]);
     }
 
