@@ -19,6 +19,8 @@ import MoneyListing from './MoneyListing/MoneyListing';
 import Register from './Register/registercomponent';
 import Login from './Register/logincomponent';
 import Test from './Test/test';
+import PlaceOrder from './Order/placeOrder';
+import ViewOrder from './Order/viewOrder'
 
 const Routing = ()=>{
 
@@ -45,6 +47,8 @@ const Routing = ()=>{
             <Route path="register" element={<Register/>}/>
             <Route path="login" element={<Login/>}/>
             <Route path="test" element={<Test/>}/>
+            <Route path="ViewOrder" element={<ViewOrder/>}/>
+            <Route path="placeOrder/:restName" element={<PlaceOrder/>}/>
 
 
         </Route>
