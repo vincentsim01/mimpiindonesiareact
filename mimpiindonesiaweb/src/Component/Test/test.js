@@ -9,6 +9,12 @@ const Test = () => {
         setItems([...items, newItem]);
     }
 
+    
+    const addItem2 = () => {
+        const newItem2 = ['Naruto','Sasuke','Sakura'];
+        setItems([...items, newItem2]);
+    }
+
     return (
         <div>
             <ul>
@@ -17,6 +23,7 @@ const Test = () => {
                 ))}
             </ul>
             <button onClick={addItem}>Add Item</button>
+            <button onClick={addItem2}>Add Ninja</button>
         </div>
     );
 }
