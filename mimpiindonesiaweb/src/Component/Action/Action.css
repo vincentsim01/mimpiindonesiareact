@@ -5,6 +5,12 @@
     width:100%;
 }
 
+.theActionFilterContainer{
+    font-family:arial;
+    display:block;
+    border:1px solid black;
+
+}
 
 
 .rowi{
@@ -26,6 +32,7 @@
 .imageAction{
     width:40%;
     display:inline-block;
+    border:solid 1px black;
 }
 
 .effectAction{
@@ -35,5 +42,12 @@
     overflow: scroll;
     border: 1px solid black;
     display:block;
+}
+
+.Filter{
+    margin:10px;
+    border:1px solid black;
+    display:inline-block;
+    width:20%;
 }
 

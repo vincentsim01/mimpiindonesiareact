@@ -22,12 +22,14 @@ const Actions = () =>{
 
     return(
         <>
-        <ActionFilter actionfiltering={(data)=>{setDataPerFilter(data)}}/>
+
+            <div className="theActionFilterContainer">        
+                <ActionFilter actionfiltering={(data)=>{setDataPerFilter(data)}}/>
+            </div>
+
 
             <div className="themainActionContainer">
-
                 <ActionDisplay theAction={actions}/>
-
             </div>
 
         </>
