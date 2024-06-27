@@ -1,21 +1,39 @@
+.themainActionContainer{
+    border: solid 3px blue;
+    padding:25px;
+    display:block;
+    width:100%;
+}
+
+
+
+.rowi{
+    display:inline;
+    text-align:center;
+}
+
 .actioncontent{
     text-align:center;
-    border: black solid 2px;
     width:30%;
     display:inline-block;
-    height:400px;
+    height:300px;
+    margin:30px;
+    border:1px solid black;
+    font-size: 10px;
 
 }
 
 .imageAction{
-    width:50%;
+    width:40%;
     display:inline-block;
 }
 
-.rowi{
-
+.effectAction{
+    margin:2px;
+    font-family:arial;
+    height:80px;
+    overflow: scroll;
     border: 1px solid black;
-    display:inline;
-    text-align:center;
-
+    display:block;
 }
+

@@ -24,7 +24,11 @@ const Actions = () =>{
         <>
         <ActionFilter actionfiltering={(data)=>{setDataPerFilter(data)}}/>
 
-        <ActionDisplay theAction={actions}/>
+            <div className="themainActionContainer">
+
+                <ActionDisplay theAction={actions}/>
+
+            </div>
 
         </>
     )
