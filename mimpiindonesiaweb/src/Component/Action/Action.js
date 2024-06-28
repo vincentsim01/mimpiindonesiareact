@@ -23,7 +23,17 @@ const Actions = () =>{
     return(
         <>
 
-            <div className="theActionFilterContainer">        
+
+
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img class="d-block w-100" src="https://i.ibb.co/ZgpBbgC/action.png" alt="First slide"></img>
+                </div>
+            </div>
+            </div>
+
+            <div className="theActionFilterContainer container-fluid">        
                 <ActionFilter actionfiltering={(data)=>{setDataPerFilter(data)}}/>
             </div>
 

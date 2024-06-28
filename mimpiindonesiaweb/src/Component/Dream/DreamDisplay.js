@@ -7,11 +7,11 @@ const DreamDisplay = (props) => {
         if(thedream){
             return thedream.map((item)=>{
                 return(
-                    <span>                    
+                    <div className="dreamContentContainer col-4">                    
                         <img src={item.image} alt="1"/><br></br>
                         {item.name}<br></br>
                         {item.character}<br></br>
-                    </span>
+                    </div>
 
                 )
             }

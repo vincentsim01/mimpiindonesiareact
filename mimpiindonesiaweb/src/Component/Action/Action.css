@@ -9,9 +9,14 @@
     font-family:arial;
     display:block;
     border:1px solid black;
+    text-align:center;
 
 }
 
+
+.filterValue{
+    padding-left:20px;
+}
 
 .rowi{
     display:inline;
