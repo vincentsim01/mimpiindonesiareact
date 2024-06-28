@@ -10,7 +10,7 @@ const DreamDisplay = (props) => {
                     <div className="dreamContentContainer">                    
                         <div className="imageContainer"><img src={item.image} className="dreamImage" alt="1"/></div><br></br>
                         <div className="dreamName">{item.name} </div><br></br>
-                        <div className="dreamCharacter">{item.character}</div><br></br>
+                        <div className="dreamCharacter">Karakter: {item.character}</div><br></br>
                     </div>
 
                 )
