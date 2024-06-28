@@ -7,10 +7,10 @@ const DreamDisplay = (props) => {
         if(thedream){
             return thedream.map((item)=>{
                 return(
-                    <div className="dreamContentContainer col-4">                    
-                        <img src={item.image} alt="1"/><br></br>
-                        {item.name}<br></br>
-                        {item.character}<br></br>
+                    <div className="dreamContentContainer">                    
+                        <div className="imageContainer"><img src={item.image} className="dreamImage" alt="1"/></div><br></br>
+                        <div className="dreamName">{item.name} </div><br></br>
+                        <div className="dreamCharacter">{item.character}</div><br></br>
                     </div>
 
                 )
