@@ -1,0 +1,27 @@
+.rowi{
+    display:inline;
+    text-align:center;
+}
+
+
+.eventcontainer{
+    text-align:center;
+    width:30%;
+    display:inline-block;
+    height:300px;
+    margin:30px;
+    border:1px solid black;
+    font-size: 10px;
+}
+
+.eventname{
+    font-family: arial;
+    text-align:center;
+    border: black 1px solid;
+}
+
+.eventimage{
+    width:40%;
+    display:inline-block;
+    border:solid 1px black;
+}

@@ -1,6 +1,7 @@
 
 import React, { useState,useEffect } from 'react';
 import EventDisplay from './EventDisplay';
+import './Event.css';
 import EventFilter from '../EventFilter/EventFilter';
 const baseUrl = "http://localhost:9120";
 
@@ -29,7 +30,7 @@ const Event = () =>{
 
     return(
         <>
-        This is Event
+        {/* This is Event */}
         <EventFilter eventFiltering={(data)=>setDataPerFilter(data)}/>
         <EventDisplay theevent={event}/>
         </>

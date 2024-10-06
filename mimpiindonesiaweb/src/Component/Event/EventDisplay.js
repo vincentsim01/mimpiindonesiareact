@@ -7,13 +7,15 @@ const EventDisplay = (props)=>{
         if(theevent){
             return theevent.map((item)=>{
                 return(
-                    <span>    
-                        This is Event List       
-                        {item.name}<br></br>
-                        <img src={item.image}/><br></br>
-                        {item.effect}         
+                    <div className="row rowi">    
+                        {/* <h1>This is Event</h1>  */}
+                        <div className="eventcontainer">  
+                            <span className="eventname">{item.name}</span><br></br>
+                            <span><img className="eventimage" src={item.image}/></span><br></br>
+                            <span className="eventeffect">{item.effect}  </span>      
+                        </div>   
            
-                    </span>
+                    </div>
 
                 )
             }
@@ -24,7 +26,7 @@ const EventDisplay = (props)=>{
 
     return(
         <>
-        This is EventDisplay
+        {/* This is EventDisplay */}
         {eventList(props)}
         </>
     )
