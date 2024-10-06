@@ -28,13 +28,15 @@ const Event = () =>{
 
     }
 
+    const daypromotion = ["christmas", "labour day", "halloween", "national day","april fool","valentine","deepavali"];
+
 
     return(
         <>
         {/* This is Event */}
         <EventFilter eventFiltering={(data)=>setDataPerFilter(data)}/>
         <EventDisplay theevent={event}/>
-        <Eventpromotion thepromo="20% Off"/>
+        <Eventpromotion thepromo={daypromotion[Math.floor(Math.random() * daypromotion.length)]}/>
         </>
     )
 }

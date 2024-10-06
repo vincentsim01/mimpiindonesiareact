@@ -2,12 +2,17 @@ import React, { useState,useEffect } from 'react';
 
 const Eventpromotion = (props) =>{
 
+    const daypromotion = ["christmas", "labour day", "halloween", "national day","april fool","valentine","deepavali"];
+
+
     const eventpromo=({thepromo})=>{
+
+
 
         return(
 
    
-            <div className="promotioncontainer">The promotion is {thepromo}</div>
+            <span>The promotion is {thepromo}</span>
             
             
     
@@ -17,7 +22,11 @@ const Eventpromotion = (props) =>{
 
     return(
         <>
-        {eventpromo(props)}
+        <div className="promotioncontainer">
+        {eventpromo(props)}<br></br><br></br>
+        The Next promotion is {daypromotion[Math.floor(Math.random() * daypromotion.length)]}
+ 
+        </div>
         
         
         </>

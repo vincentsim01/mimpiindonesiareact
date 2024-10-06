@@ -17,6 +17,13 @@ const ActionFilter = (props) =>{
         .then((data)=> props.actionfiltering(data))
     }
 
+    const handleReset = (event) =>{
+        fetch(`${baseUrl}/actioning`, {method: 'GET'})
+        .then((res)=>res.json())
+        .then((data)=> props.actionfiltering(data))
+    }
+
+
 
 
     return(
@@ -56,6 +63,14 @@ const ActionFilter = (props) =>{
             <label className="filterValue">
                 <input type="radio" name="duration" value="multi turn"/>multi turn
 
+
+            </label>
+        </div>
+
+        Reset All Filter
+        <div onChange={handleReset} className="Filter">
+            <label className="filterValue">
+            <input type="radio" name="reset" value="reset"/>reset
 
             </label>
         </div>
