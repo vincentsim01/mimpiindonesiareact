@@ -7,9 +7,17 @@ const EventFilter = (props) =>{
 
     const handleFilterChange = (event) =>{
 
-        fetch(`${baseUrl}/eventfilter?type=${event.target.value}`, {method: 'GET'})
-        .then((res)=>res.json())
-        .then((data)=>props.eventFiltering(data))
+        if(event.target.value!=="All"){
+
+         fetch(`${baseUrl}/eventfilter?type=${event.target.value}`, {method: 'GET'})
+            .then((res)=>res.json())
+            .then((data)=>props.eventFiltering(data))
+        }else{
+            fetch(`${baseUrl}/event`, {method: 'GET'})
+            .then((res)=>res.json())
+            .then((data)=>props.eventFiltering(data))
+
+        }
     };
 
 
@@ -29,6 +37,10 @@ const EventFilter = (props) =>{
 
         <label>
             <input type="radio" name="type" value="positive/negative"/>Positive/Negative
+        </label>        
+        
+        <label>
+            <input type="radio" name="type" value="All"/>Reset Filter
         </label>
 
         </div>
