@@ -20,7 +20,8 @@ import Register from './Register/registercomponent';
 import Login from './Register/logincomponent';
 import Test from './Test/test';
 import PlaceOrder from './Order/placeOrder';
-import ViewOrder from './Order/viewOrder'
+import ViewOrder from './Order/viewOrder';
+import Viewfavcard from './FavCard/viewfavcard';
 
 const Routing = ()=>{
 
@@ -49,6 +50,7 @@ const Routing = ()=>{
             <Route path="test" element={<Test/>}/>
             <Route path="ViewOrder" element={<ViewOrder/>}/>
             <Route path="placeOrder" element={<PlaceOrder/>}/>
+            <Route path="viewfavcard" element={<Viewfavcard/>}/>
 
 
         </Route>
