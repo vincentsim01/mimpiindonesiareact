@@ -1,5 +1,6 @@
 
 import React, { useState,useEffect } from 'react';
+import './Character.css';
 import CharacterDisplay from './CharacterDisplay';
 const baseUrl = "http://localhost:9120";
 

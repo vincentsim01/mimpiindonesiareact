@@ -7,11 +7,13 @@ const CharacterDisplay = (props) => {
         if(thecharacter){
             return thecharacter.map((item)=>{
                 return(
-                    <span>                    
-                        <img src={item.image} alt="1"/><br></br>
-                        {item.name}<br></br>
-                        {item.provinsi}<br></br>
-                    </span>
+                    <div className="charactercontainer">                    
+                        <div className="characterindividual">
+                            <img src={item.image} className="imagecharacter" alt="1"/><br></br>
+                            <span className="charactername">{item.name}<br></br></span>
+                            <span className="characterprovince">{item.provinsi}<br></br></span>
+                        </div>
+                    </div>
 
                 )
             }

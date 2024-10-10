@@ -1,0 +1,14 @@
+.charactercontainer{
+    display:inline;
+}
+
+.characterindividual{
+    display: inline-block;
+    width:30%;
+}
+
+.imagecharacter{
+    width:40%;
+    display:inline-block;
+    border:solid 1px black;
+}
