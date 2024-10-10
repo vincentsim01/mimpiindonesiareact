@@ -1,11 +1,14 @@
 .moneycontainer{
     display:inline;
+    border: 1px black solid;
 
 }
 
 .moneyindividual{
     display:inline-block;
     width:30%;
+    border: 1px black solid;
+    text-align:center;
 
 
 
@@ -14,14 +17,17 @@
 .moneyname{
     display:block;
     border: 1px black solid;
+    text-align:center;
+
 
 
 
 }
 
-.moneyimage{
+.imagemoney{
     display: inline-block;
-    width:50%;
+    width:100%;
+    text-align:center;
 
 
 }

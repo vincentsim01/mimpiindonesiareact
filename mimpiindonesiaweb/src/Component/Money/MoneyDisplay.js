@@ -23,7 +23,7 @@ const MoneyDisplay = (props) =>{
     return(
 
         <>
-        This is MoneyDisplay
+        
         {MoneyList(props)}
         
         
