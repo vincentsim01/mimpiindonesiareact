@@ -8,11 +8,13 @@ const MoneyDisplay = (props) =>{
         if (themoney){
             return themoney.map((item) => {
                 return (
-                    <>
-                    {item.id}<br></br>
-                    <img src={item.image}/>
+                    <div className="moneycontainer">
+                        <div className="moneyindividual">
+                        <div className="moneyname">{item.id}<br></br></div>
+                        <img className="imagemoney" src={item.image}/>
+                    </div>
                     
-                    </>
+                    </div>
                 )
             })
         }

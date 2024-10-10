@@ -1,0 +1,27 @@
+.moneycontainer{
+    display:inline;
+
+}
+
+.moneyindividual{
+    display:inline-block;
+    width:30%;
+
+
+
+}
+
+.moneyname{
+    display:block;
+    border: 1px black solid;
+
+
+
+}
+
+.moneyimage{
+    display: inline-block;
+    width:50%;
+
+
+}

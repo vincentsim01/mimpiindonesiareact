@@ -1,4 +1,5 @@
 import React, { useState,useEffect } from 'react';
+import './Money.css';
 import MoneyDisplay from './MoneyDisplay';
 
 const baseUrl="http://localhost:9120";
