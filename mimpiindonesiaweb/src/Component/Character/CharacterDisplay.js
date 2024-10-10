@@ -30,7 +30,9 @@ const CharacterDisplay = (props) => {
 
     return(
         <>
-        This is Character Display
+
+        <br>
+        </br>
         {characterList(props)}
         
         </>
