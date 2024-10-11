@@ -27,8 +27,8 @@ const TriviaFilter = (props) =>{
     return(
         <>
 
-            This is Trivia Kategori Filter
-            <div onChange={handleChangeKategori} className="Filter">
+
+            <div onChange={handleChangeKategori} className="Filter"> Kategori Filter
             <label className="filterValue"> 
                 <input type="radio" name="kategori" value="Uang dan Finansial"/>Uang dan Finansial
             </label>
@@ -46,7 +46,7 @@ const TriviaFilter = (props) =>{
             </label>
             </div>
 
-            <div onChange={handleChangeHarga} className="Filter">
+            <div onChange={handleChangeHarga} className="Filter"> Harga Filter
             <label className="filterValue"> 
                 <input type="radio" name="harga" value="10"/>10
             </label>

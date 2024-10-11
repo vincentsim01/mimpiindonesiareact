@@ -24,7 +24,7 @@ const Trivia = () =>{
 
         <>
             <TriviaFilter triviafiltering={(data)=>{setDataPerFilter(data)}}/>
-            This is Trivia
+         
             <TriviaDisplay thetrivias={trivias}/>
         
         

@@ -35,7 +35,7 @@ const TriviaDisplay = (props) =>{
         <>
         
         
-        This is Trivia ActionDisplay
+  
         {TriviaListing (props)}
         
         </>
