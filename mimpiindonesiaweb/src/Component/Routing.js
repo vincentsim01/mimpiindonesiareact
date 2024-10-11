@@ -22,6 +22,7 @@ import Test from './Test/test';
 import PlaceOrder from './Order/placeOrder';
 import ViewOrder from './Order/viewOrder';
 import Viewfavcard from './FavCard/viewfavcard';
+import Trivia from './Trivia/Trivia';
 
 const Routing = ()=>{
 
@@ -38,6 +39,7 @@ const Routing = ()=>{
             <Route path="Dream" element={<Dream/>}/>
             <Route path="Event" element={<Event/>}/>
             <Route path="Actioning" element={<Actions/>}/>
+            <Route path="Trivia" element={<Trivia/>}/>
             <Route path="Money" element={<Money/>}/>
             <Route path="ActioningListing" element={<ActionListing/>}/>
             <Route path="DreamListing" element={<DreamListing/>}/>
