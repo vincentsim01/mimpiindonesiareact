@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from 'react';
 import TriviaDisplay from './TriviaDisplay';
 import TriviaFilter from '../TriviaFilter/TriviaFilter';
+import './Trivia.css';
 
 const baseUrl="http://localhost:9120";
 

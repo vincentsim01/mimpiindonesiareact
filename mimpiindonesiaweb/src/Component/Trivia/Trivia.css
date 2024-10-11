@@ -1,0 +1,28 @@
+.row{
+    display:inline;
+}
+
+.triviacontent{
+    display:inline-block;
+    width:30%;
+}
+
+.imageTrivia{
+    display:inline-block;
+    width:90%;
+
+
+
+}
+
+.nameTrivia{
+    display:block;
+}
+
+.kategoriTrivia{
+    display:block;
+}
+
+.hargaTrivia{
+    display:block;
+}
