@@ -22,6 +22,7 @@ import Test from './Test/test';
 import PlaceOrder from './Order/placeOrder';
 import ViewOrder from './Order/viewOrder';
 import Viewfavcard from './FavCard/viewfavcard';
+import Pickfavcard from './FavCard/pickfavcard';
 import Trivia from './Trivia/Trivia';
 
 const Routing = ()=>{
@@ -53,6 +54,7 @@ const Routing = ()=>{
             <Route path="ViewOrder" element={<ViewOrder/>}/>
             <Route path="placeOrder" element={<PlaceOrder/>}/>
             <Route path="viewfavcard" element={<Viewfavcard/>}/>
+            <Route path="pickfavcard" element={<Pickfavcard/>}/>
 
 
         </Route>

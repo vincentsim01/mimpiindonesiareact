@@ -23,6 +23,7 @@ const Header = () =>{
                 <Link to="/register">Register</Link>
                 <Link to="/login">Login</Link>
                 <Link to="/viewfavcard">Favorite Card</Link>
+                <Link to="/pickfavcard">Favorite Card</Link>
  
             </div>
             

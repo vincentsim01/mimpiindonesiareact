@@ -80,7 +80,7 @@ const Pickfavcard = () => {
 
     return(
         <>
-            <Header2/>
+
             <div className="container">
                 <hr/>
                 <div className="panel panel-primary">
