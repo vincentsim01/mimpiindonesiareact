@@ -1,13 +1,22 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 
 
 const TriviaDisplay = (props) =>{
+    let navigate = useNavigate();
+
     const TriviaListing =({thetrivias})=>{
 
         if (thetrivias){
             return thetrivias.map((item) =>{
+                const savesession = () => {
+                    sessionStorage.setItem('cardname',JSON.stringify(item.name));
+                    navigate('/pickfavcard');
+    
+            
+                }
                  return(
                      <>                    {/* <div className="container-fluid rowi"> */}
                      <div className="row rowi">
@@ -16,6 +25,7 @@ const TriviaDisplay = (props) =>{
                              <span><img className="imageTrivia" src={item.image}/></span><br></br>
                              <div className="kategoriTrivia">{item.kategori}</div><br></br>
                              <div className="hargaTrivia">{item.Harga}</div>
+                             <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button>   
                          </div>
                      </div>
                      {/* </div> */}
