@@ -79,7 +79,7 @@ const Pickfavcard = () => {
             },
             body:JSON.stringify(values)
         })
-        .then(navigate('/favcard'))
+        .then(navigate('/viewfavcard'))
     }
 
     return(

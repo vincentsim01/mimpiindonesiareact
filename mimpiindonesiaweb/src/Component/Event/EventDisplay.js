@@ -7,19 +7,25 @@ const EventDisplay = (props)=>{
     let navigate = useNavigate();
 
 
-    const savesession = () => {
-        navigate('/pickfavcard');
 
-    }
 
 
     const eventList=({theevent})=>{
         if(theevent){
 
 
+
+
         
             return theevent.map((item)=>{
-                sessionStorage.setItem('cardname',JSON.stringify(item.name));
+
+                const savesession = () => {
+                    sessionStorage.setItem('cardname',JSON.stringify(item.name));
+                    navigate('/pickfavcard');
+    
+            
+                }
+
                 return(
                     <div className="row rowi">    
                         {/* <h1>This is Event</h1>  */}
