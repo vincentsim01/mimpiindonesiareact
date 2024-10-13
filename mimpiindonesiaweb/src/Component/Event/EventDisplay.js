@@ -6,19 +6,20 @@ import { useNavigate } from 'react-router-dom';
 const EventDisplay = (props)=>{
     let navigate = useNavigate();
 
-    const savesession = ({theevent}) => {
 
-                sessionStorage.setItem('cardname',theevent.name);
-                navigate('/pickfavcard');
+    const savesession = () => {
+        navigate('/pickfavcard');
 
     }
 
 
-
-
     const eventList=({theevent})=>{
         if(theevent){
+
+
+        
             return theevent.map((item)=>{
+                sessionStorage.setItem('cardname',JSON.stringify(item.name));
                 return(
                     <div className="row rowi">    
                         {/* <h1>This is Event</h1>  */}
@@ -26,7 +27,7 @@ const EventDisplay = (props)=>{
                         <div className="eventcontainer">  
                             <span className="eventname">{item.name}</span><br></br>
                             <span><img className="eventimage" src={item.image}/></span><br></br>
-                            <span className="eventeffect">{item.effect}  </span>   
+                            <span className="eventeffect">{item.effect}  </span>   <br></br>
                             <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button>   
                         </div>   
 

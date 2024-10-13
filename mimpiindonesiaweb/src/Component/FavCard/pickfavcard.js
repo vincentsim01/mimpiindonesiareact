@@ -18,6 +18,10 @@ const Pickfavcard = () => {
     let sessionData = sessionStorage.getItem('userInfo');
     let data = JSON.parse(sessionData)
 
+    
+    let sessioncardname = sessionStorage.getItem('cardname');
+    let datacardname = JSON.parse(sessioncardname)
+
     // try {
     //     if (!sessionData) {
     //       throw new Error('User is not logged in');
@@ -52,7 +56,7 @@ const Pickfavcard = () => {
 
         address:"Hon 12 sec 34",
         date:"1 January 1970",
-        favcard: "Janji Manis"
+        favcard: datacardname
     }
 
     const [values,setValues] = useState(initialValues);
@@ -75,7 +79,7 @@ const Pickfavcard = () => {
             },
             body:JSON.stringify(values)
         })
-        .then(navigate('/favcardr'))
+        .then(navigate('/favcard'))
     }
 
     return(
