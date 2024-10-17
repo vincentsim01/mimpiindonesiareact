@@ -27,8 +27,8 @@ const EventDisplay = (props)=>{
                 }
 
                 const saveeventdetail= () => {
-                    sessionStorage.setItem('cardeventdetail',JSON.stringify(item.name));
-                    navigate('/eventdetail');
+                    sessionStorage.setItem('cardeventdetail',JSON.stringify(item.id2));
+                    console.log(sessionStorage.getItem('cardeventdetail'))
     
             
                 }
@@ -38,10 +38,12 @@ const EventDisplay = (props)=>{
                         {/* <h1>This is Event</h1>  */}
            
                         <div className="eventcontainer">  
+                        <Link to={`/eventdetail/${item.id2}`} key={item.id2}>
                             <span className="eventname" onClick={saveeventdetail}>{item.name}</span><br></br>
                             <span><img className="eventimage" src={item.image} onClick={saveeventdetail}/></span><br></br>
                             <span className="eventeffect" onClick={saveeventdetail}>{item.effect}  </span>   <br></br>
                             <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button>   
+                        </Link>
                         </div>   
 
                  
