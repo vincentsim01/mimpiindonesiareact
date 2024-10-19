@@ -22,6 +22,33 @@ const EventDetail = () =>{
     },[])
 
 
+    const renderdata = (eventdetail) =>{
+
+        if(eventdetail){
+            return listData.map((item) => {
+                return(
+
+                    <img src={item.image} alt={item.restaurant_name}/>
+                    {item.name}
+                )
+            }
+
+        }else{
+            
+        return(
+
+            <>
+            No Data Found
+            
+            </>
+
+        }
+
+
+        )
+    }
+
+
 
 
     return(
@@ -29,6 +56,8 @@ const EventDetail = () =>{
 
         This is Event Detail 
         <EventDetailDisplay listData={eventdetail}/>
+
+        {renderdate}
 
         
         
