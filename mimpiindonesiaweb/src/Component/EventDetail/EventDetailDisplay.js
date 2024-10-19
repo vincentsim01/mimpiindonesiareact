@@ -5,6 +5,10 @@ const baseUrl = "http://localhost:9120";
 
 const EventDetailDisplay = (props) => {
 
+    const removesessionstorage = () =>{
+        sessionStorage.removeItem('cardeventdetail');
+    }
+
     const renderdata = ({listData}) => {
         if(listData){
             if(listData.length>0){   
@@ -14,6 +18,9 @@ const EventDetailDisplay = (props) => {
                                  {item.name}
                                  <br></br>
                                  <img src={item.image} alt={item.image}/>
+                                 <br>
+                                 </br>
+                                 <Link to="/Event"><button onClick={removesessionstorage}>Go Back Event</button></Link>
                         </>
                     )
                 })
