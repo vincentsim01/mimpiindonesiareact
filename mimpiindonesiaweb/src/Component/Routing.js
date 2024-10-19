@@ -25,6 +25,7 @@ import Viewfavcard from './FavCard/viewfavcard';
 import Pickfavcard from './FavCard/pickfavcard';
 import Trivia from './Trivia/Trivia';
 import EventDetail from './EventDetail/EventDetail';
+import MoneyDetail from './MoneyDetail/MoneyDetail';
 
 
 const Routing = ()=>{
@@ -58,6 +59,7 @@ const Routing = ()=>{
             <Route path="viewfavcard" element={<Viewfavcard/>}/>
             <Route path="pickfavcard" element={<Pickfavcard/>}/>
             <Route path="eventdetail/:cardId" element={<EventDetail/>}/>
+            <Route path="moneydetail" element={<MoneyDetail/>}/>
 
 
         </Route>
