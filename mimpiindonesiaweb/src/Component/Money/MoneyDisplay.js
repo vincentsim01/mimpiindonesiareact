@@ -8,6 +8,7 @@ const MoneyDisplay = (props) =>{
         if (themoney){
             return themoney.map((item) => {
                 return (
+                    <Link to={`/moneydetail/${item.id2}`}>
                     <div className="moneycontainer">
                         <div className="moneyindividual">
                         <div className="moneyname">{item.id}<br></br></div>
@@ -15,6 +16,7 @@ const MoneyDisplay = (props) =>{
                     </div>
                     
                     </div>
+                    </Link>
                 )
             })
         }

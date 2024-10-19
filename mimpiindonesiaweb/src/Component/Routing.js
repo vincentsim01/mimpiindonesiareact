@@ -59,7 +59,7 @@ const Routing = ()=>{
             <Route path="viewfavcard" element={<Viewfavcard/>}/>
             <Route path="pickfavcard" element={<Pickfavcard/>}/>
             <Route path="eventdetail/:cardId" element={<EventDetail/>}/>
-            <Route path="moneydetail" element={<MoneyDetail/>}/>
+            <Route path="moneydetail/:cardId" element={<MoneyDetail/>}/>
 
 
         </Route>
