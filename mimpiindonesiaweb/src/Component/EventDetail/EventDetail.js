@@ -13,10 +13,11 @@ const EventDetail = () =>{
     let sessionData = sessionStorage.getItem('cardeventdetail');
 
     useEffect(() => {
-        fetch(`${baseUrl}/eventdetail2/${cardnameid}`,{method:'GET'})
+        fetch(`${baseUrl}/eventdetail2/${sessionData}`,{method:'GET'})
         .then((res) => res.json())
         .then((data) => {
             seteventdetail(data)
+            console.log(eventdetail);
 
         })
     },[])
@@ -25,13 +26,21 @@ const EventDetail = () =>{
     const renderdata = (eventdetail) =>{
 
         if(eventdetail){
-            return listData.map((item) => {
+            return eventdetail.map((item) => {
+
+                console.log(item.name);
                 return(
+                    <>
 
                     <img src={item.image} alt={item.restaurant_name}/>
                     {item.name}
+
+                    </>
+
                 )
+                
             }
+        )
 
         }else{
             
@@ -41,11 +50,12 @@ const EventDetail = () =>{
             No Data Found
             
             </>
+        )
 
         }
 
 
-        )
+        
     }
 
 
@@ -54,10 +64,12 @@ const EventDetail = () =>{
     return(
         <>
 
-        This is Event Detail 
+        Card Detail
+        <br></br>
         <EventDetailDisplay listData={eventdetail}/>
+        <br></br>
 
-        {renderdate}
+        {/* {renderdata} */}
 
         
         
