@@ -30,12 +30,13 @@ const EventDetail = () =>{
 
                 console.log(item.name);
                 return(
-                    <>
+                    <div>
 
-                    <img src={item.image} alt={item.restaurant_name}/>
+                    <img src={item.image} alt={item.image}/>
+                    <br></br>
                     {item.name}
 
-                    </>
+                    </div>
 
                 )
                 
