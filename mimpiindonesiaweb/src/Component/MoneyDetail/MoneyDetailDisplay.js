@@ -9,12 +9,16 @@ const MoneyDetailDisplay = (props) =>{
 
     const renderMoneyDetail = ({listData}) =>{
         if(listData){
-            return(
-                <>
-                This is ListData Success
-                
-                </>
-            )
+            return listData.map((item)=>{
+                return(
+                    <>
+                    {item.name}<br></br>
+                    <img src={item.image}/><br></br>
+                    
+                    </>
+                )
+            })
+
         }else{
             return(
                 <>

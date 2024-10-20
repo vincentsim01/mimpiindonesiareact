@@ -8,6 +8,19 @@ const baseUrl = "http://localhost:9120";
 const MoneyDetail = () =>{
 
     const [moneyDetail,setMoneyDetail] = useState([]);
+    let sessionData = Number(sessionStorage.getItem('cardmoneydetail'));
+
+    console.log(sessionData);
+
+    useEffect(() => {
+        fetch(`${baseUrl}/moneydetail/${sessionData}`,{method:'GET'})
+        .then((res) => res.json())
+        .then((data) => {
+            setMoneyDetail(data)
+            console.log(moneyDetail);
+
+        })
+    },[])
 
 
     return(
