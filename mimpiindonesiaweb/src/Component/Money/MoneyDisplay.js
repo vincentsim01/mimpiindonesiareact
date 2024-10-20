@@ -9,15 +9,15 @@ const MoneyDisplay = (props) =>{
 
         if (themoney){
             return themoney.map((item) => {
-                
+
                 const savemoneydetail= () => {
                     sessionStorage.setItem('cardmoneydetail',JSON.stringify(item.id2));
-                    console.log(sessionStorage.getItem('cardmoneydetail'))
+                    console.log(sessionStorage.getItem('cardmoneydetail'));
         
             
                 }
                 return (
-                    <Link to={`/moneydetail/${item.id2}`}>
+                    <Link to={`/moneydetail/${item.id2}`} key={item.id2}>
                     <div className="moneycontainer" onClick={savemoneydetail}>
                         <div className="moneyindividual" onClick={savemoneydetail}>
                         <div className="moneyname" onClick={savemoneydetail}>{item.id}<br></br></div>

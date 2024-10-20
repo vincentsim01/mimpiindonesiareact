@@ -7,7 +7,7 @@ const baseUrl = "http://localhost:9120";
 
 const MoneyDetail = () =>{
 
-    const [moneyDetail,setMoneyDetail] = useState([]);
+    const [moneydetail,setmoneyDetail] = useState([]);
     let sessionData = Number(sessionStorage.getItem('cardmoneydetail'));
 
     console.log(sessionData);
@@ -16,8 +16,8 @@ const MoneyDetail = () =>{
         fetch(`${baseUrl}/moneydetail/${sessionData}`,{method:'GET'})
         .then((res) => res.json())
         .then((data) => {
-            setMoneyDetail(data)
-            console.log(moneyDetail);
+            setmoneyDetail(data)
+            console.log(moneydetail);
 
         })
     },[])
@@ -27,7 +27,7 @@ const MoneyDetail = () =>{
         <>
 
 
-        <MoneyDetailDisplay listData={moneyDetail}/>
+        <MoneyDetailDisplay listData={moneydetail}/>
         </>
     )
 }
