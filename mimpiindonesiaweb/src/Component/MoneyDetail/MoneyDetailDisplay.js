@@ -7,20 +7,35 @@ const baseUrl = "http://localhost:9120";
 
 const MoneyDetailDisplay = (props) =>{
 
+    let navigate = useNavigate();
+
     const removesessionstorage = () =>{
         sessionStorage.removeItem('cardmoneydetail');
     }
+
+
+
 
     const renderMoneyDetail = ({listData}) => {
         if(listData){
             if(listData.length > 0 ){   
                 return listData.map((item) => {
+
+                    const savesession = () => {
+                        sessionStorage.setItem('cardname',JSON.stringify(item.name));
+                        navigate('/pickfavcard');
+                
+                
+                    }
                     return(
                         <div className='item' key={item._id}>
                             <div className='row rowi'>
                                 <div className='col-md-5'>
+                                    {item.name}
                                     <img src={item.image} alt={item.image}
                                     className='Image'/>
+                                    <Link to="/Money"><button onClick={removesessionstorage}>Go Back Money</button></Link>
+                                    <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button>   
                                 </div>
 
 
@@ -38,27 +53,29 @@ const MoneyDetailDisplay = (props) =>{
                 
 
 
-//     const renderMoneyDetail = ({listData}) =>{
+    // const renderMoneyDetail2 = ({listData}) =>{
 
-//         const renderData = ({listData}) => {
-//             if(listData){
-//                 if(listData.length > 0 ){   
-//                     return listData.map((item) => {
-//                         return(
+    //     const renderData = ({listData}) => {
+    //         if(listData){
+    //             if(listData.length > 0 ){   
+    //                 return listData.map((item) => {
+    //                     return(
 
-//                             <>
+    //                         <>
 
-//                                 {item.name}<br></br>
-//                                 <img src={item.image}/><br></br>
+    //                             {item.name}<br></br>
+    //                             <img src={item.image}/><br></br>
                             
-//                             </>
+    //                         </>
 
-//                         )
+    //                     )
 
-//                     }
-//                 }
-//             }
-//         }
+    //                 }
+    //             )
+    //             }
+    //         }
+    //     }
+    // }
 
 
 
@@ -91,6 +108,8 @@ const MoneyDetailDisplay = (props) =>{
         <>
 
         {renderMoneyDetail(props)}
+        <br></br>
+        {/* {renderMoneyDetail2(props)} */}
         
         </>
     )
