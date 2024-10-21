@@ -15,11 +15,21 @@ const DreamDisplay = (props) => {
     
             
                 }
+
+
+                const savedreamdetail = () =>{
+                    sessionStorage.setItem('carddreamdetail', JSON.stringify(item.id2));
+
+
+                }
                 return(
                     <div className="dreamContentContainer">  
-                        <div className="dreamName">{item.name} </div><br></br>                  
-                        <div className="imageContainer"><img src={item.image} className="dreamImage" alt="1"/></div><br></br>
-                        <div className="dreamCharacter">Karakter: {item.character}</div><br></br>
+                    <Link to={`/DreamDetail/${item.id2}`}>
+                        <div className="dreamName" onClick={savedreamdetail}>{item.name} </div><br></br>                  
+                        <div className="imageContainer" onClick={savedreamdetail}><img src={item.image} className="dreamImage" alt="1"/></div><br></br>
+                        <div className="dreamCharacter" onClick={savedreamdetail}>Karakter: {item.character}</div><br></br>
+                    </Link>
+
                         <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button>   
                     </div>
 
