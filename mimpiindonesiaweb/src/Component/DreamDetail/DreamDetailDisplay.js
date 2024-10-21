@@ -5,10 +5,10 @@ const baseUrl = "http://localhost:9120";
 
 const DreamDetailDisplay = (props) => {
 
-    const removesession = () =>{
+    let navigate = useNavigate();
+
+    const removesessionstorage = () =>{
         sessionStorage.removeItem('carddreamdetail');
-
-
     }
 
 
@@ -16,11 +16,12 @@ const DreamDetailDisplay = (props) => {
 
         if(listData){
             return listData.map((item)=>{
-                // const savesession = () = {
-                //     sessionStorage.setItem('cardname',JSON.stringify(item.name));
-                //     navigate('/pickfavcard');
-
-                // }
+                const savesession = () => {
+                    sessionStorage.setItem('cardname',JSON.stringify(item.name));
+                    navigate('/pickfavcard');
+            
+            
+                }
 
                 return(
                     <>
@@ -29,6 +30,9 @@ const DreamDetailDisplay = (props) => {
                     {item.name}
                     <br></br>
                     {item.character}
+                    <br></br>
+                    <Link to="/Dream"><button onClick={removesessionstorage}>Go Back Dream</button></Link>
+                    <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button>   
                     
                     </>
                 )
