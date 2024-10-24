@@ -29,6 +29,7 @@ import MoneyDetail from './MoneyDetail/MoneyDetail';
 import DreamDetail from './DreamDetail/DreamDetail';
 import TriviaDetail from './TriviaDetail/TriviaDetail';
 import ActionDetail from './ActionDetail/ActionDetail';
+import CharacterDetail from './CharacterDetail/CharacterDetail';
 
 
 const Routing = ()=>{
@@ -66,6 +67,7 @@ const Routing = ()=>{
             <Route path="dreamdetail/:cardId" element={<DreamDetail/>}/>
             <Route path="triviadetail/:cardId" element={<TriviaDetail/>}/>
             <Route path="actiondetail/:cardId" element={<ActionDetail/>}/>
+            <Route path="characterdetail/:cardId" element={<CharacterDetail/>}/>
             
 
         </Route>

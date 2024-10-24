@@ -16,13 +16,21 @@ const CharacterDisplay = (props) => {
     
             
                 }
+
+                const savecharacterdetail = () =>{
+
+                    sessionStorage.setItem('cardcharacterdetail',JSON.stringify(item.id2));
+                }
                 return(
                     <div className="charactercontainer">                    
                         <div className="characterindividual">
-                            <img src={item.image} className="imagecharacter" alt="1"/><br></br>
-                            <span className="charactername">{item.name}<br></br></span>
-                            <span className="characterprovince">{item.provinsi}<br></br></span>
+                            <Link to={`/characterdetail/${item.id2}`}>
+                            <img src={item.image} onClick={savecharacterdetail} className="imagecharacter" alt="1"/><br></br>
+                            <span className="charactername" onClick={savecharacterdetail}>{item.name}<br></br></span>
+                            <span className="characterprovince" onClick={savecharacterdetail}>{item.provinsi}<br></br></span>
+                            </Link>
                             <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button>   
+
                         </div>
                     </div>
 
