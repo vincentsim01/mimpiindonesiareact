@@ -7,6 +7,8 @@ import { useNavigate } from 'react-router-dom';
 const ActionDisplay = (props) =>{
     let navigate = useNavigate();
 
+
+
     //attribute from parent function theAction
     const actionsList = ({theAction})=>{
         if (theAction){
@@ -17,13 +19,22 @@ const ActionDisplay = (props) =>{
 
         
             }
+
+            const saveactiondetail= () => {
+                sessionStorage.setItem('cardactiondetail',JSON.stringify(item.id2));
+    
+
+        
+            }
                 return(
                     <>                    {/* <div className="container-fluid rowi"> */}
                     <div className="row rowi">
                         <div className="actioncontent">
-                            <span className="nameAction">{item.name}</span><br></br>
-                            <span><img className="imageAction" src={item.image}/></span><br></br>
-                            <div className="effectAction">{item.effect}</div><br></br>
+                            <Link to={`/actiondetail/${item.id2}`}>
+                            <span className="nameAction" onClick={saveactiondetail}>{item.name}</span><br></br>
+                            <span><img className="imageAction" onClick={saveactiondetail} src={item.image}/></span><br></br>
+                            <div className="effectAction" onClick={saveactiondetail}>{item.effect}</div><br></br>
+                            </Link>
                             <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button>   
                         </div>
                     </div>
