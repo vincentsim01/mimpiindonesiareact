@@ -1,25 +1,31 @@
-.eventname2{
+.eventdisplaybigcontainer2{
+    display:inline;
+    
+}
+
+.eventdisplayname2{
     text-align:center;
     border: solid 1px black;
 }
 
-.eventimagecontainer2{
+.eventdisplayimagecontainer2{
     text-align:center;
 }
 
-.eventimage2{
+.eventdisplayimage2{
     text-align:center;
     border: solid 1px black;
     width:60%;
     /* display:inline-block; */
 }
 
-.effecttypecontainer2{
+.effecttypedisplaycontainer2{
+
 
     border:solid 1px black;
 }
 
-.eventeffect2{
+.eventdisplayeffect2{
     display:inline-block;
     margin-right:10px;
     width:70%;   

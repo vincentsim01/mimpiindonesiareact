@@ -32,7 +32,7 @@ const EventDetail = () =>{
     }
 
     
-    const twobuttons = () =>{
+    const previousbutton = () =>{
 
         let navigate = useNavigate();
 
@@ -44,6 +44,33 @@ const EventDetail = () =>{
 
             navigate(`/eventdetail/${sessionData-1}`)
         }
+
+
+        
+        return(   
+            <>
+
+            <button onClick={previousevent}>Previous</button>
+
+
+
+
+
+ 
+
+             </>    
+
+
+        )
+
+    }
+
+
+        
+    const nextbutton = () =>{
+
+        let navigate = useNavigate();
+
 
         function nextevent(){
             fetch(`${baseUrl}/eventdetail2/${Number(sessionData)+1}`,{method:'GET'})
@@ -59,12 +86,11 @@ const EventDetail = () =>{
         
         return(   
             <>
-             <Link to={`/eventdetail/${sessionData-1}`}>
-            <button onClick={previousevent}>Previous</button>
-            </Link>
-            <Link to={`/eventdetail/${Number(sessionData)+1}`}>
+
+
+
             <button onClick={nextevent}>Next</button>
-            </Link>
+
 
 
 
@@ -127,10 +153,13 @@ const EventDetail = () =>{
 
         Card Detail
         <br></br>
-        {twobuttons()}
-        <br></br>
-        <EventDetailDisplay listData={eventdetail}/>
-        <br></br>
+        <div className="eventdetailcontainer">
+            <div className="previousbutton">{previousbutton()}</div>
+
+            <div className="eventdetaildisplay"><EventDetailDisplay listData={eventdetail}/></div>
+ 
+            <div className="nextbutton">{nextbutton()}</div>
+        </div>
 
         {/* {renderdata} */}
 

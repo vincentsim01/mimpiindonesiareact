@@ -31,3 +31,43 @@
     background-color: pink;
     height:150px;
 }
+
+.eventdetailcontainer{
+    text-align:center;
+    border:solid 1px pink;
+    vertical-align: middle;
+
+    height:100%;
+}
+
+.previousbutton{
+    display:inline-block;
+    width:15%;
+    border:solid 1px black;
+    height:100px;
+    vertical-align: middle;
+
+
+}
+
+.eventdetaildisplay{
+    display:inline-block;
+    width:65%;
+    border: solid 1px black;
+
+
+
+}
+
+.nextbutton{
+
+    display:inline-block;
+    width:15%;
+    border:solid 1px black;
+    height:100px;
+    vertical-align: middle;
+
+
+
+
+}
