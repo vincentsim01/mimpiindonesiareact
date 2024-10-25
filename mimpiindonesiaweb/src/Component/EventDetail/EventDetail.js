@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import EventDetailDisplay from './EventDetailDisplay';
+import './EventDetail.css';
 const baseUrl = "http://localhost:9120";
 
 
@@ -23,7 +24,7 @@ const EventDetail = () =>{
     },[])
 
 
-    const renderdata = (eventdetail) =>{
+    const renderdata = ({eventdetail}) =>{
 
         if(eventdetail){
             return eventdetail.map((item) => {
@@ -70,7 +71,7 @@ const EventDetail = () =>{
         <EventDetailDisplay listData={eventdetail}/>
         <br></br>
 
-        {/* {renderdata} */}
+        {renderdata}
 
         
         

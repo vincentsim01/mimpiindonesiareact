@@ -1,0 +1,42 @@
+.eventname2{
+    text-align:center;
+    border: solid 1px black;
+}
+
+.eventimagecontainer2{
+    text-align:center;
+}
+
+.eventimage2{
+    text-align:center;
+    border: solid 1px black;
+    width:60%;
+    /* display:inline-block; */
+}
+
+.effecttypecontainer2{
+
+    border:solid 1px black;
+}
+
+.eventeffect2{
+    display:inline-block;
+    margin-right:10px;
+    width:70%;   
+     border: solid 1px black;
+
+}
+
+.eventtype2{
+    display:inline-block;
+    margin-left:10px;
+    border: solid 1px black;
+    width:20%;
+
+}
+
+
+.buttoncontainer2{
+    text-align:center;
+    border: 1px solid blue;
+}

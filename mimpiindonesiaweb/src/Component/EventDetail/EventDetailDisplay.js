@@ -26,13 +26,22 @@ const EventDetailDisplay = (props) => {
                     }
                     return(
                         <>
-                                 {item.name}
+                                 <div className="eventname2">{item.name}</div>
                                  <br></br>
-                                 <img src={item.image} alt={item.image}/>
+                                 <div className="eventimagecontainer2"><img className="eventimage2" src={item.image} alt={item.image}/></div>
                                  <br>
                                  </br>
+                                 <div className="effecttypecontainer2">
+                                        <div className="eventeffect2">{item.effect}</div>
+                                        <div className="eventtype2">{item.type}</div>
+                                </div>                
+                                <br></br>
+                                 <div className="buttoncontainer2">
+                    
+                       
                                  <Link to="/Event"><button onClick={removesessionstorage}>Go Back Event</button></Link>
                                  <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button>   
+                                 </div>
                         </>
                     )
                 })
