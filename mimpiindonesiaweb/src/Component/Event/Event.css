@@ -34,38 +34,62 @@
 
 .eventdetailcontainer{
     text-align:center;
-    border:solid 1px pink;
-    vertical-align: middle;
 
-    height:100%;
-}
 
-.previousbutton{
-    display:inline-block;
-    width:15%;
+    align-items: center;
+    padding-bottom:10%;
+    padding-top:10%;
+
     border:solid 1px black;
-    height:100px;
     vertical-align: middle;
+    z-index: -1;
+
 
 
 }
+
 
 .eventdetaildisplay{
     display:inline-block;
     width:65%;
-    border: solid 1px black;
+    z-index:-1;
+
+
 
 
 
 }
 
+.twobuttons{
+
+    z-index: 10;
+}
+
+.previousbutton{
+    display:inline-block;
+    width:50%;
+    margin-left:0px;
+    text-align:center;
+
+
+
+
+
+
+}
+
+
 .nextbutton{
 
     display:inline-block;
-    width:15%;
-    border:solid 1px black;
-    height:100px;
-    vertical-align: middle;
+    width:50%;
+    margin-right:0px;
+    text-align:center;
+
+
+
+
+
 
 
 

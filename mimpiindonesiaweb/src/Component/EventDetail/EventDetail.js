@@ -151,14 +151,20 @@ const EventDetail = () =>{
     return(
         <>
 
-        Card Detail
+    
         <br></br>
+
         <div className="eventdetailcontainer">
+        <div className="twobuttons">
             <div className="previousbutton">{previousbutton()}</div>
+            {/* <div className="eventdetaildisplay"><EventDetailDisplay listData={eventdetail}/></div> */}
+            <div className="nextbutton">{nextbutton()}</div>
+        </div>
+
 
             <div className="eventdetaildisplay"><EventDetailDisplay listData={eventdetail}/></div>
  
-            <div className="nextbutton">{nextbutton()}</div>
+
         </div>
 
         {/* {renderdata} */}

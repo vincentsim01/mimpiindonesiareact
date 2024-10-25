@@ -1,20 +1,21 @@
 .eventdisplaybigcontainer2{
     display:inline;
-    
+
 }
 
 .eventdisplayname2{
     text-align:center;
-    border: solid 1px black;
+
 }
 
 .eventdisplayimagecontainer2{
     text-align:center;
+
 }
 
 .eventdisplayimage2{
     text-align:center;
-    border: solid 1px black;
+
     width:60%;
     /* display:inline-block; */
 }
@@ -22,21 +23,21 @@
 .effecttypedisplaycontainer2{
 
 
-    border:solid 1px black;
+
 }
 
 .eventdisplayeffect2{
     display:inline-block;
     margin-right:10px;
     width:70%;   
-     border: solid 1px black;
+
 
 }
 
 .eventtype2{
     display:inline-block;
     margin-left:10px;
-    border: solid 1px black;
+
     width:20%;
 
 }
@@ -44,5 +45,5 @@
 
 .buttoncontainer2{
     text-align:center;
-    border: 1px solid blue;
+
 }
