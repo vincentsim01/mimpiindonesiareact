@@ -26,9 +26,10 @@ const CharacterDetailDisplay = (props) =>{
                 
                     }
                     return(
-                        <>{item.name}<br>
-                        </br>
-                        <img src={item.image}/>
+                        <>
+                        <div className="charactername">{item.name}</div>
+                        <br></br>
+                        <div className="characterimage"><img src={item.image}/></div>
                         <br></br>
                         <Link to="/Character"><button onClick={removesessionstorage}>Go Back Character</button></Link>
                         <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button>   
