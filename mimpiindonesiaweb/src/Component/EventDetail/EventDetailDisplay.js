@@ -12,6 +12,10 @@ const EventDetailDisplay = (props) => {
         sessionStorage.removeItem('cardeventdetail');
     }
 
+    const sessionData = Number(sessionStorage.getItem('cardeventdetail'));
+
+
+
 
 
     const renderdata = ({listData}) => {
@@ -63,9 +67,13 @@ const EventDetailDisplay = (props) => {
 
         <>
 
+  
+
 
        
             {renderdata(props)}
+
+
 
         
         
