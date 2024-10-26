@@ -1,11 +1,13 @@
 import React,{useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import CharacterDetailDisplay from './CharacterDetailDisplay';
 const baseUrl = "http://localhost:9120";
 
 
 
 const CharacterDetail = () =>{
+    let navigate = useNavigate();
 
     const [characterdetail, setcharacterdetail] = useState([]);
 
@@ -20,14 +22,92 @@ const CharacterDetail = () =>{
 
     },[])
 
+    const previousbutton = () =>{
+
+
+
+        function previousevent(){
+            fetch(`${baseUrl}/characterdetail/${sessionData-1}`,{method:'GET'})
+            .then((res) => res.json())
+            .then((data) =>setcharacterdetail(data))
+            sessionStorage.setItem('cardcharacterdetail',JSON.stringify(sessionData-1));
+
+            navigate(`/characterdetail/${sessionData-1}`)
+        }
+
+
+        
+        return(   
+            <>
+
+            <button onClick={previousevent}>Previous</button>
+
+
+
+
+
+ 
+
+             </>    
+
+
+        )
+
+    }
+
+
+        
+    const nextbutton = () =>{
+
+
+
+        function nextevent(){
+            fetch(`${baseUrl}/characterdetail/${Number(sessionData)+1}`,{method:'GET'})
+            .then((res) => res.json())
+            .then((data) =>setcharacterdetail(data))
+            sessionStorage.setItem('cardcharacterdetail',JSON.stringify(Number(sessionData)+1));
+
+            navigate(`/characterdetail/${Number(sessionData)+1}`)
+
+            
+        }
+
+        
+        return(   
+            <>
+
+
+
+            <button onClick={nextevent}>Next</button>
+
+
+
+
+ 
+
+             </>    
+
+
+        )
+
+    }
+
+
 
 
 
 
     return(
         <>
+        <div className="characterdetailcontainer">
+        <div className="twoButtons">
+        <div className="previousbutton">{previousbutton()}</div>
 
-        <CharacterDetailDisplay listData={characterdetail}/>
+        <div className="characterdetaildisplay"><CharacterDetailDisplay listData={characterdetail}/></div>
+        <div className="nextbutton">{nextbutton()}</div>
+
+        </div>
+        </div>
         
         </>
     )
