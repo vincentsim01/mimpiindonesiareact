@@ -1,10 +1,14 @@
 import React,{useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import DreamDetailDisplay from './DreamDetailDisplay';
 const baseUrl = "http://localhost:9120";
 
 
 const DreamDetail = () => {
+
+    
+    let navigate = useNavigate();
 
     const [dreamDetail,setDreamDetail] = useState([]);
 
@@ -17,13 +21,93 @@ const DreamDetail = () => {
     },[]);
 
 
+    const previousbutton = () =>{
+
+        // let navigate = useNavigate();
+
+        function previousevent(){
+            fetch(`${baseUrl}/dreamDetail/${sessionData-1}`,{method:'GET'})
+            .then((res) => res.json())
+            .then((data) =>setDreamDetail(data))
+            sessionStorage.setItem('carddreamdetail',JSON.stringify(sessionData-1));
+
+            navigate(`/dreamdetail/${sessionData-1}`)
+        }
+
+
+        
+        return(   
+            <>
+
+            <button onClick={previousevent}>Previous</button>
+
+
+
+
+
+ 
+
+             </>    
+
+
+        )
+
+    }
+
+
+        
+    const nextbutton = () =>{
+
+        // let navigate = useNavigate();
+
+
+        function nextevent(){
+            fetch(`${baseUrl}/dreamDetail/${Number(sessionData)+1}`,{method:'GET'})
+            .then((res) => res.json())
+            .then((data) =>setDreamDetail(data))
+            sessionStorage.setItem('carddreamdetail',JSON.stringify(Number(sessionData)+1));
+
+            navigate(`/dreamdetail/${Number(sessionData)+1}`)
+
+            
+        }
+
+        
+        return(   
+            <>
+
+
+
+            <button onClick={nextevent}>Next</button>
+
+
+
+
+ 
+
+             </>    
+
+
+        )
+
+    }
+
+
+
 
     return (
         <>
 
         This is DreamDetail
+        <div className="dreamdetailcontainer">
+            <div className="twobutton">
+            <div className="previousbutton">{previousbutton()}</div>
+            <div className="dreamdetaildisplay"><DreamDetailDisplay listData={dreamDetail}/></div>
+            <div className="nextbutton">{nextbutton()}</div>
+            </div>
 
-        <DreamDetailDisplay listData={dreamDetail}/>
+
+        </div>
         
         
         </>
