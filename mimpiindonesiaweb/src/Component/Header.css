@@ -3,13 +3,13 @@
     display:flex;
     position:relative;
 
-    border:solid 1px black;
+
 }
 
 .HeaderLeft{
 
     /* left:5%; */
-    border:solid 1px black;
+
     display:inline;
     position:relative;
 
@@ -21,7 +21,7 @@
 
     margin-right:20px;
     margin-left:20px;
-    border:solid 1px black;
+
 }
 
 
@@ -29,7 +29,7 @@
 
 
     display:inline-block;
-    border:solid 1px black;
+
     margin-right:20px;
     margin-left:20px;
 }
@@ -39,7 +39,7 @@
 
 
     
-    border:solid 1px black;
+
     display:inline;
     position:absolute;
     right:0px;
