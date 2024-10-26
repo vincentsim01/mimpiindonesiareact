@@ -21,7 +21,19 @@
     padding:20px;
 }
 
+#carddropdown{
+    position:relative;
 
+}
+
+#cardhidden{
+    position:absolute;
+    background:white;
+
+
+    border:solid 1px black;
+    z-index:2;
+}
 
 .none{
     display:none;
