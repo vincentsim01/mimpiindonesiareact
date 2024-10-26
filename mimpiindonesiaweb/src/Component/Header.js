@@ -88,9 +88,10 @@ const Header = () =>{
             <div className="HeaderLeft">
            <Link to="/"> <div className="HeaderContent">Home</div></Link>
            <Link to="/About"><div className="HeaderContent">About</div></Link>
-            <Link to="/Character"><div className="HeaderContent">Character</div></Link>
+
             <div id="carddropdown" className="HeaderContent" onMouseOver={headerreveal} onMouseOut={headerhide}> Cards
-                <div id="cardhidden" className="none">        
+                <div id="cardhidden" className="none">     
+                    <Link to="/Character"><div className="HeaderContent">Character</div></Link>   
                     <Link to="/Dream"><div className="HeaderContent cardhiddenchild">Dream</div></Link><br></br>
                     <Link to="/Event"><div className="HeaderContent cardhiddenchild">Event</div></Link><br></br>
                     <Link to="/Actioning"><div className="HeaderContent cardhiddenchild">Action</div></Link><br></br>
