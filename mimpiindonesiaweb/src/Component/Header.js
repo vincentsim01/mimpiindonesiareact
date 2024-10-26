@@ -44,7 +44,7 @@ const Header = () =>{
                 <div className="HeaderRight">
                 <Link to="/" onClick={handleLogout}className="HeaderContent2">Logout</Link>
                 <Link to="/viewfavcard" className="HeaderContent2">Favorite Card</Link>
-                <Link to="/pickfavcard"className="HeaderContent2">Favorite Card</Link>
+                <Link to="/pickfavcard"className="HeaderContent2">Add Favorite Card</Link>
 
                 </div>
             )
@@ -57,7 +57,7 @@ const Header = () =>{
                     <Link to="/register" className="HeaderContent2">Register</Link>
                     <Link to="/login" className="HeaderContent2">Login</Link>
                     <Link to="/viewfavcard" className="HeaderContent2">Favorite Card</Link>
-                    <Link to="/pickfavcard" className="HeaderContent2">Pick Favorite Card</Link>
+                    <Link to="/pickfavcard" className="HeaderContent2">Add Favorite Card</Link>
             
                     </div>
     

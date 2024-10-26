@@ -1,25 +1,51 @@
 .HeaderContainer{
 
+    display:flex;
+    position:relative;
+
+    border:solid 1px black;
+}
+
+.HeaderLeft{
+
+    /* left:5%; */
+    border:solid 1px black;
     display:inline;
+    position:relative;
+
 }
 
 .HeaderContent{
 
     display:inline-block;
-    width:50px;
+
+    margin-right:20px;
+    margin-left:20px;
+    border:solid 1px black;
+}
+
+
+.HeaderContent2{
+
+
+    display:inline-block;
+    border:solid 1px black;
     margin-right:20px;
     margin-left:20px;
 }
 
-.headerRight{
+.HeaderRight{
 
-    padding:20px;
+
+
+    
+    border:solid 1px black;
+    display:inline;
+    position:absolute;
+    right:0px;
 }
 
-.HeaderContent2{
 
-    padding:20px;
-}
 
 #carddropdown{
     position:relative;
