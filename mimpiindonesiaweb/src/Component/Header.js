@@ -100,8 +100,9 @@ const Header = () =>{
                 </div>  
             </div>
 
-            <Link to="/"><div className="HeaderContent"><Logo/></div></Link>
+
             </div>
+            <Link to="/"><div id="theLogo"><Logo/></div></Link>
             {conditionalHeader()}
            
             
