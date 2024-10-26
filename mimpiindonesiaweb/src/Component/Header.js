@@ -57,7 +57,7 @@ const Header = () =>{
                     <Link to="/register" className="HeaderContent2">Register</Link>
                     <Link to="/login" className="HeaderContent2">Login</Link>
                     <Link to="/viewfavcard" className="HeaderContent2">Favorite Card</Link>
-                    <Link to="/pickfavcard" className="HeaderContent2">Favorite Card</Link>
+                    <Link to="/pickfavcard" className="HeaderContent2">Pick Favorite Card</Link>
             
                     </div>
     
@@ -66,6 +66,15 @@ const Header = () =>{
     
         }
     }
+
+    function headerreveal(){
+        document.getElementsByClassName("cardhidden").classList.toggle("none");
+    }
+
+    // function headerhide(){
+    //     document.getElementsByClassName("cardhiddenchild").classList.add(none);
+
+    // }
 
 
 
@@ -76,11 +85,16 @@ const Header = () =>{
            <Link to="/"> <div className="HeaderContent">Home</div></Link>
            <Link to="/About"><div className="HeaderContent">About</div></Link>
             <Link to="/Character"><div className="HeaderContent">Character</div></Link>
-            <Link to="/Dream"><div className="HeaderContent">Dream</div></Link>
-            <Link to="/Event"><div className="HeaderContent">Event</div></Link>
-            <Link to="/Actioning"><div className="HeaderContent">Action</div></Link>
-            <Link to="/Trivia"><div className="HeaderContent">Trivia</div></Link>
-            <Link to="/Money"><div className="HeaderContent">Money</div></Link>
+            <div className="carddropdown" onMouseOver={headerreveal}> Cards
+                <div className="cardhidden none">        
+                    <Link to="/Dream"><div className="HeaderContent cardhiddenchild">Dream</div></Link><br></br>
+                    <Link to="/Event"><div className="HeaderContent cardhiddenchild">Event</div></Link><br></br>
+                    <Link to="/Actioning"><div className="HeaderContent cardhiddenchild">Action</div></Link><br></br>
+                    <Link to="/Trivia"><div className="HeaderContent cardhiddenchild">Trivia</div></Link><br></br>
+                    <Link to="/Money"><div className="HeaderContent cardhiddenchild">Money</div></Link>
+                </div>  
+            </div>
+
             <Link to="/"><div className="HeaderContent"><Logo/></div></Link>
             </div>
             {conditionalHeader()}
