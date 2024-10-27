@@ -49,12 +49,12 @@ const Routing = ()=>{
             <Route path="Actioning" element={<Actions/>}/>
             <Route path="Trivia" element={<Trivia/>}/>
             <Route path="Money" element={<Money/>}/>
-            <Route path="ActioningListing" element={<ActionListing/>}/>
-            <Route path="DreamListing" element={<DreamListing/>}/>
+            <Route path="actioningListing" element={<ActionListing/>}/>
+            <Route path="dreamListing" element={<DreamListing/>}/>
             {/* <Route Path="CharList" element={<CharacterListing/>}/> */}
-            <Route path="EventListing" element={<EventListing/>}/>
-            <Route path="CharacterListing" element={<Charlist/>}/>
-            <Route path="MoneyListing" element={<MoneyListing/>}/>
+            <Route path="eventListing" element={<EventListing/>}/>
+            <Route path="characterListing" element={<Charlist/>}/>
+            <Route path="moneyListing" element={<MoneyListing/>}/>
             <Route path="register" element={<Register/>}/>
             <Route path="login" element={<Login/>}/>
             <Route path="test" element={<Test/>}/>

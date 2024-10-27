@@ -23,7 +23,7 @@ const CatDropdown = () =>{
 
         if(data){
             return data.map((item)=>{
-
+ 
                 return(
                     <>
                     <option value={item.name} key={item.id}>
@@ -44,6 +44,7 @@ const CatDropdown = () =>{
 
     const handleCategory = (event) =>{
         let dacategory=event.target.value;
+        console.log(dacategory);
         setdacateg(dacategory);
         fetch(`${baseUrl}/${dacategory}`,{method:'GET'})
         .then((res) => res.json())
