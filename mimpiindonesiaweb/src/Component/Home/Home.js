@@ -34,8 +34,13 @@ const Home = () => {
 
     function becomepopup(){
         var popupcontainer = document.getElementById('popupcontainer');
+        let bannercontainer=document.getElementById('carouselExampleSlidesOnly');
+
+        bannercontainer.classList.add('opacityhalf');
+
 
         popupcontainer.classList.remove('none');
+
     }
 
 
@@ -46,6 +51,10 @@ const Home = () => {
         var popupcontainer = document.getElementById('popupcontainer');
         popupcontainer.classList.add('none');
 
+        let bannercontainer=document.getElementById('carouselExampleSlidesOnly');
+
+        bannercontainer.classList.remove('opacityhalf');
+
     }
 
 
@@ -53,13 +62,15 @@ const Home = () => {
 
     return(
         <>
+        <div id="totalhomecontainer">
             <div id="popupcontainer" className="none">
                 <button type="button" className="popupclosebutton" onClick={closepopup}>X</button>
-                <p> Discount 50% Off Today!</p>
+                <img src="https://i.ibb.co/d7JHQP2/www-mimpiindonesia-com.png" id="popupimage"></img>
+                <p> Discount Up To 70% Off Today!</p>
 
             </div>
 
-
+            <div id="homecontainer">
 
             <Banner/>
             <br></br>
@@ -75,6 +86,12 @@ const Home = () => {
             </br>
             <CatDropdown/>
             <br></br>
+            </div>
+            </div>
+
+
+
+
   
 
         </>
