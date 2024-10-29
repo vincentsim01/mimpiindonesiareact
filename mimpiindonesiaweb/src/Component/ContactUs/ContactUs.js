@@ -29,10 +29,6 @@ const ContactUs = () =>{
 
 
     const checkout = () => {
-
-
-
-
         fetch(`${baseUrl}/contactus`,{
             method: 'POST',
             headers:{

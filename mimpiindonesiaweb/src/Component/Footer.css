@@ -1,0 +1,17 @@
+.footercontent{
+    margin-top:10px;
+    display: inline-block;
+    width:25%;
+    margin-top:20px;
+    margin-bottom:20px;
+    padding:5px;
+    color:white;
+
+
+    text-align:center;
+}
+
+.footercontainer{
+    background-color:#2596be;
+    margin-top:15px;
+}

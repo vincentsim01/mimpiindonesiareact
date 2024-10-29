@@ -1,29 +1,35 @@
 import React, { useState,useEffect } from 'react';
 import {Link} from 'react-router-dom';
+import './Footer.css';
 
 
 const Footer = () =>{
 
     return (
-        <>
-        <div>
-            <span className="rowi">
-                Social Media
-            </span>
+        <div className="footercontainer">
+        <div className="container ">
+            <div className="row">
+                <div className="col footercontent">
+                    Social Media
+                </div>
 
-            <span className="rowi">
-                Card Types
-            </span>
+                <div className="col footercontent">
+                    Card Types
+                </div>
 
-            <span className="rowi">
-                Blogs
-            </span>
-            <span className="rowi">
-                Contact Us
-            </span>
+                <div className="col footercontent">
+                    Blogs
+                </div>
+                <Link to ='/contactus'>
+                <div className="col footercontent">
+                    Contact Us
+                </div>
+                </Link>
+            </div>
         </div>
+
         
-        </>
+        </div>
     )
 
 }
