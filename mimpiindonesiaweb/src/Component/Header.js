@@ -98,6 +98,7 @@ const Header = () =>{
                     <Link to="/Money"><div className="HeaderContent cardhiddenchild">Money</div></Link>
                 </div>  
             </div>
+            <Link to="/contactus"><div className="HeaderContent">Contact Us</div></Link>
 
 
             </div>

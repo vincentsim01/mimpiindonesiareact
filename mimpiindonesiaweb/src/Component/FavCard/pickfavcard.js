@@ -44,20 +44,20 @@ const Pickfavcard = () => {
 
     // console.log("this is sessiondata from placeorder.js"+sessionData);
 
-    const initialValues = {
-        id:Math.floor(Math.random() * 1000000),
-        rest_name: params.restName,
-        name:data.name,
-        email:data.email,
-        // name:"Bob",
-        // email:"Bob@gmail.com",
-        // cost:Math.floor(Math.random()*1000),
-        // phone:data.phone,
+        const initialValues = {
+            id:Math.floor(Math.random() * 1000000),
+            rest_name: params.restName,
+            name:data.name,
+            email:data.email,
+            // name:"Bob",
+            // email:"Bob@gmail.com",
+            // cost:Math.floor(Math.random()*1000),
+            // phone:data.phone,
 
-        address:"Hon 12 sec 34",
-        date:"1 January 1970",
-        favcard: datacardname
-    }
+            address:"Hon 12 sec 34",
+            date:"1 January 1970",
+            favcard: datacardname
+        }
 
     const [values,setValues] = useState(initialValues);
 

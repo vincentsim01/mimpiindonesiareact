@@ -30,6 +30,8 @@ import DreamDetail from './DreamDetail/DreamDetail';
 import TriviaDetail from './TriviaDetail/TriviaDetail';
 import ActionDetail from './ActionDetail/ActionDetail';
 import CharacterDetail from './CharacterDetail/CharacterDetail';
+import ContactUs from './ContactUs/ContactUs';
+import ThankYou from './ContactUs/ThankYou';
 
 
 const Routing = ()=>{
@@ -68,6 +70,8 @@ const Routing = ()=>{
             <Route path="triviadetail/:cardId" element={<TriviaDetail/>}/>
             <Route path="actiondetail/:cardId" element={<ActionDetail/>}/>
             <Route path="characterdetail/:cardId" element={<CharacterDetail/>}/>
+            <Route path="contactus" element={<ContactUs/>}/>
+            <Route path="thankyou" element={<ThankYou/>}/>
             
 
         </Route>
