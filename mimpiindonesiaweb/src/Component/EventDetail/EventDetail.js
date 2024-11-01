@@ -32,9 +32,9 @@ const EventDetail = () =>{
     }
 
     
-    const previousbutton = () =>{
+    const Previousbutton = () =>{
 
-        let navigate = useNavigate();
+        let Navigate = useNavigate();
 
         function previousevent(){
             fetch(`${baseUrl}/eventdetail2/${sessionData-1}`,{method:'GET'})
@@ -42,7 +42,7 @@ const EventDetail = () =>{
             .then((data) =>seteventdetail(data))
             sessionStorage.setItem('cardeventdetail',JSON.stringify(sessionData-1));
 
-            navigate(`/eventdetail/${sessionData-1}`)
+            Navigate(`/eventdetail/${sessionData-1}`)
         }
 
 
@@ -67,9 +67,9 @@ const EventDetail = () =>{
 
 
         
-    const nextbutton = () =>{
+    const Nextbutton = () =>{
 
-        let navigate = useNavigate();
+        let Navigate = useNavigate();
 
 
         function nextevent(){
@@ -78,7 +78,7 @@ const EventDetail = () =>{
             .then((data) =>seteventdetail(data))
             sessionStorage.setItem('cardeventdetail',JSON.stringify(Number(sessionData)+1));
 
-            navigate(`/eventdetail/${Number(sessionData)+1}`)
+            Navigate(`/eventdetail/${Number(sessionData)+1}`)
 
             
         }
@@ -156,9 +156,9 @@ const EventDetail = () =>{
 
         <div className="eventdetailcontainer">
         <div className="twobuttons">
-            <div className="previousbutton">{previousbutton()}</div>
+            <div className="previousbutton">{Previousbutton()}</div>
             <div className="eventdetaildisplay"><EventDetailDisplay listData={eventdetail}/></div>
-            <div className="nextbutton">{nextbutton()}</div>
+            <div className="extbutton">{Nextbutton()}</div>
         </div>
 
 

@@ -29,13 +29,22 @@ const MoneyDetailDisplay = (props) =>{
                     }
                     return(
                         <div className='item' key={item._id}>
-                            <div className='row rowi'>
+                            <div className='row rowi moneydetaildisplaycontainer'>
                                 <div className='col-md-5'>
-                                    {item.name}
-                                    <img src={item.image} alt={item.image}
-                                    className='Image'/>
-                                    <Link to="/Money"><button onClick={removesessionstorage}>Go Back Money</button></Link>
-                                    <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button>   
+                                    <div className="moneydetailname">This is Money Rp {item.name} Milyar</div>
+                                    <div className="moneydetailimage"><img src={item.image} alt={item.image}
+                                    className='MoneyImage'/></div>
+                                    <div className="moneydetailbuttoncontainer">
+                                    <div className="moneybutton">
+                                        <Link to="/Money"><button onClick={removesessionstorage} >Go Back Money</button></Link>
+                                    </div>
+                                    <div className="moneybutton">
+                                        <button className="btn btn-primary" onClick={savesession} className="addfavouritebutton">Add as Favorite</button>   
+
+                                    </div>
+                                    </div>
+
+
                                 </div>
 
 

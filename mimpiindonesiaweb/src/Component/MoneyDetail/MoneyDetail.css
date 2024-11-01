@@ -1,0 +1,64 @@
+.moneydetailcontainer{
+    position:relative;
+    text-align:center;
+    border:solid 1px black;
+
+
+}
+
+.previousbuttoncontainer{
+    position:absolute;
+    top:50%;
+    left:0;
+    display:inline-block;
+    border:1px solid black;
+
+
+}
+
+.moneyDetailDisplayContainer{
+    position:relative;
+    display:inline-block;
+    border:1px solid black;
+
+
+}
+
+.nextbuttoncontainer{
+    position:absolute;
+    top:50%;
+    right:0;    
+    display:inline-block;
+    border:1px solid black;
+
+
+}
+
+.moneydetaildisplaycontainer{
+    position:relative;
+    text-align:center;
+}
+
+.moneydetailname{
+    display:block;
+
+}
+
+.moneydetailimage{
+    display:inline-block;
+    position:relative;
+    width:60%;
+    text-align:center;
+}
+.moneydetailbuttoncontainer{
+    text-align:center;
+
+
+}
+
+.moneybutton{
+    display:inline-block;
+    border:1px solid black;
+    padding:5px 10px;margin:10px;
+    width:40%;
+}
