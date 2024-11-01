@@ -158,7 +158,7 @@ const EventDetail = () =>{
         <div className="twobuttons">
             <div className="previousbutton">{Previousbutton()}</div>
             <div className="eventdetaildisplay"><EventDetailDisplay listData={eventdetail}/></div>
-            <div className="extbutton">{Nextbutton()}</div>
+            <div className="nextbutton">{Nextbutton()}</div>
         </div>
 
 
