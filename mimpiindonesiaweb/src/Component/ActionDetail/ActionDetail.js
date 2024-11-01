@@ -2,6 +2,7 @@ import React,{useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import ActionDetailDisplay from './ActionDetailDisplay';
+import '../Action/Action.css';
 const baseUrl = "http://localhost:9120";
 
 
@@ -65,11 +66,13 @@ const ActionDetail = () =>{
 
 
         <>
-        {Previousbutton()}
+        <div className="ActionDetailContainer">
+            <div className="PreviousButtonContainer">{Previousbutton()}</div>
 
-        <ActionDetailDisplay listData={actiondetail}/>
+            <div className="ActionDetailDisplayContainerLink"><ActionDetailDisplay listData={actiondetail}/></div>
 
-        {Nextbutton()}
+            <div className="NextButtonContainer">{Nextbutton()}</div>
+        </div>
         
         
         </>

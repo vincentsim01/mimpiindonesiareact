@@ -23,11 +23,15 @@ const ActionDetailDisplay = (props) => {
                     }
                     return(
                     <>
+                    <div className="container-fluid ActionDetailDisplayContainer">
 
-                    {item.name}
-                    <img src={item.image}/>
-                    <Link to="/Actioning"><button onClick={removesessionstorage}>Go Back Action</button></Link>
-                    <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button>   
+                        <div className="row ActionDetailDisplayName">{item.name}</div><br></br>
+                        <div className="row ActionDetailDisplayImageContainer"><img className="ActionDetailDisplayImage" src={item.image}/></div><br></br>
+                        <div className="buttoncontainer">
+                            <Link to="/Actioning"><button onClick={removesessionstorage}>Go Back Action</button></Link>
+                            <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button>   
+                        </div>
+                    </div>
                     
                     
                     </>

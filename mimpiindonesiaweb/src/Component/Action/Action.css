@@ -56,3 +56,70 @@
     width:20%;
 }
 
+.ActionDetailDisplayContainer{
+
+    display:inline;
+    border:1px solid black;
+    text-align:center;
+    position:relative;
+    left:20%;
+
+
+
+}
+
+.ActionDetailDisplayName{
+    display:inline-block;
+    width:100%;
+    border:solid 1px black;
+
+
+
+}
+
+.ActionDetailDisplayImage{
+    display:inline-block;
+    width:30%;
+
+
+
+}
+
+
+
+.ActionDetailDisplayImageContainer{
+    display:inline-block;
+    text-align:center;
+    width:80%;
+}
+
+.ActionDetailContainer{
+    position:relative;
+    border: solid 1px black;
+
+
+}
+
+.PreviousButtonContainer{
+    position:absolute;
+    left:0;
+    top:40%;
+
+
+}
+
+
+
+.NextButtonContainer{
+    position:absolute;
+    right:0;
+    top:40%;
+
+
+}
+
+.buttoncontainer{
+
+    display:block;
+}
+
