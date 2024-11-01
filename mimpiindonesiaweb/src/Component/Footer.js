@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from 'react';
 import {Link} from 'react-router-dom';
+import Subscriber from './Subscriber/Subscriber';
 import './Footer.css';
 
 
@@ -27,6 +28,8 @@ const Footer = () =>{
                 </Link>
             </div>
         </div>
+        <br></br>
+        <Subscriber></Subscriber>
 
         
         </div>

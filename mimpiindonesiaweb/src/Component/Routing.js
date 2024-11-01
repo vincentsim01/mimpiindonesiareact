@@ -32,6 +32,7 @@ import ActionDetail from './ActionDetail/ActionDetail';
 import CharacterDetail from './CharacterDetail/CharacterDetail';
 import ContactUs from './ContactUs/ContactUs';
 import ThankYou from './ContactUs/ThankYou';
+import Subscriber from './Subscriber/Subscriber';
 
 
 const Routing = ()=>{
@@ -72,6 +73,8 @@ const Routing = ()=>{
             <Route path="characterdetail/:cardId" element={<CharacterDetail/>}/>
             <Route path="contactus" element={<ContactUs/>}/>
             <Route path="thankyou" element={<ThankYou/>}/>
+            <Route path="subscriber" element={<Subscriber/>}/>
+
             
 
         </Route>
