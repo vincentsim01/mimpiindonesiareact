@@ -29,7 +29,7 @@ const CharacterDetail = () =>{
         function previousevent(){
             fetch(`${baseUrl}/characterdetail/${sessionData-1}`,{method:'GET'})
             .then((res) => res.json())
-            .then((data) =>setcharacterdetail(data))
+            .then((data) =>setcharacterdetail(data));
             sessionStorage.setItem('cardcharacterdetail',JSON.stringify(sessionData-1));
 
             navigate(`/characterdetail/${sessionData-1}`)
@@ -64,7 +64,7 @@ const CharacterDetail = () =>{
         function nextevent(){
             fetch(`${baseUrl}/characterdetail/${Number(sessionData)+1}`,{method:'GET'})
             .then((res) => res.json())
-            .then((data) =>setcharacterdetail(data))
+            .then((data) =>setcharacterdetail(data));
             sessionStorage.setItem('cardcharacterdetail',JSON.stringify(Number(sessionData)+1));
 
             navigate(`/characterdetail/${Number(sessionData)+1}`)
