@@ -16,3 +16,45 @@
     margin-top:15px;
 
 }
+
+.subscribercontainer{
+    background-color:#2596be;
+    display:block;
+    position:relative;
+  
+
+  
+    padding:30px;
+  }
+
+  .subscriberbetween{
+    position:relative;
+    display:block;
+
+    background-color:#2596be;
+
+
+  }
+
+  .subscribes{
+    /* position:relative;
+    right:0; */
+    font-size: small;
+    /* text-align:center; */
+    display: flex; 
+    text-align:right;
+    justify-content: flex-end;
+    border:solid 1px black;
+
+  }
+
+  .form-group{
+    display:inline-block;
+  
+  }
+  
+  .form-control{
+    font-size: small;
+  }
+  
+  

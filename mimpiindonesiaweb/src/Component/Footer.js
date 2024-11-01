@@ -30,7 +30,9 @@ const Footer = () =>{
         </div>
         <br></br>
         <div className="subscribercontainer">
-            <Subscriber></Subscriber>
+            <div className="subscriberbetween">
+                <Subscriber></Subscriber>
+            </div>
         </div>
 
         

@@ -43,17 +43,19 @@ const Subscriber = () =>{
         <>
 
             <div className="panel panel-primary subscribes">
-                    <div className="panel-heading">
-                        <h4>Subscribe to Mimpi Indonesia</h4>
-                    </div>
+
                     <div className='panel-body container-fluid'>
+                    <div className="panel-heading">
+                        <h5>Subscribe to Mimpi Indonesia</h5>
+                    </div>
+                    <br></br>
                         <div className="row">
-                            <div className="col-md-3 form-group">
+                            <div className="col-md-2 form-group">
                                 <label for="name" className="control-label">Name</label>
                                 <input className="form-control" id="name"
                                 name="name" value={thesubscriber.name} onChange={handleInputChange}/>
                             </div>
-                            <div className="col-md-3 form-group">
+                            <div className="col-md-2 form-group">
                                 <label for="email" className="control-label">Email</label>
                                 <input className="form-control" id="email"
                                 name="email" value={thesubscriber.email} onChange={handleInputChange}/>
