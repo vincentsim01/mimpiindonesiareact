@@ -35,6 +35,7 @@ const Event = () =>{
         <>
         {/* This is Event */}
         <EventFilter eventFiltering={(data)=>setDataPerFilter(data)}/>
+        <h1 align="center">Event Cards </h1>
         <EventDisplay theevent={event}/>
         <Eventpromotion thepromo={daypromotion[Math.floor(Math.random() * daypromotion.length)]}/>
         </>

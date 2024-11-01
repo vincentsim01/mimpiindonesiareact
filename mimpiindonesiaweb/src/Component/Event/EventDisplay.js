@@ -39,10 +39,12 @@ const EventDisplay = (props)=>{
            
                         <div className="eventcontainer">  
                         <Link to={`/eventdetail/${item.id2}`} key={item.id2}>
-                            <span><img className="eventimage" src={item.image} onClick={saveeventdetail}/></span><br></br>
+                            <span><img className="eventimage" src={item.image} onClick={saveeventdetail}/></span><br></br><br></br>
                             <span className="eventname" onClick={saveeventdetail}><h5>{item.name}</h5></span><br></br>
-                            <span className="eventeffect" onClick={saveeventdetail}>{item.effect}  </span>   <br></br>
-                            <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button>   
+                            {/* <span className="eventeffect" onClick={saveeventdetail}>{item.effect}  </span>   <br></br> */}
+                            <br></br>
+                            <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button>  
+                            <br></br> <br></br>
                         </Link>
                         </div>   
 

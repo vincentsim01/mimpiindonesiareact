@@ -34,6 +34,7 @@ const Dream= () =>{
     return(
         <>
         <DreamFilter thedream={dream} dreamfiltering={(data) => {setDataPerFilter(data)}}/><br></br>
+        <h1 align="center">Dream Cards </h1><br></br><br></br>
         <div className="dreamDisplayContainer container-fluid">
             <DreamDisplay thedream={dream}/>
         </div>
