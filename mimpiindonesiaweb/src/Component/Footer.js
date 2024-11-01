@@ -29,7 +29,9 @@ const Footer = () =>{
             </div>
         </div>
         <br></br>
-        <Subscriber></Subscriber>
+        <div className="subscribercontainer">
+            <Subscriber></Subscriber>
+        </div>
 
         
         </div>

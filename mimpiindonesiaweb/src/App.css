@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+.subscribercontainer{
+  background-color:#2596be;
+  display:block;
+
+  position:absolute;
+  right:0;
+
+  padding:20px;
+}
+
+.form-group{
+  display:inline-block;
+
+}
+
+.subscribes{
+
+}
