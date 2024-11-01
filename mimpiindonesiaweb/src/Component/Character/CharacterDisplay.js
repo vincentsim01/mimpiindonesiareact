@@ -25,12 +25,15 @@ const CharacterDisplay = (props) => {
                     <div className="charactercontainer">                    
                         <div className="characterindividual">
                             <Link to={`/characterdetail/${item.id2}`}>
-                            <img src={item.image} onClick={savecharacterdetail} className="imagecharacter" alt="1"/><br></br>
+                            <img src={item.image} onClick={savecharacterdetail} className="imagecharacter" alt="1"/><br></br><br></br>
                             <span className="charactername" onClick={savecharacterdetail}><h5>{item.name}</h5><br></br></span>
-                            <span className="characterprovince" onClick={savecharacterdetail}>{item.provinsi}<br></br></span>
+                            <span className="characterprovince" onClick={savecharacterdetail}>Provinsi: {item.provinsi}<br></br></span>
+                            <span className="characterNIK" onClick={savecharacterdetail}>SIP: {item.NIK}<br></br></span>
                             <br></br>
                             </Link>
                             <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button>   
+                            <br></br>
+                            <br></br>
 
                         </div>
                     </div>

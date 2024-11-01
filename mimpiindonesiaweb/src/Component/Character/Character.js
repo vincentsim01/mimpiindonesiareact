@@ -22,7 +22,7 @@ const Character= () =>{
 
     return(
         <>
-        This is Character 
+        <h1 align="center">Character Cards </h1>
         <CharacterDisplay thecharacter={character}/>
         </>
     )
