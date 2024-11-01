@@ -58,11 +58,11 @@
 
 .ActionDetailDisplayContainer{
 
-    display:inline;
-    border:1px solid black;
+
+
     text-align:center;
     position:relative;
-    left:20%;
+
 
 
 
@@ -71,7 +71,7 @@
 .ActionDetailDisplayName{
     display:inline-block;
     width:100%;
-    border:solid 1px black;
+
 
 
 
@@ -95,7 +95,7 @@
 
 .ActionDetailContainer{
     position:relative;
-    border: solid 1px black;
+
 
 
 }
