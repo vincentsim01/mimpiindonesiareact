@@ -4,12 +4,18 @@
 } */
 
 .dreamContentContainer{
+
+    display:inline;
+    text-align:center;
+}
+
+.dreamindividual{
     display:inline-block;
     width:30%;
     margin:10px;
     border:1px solid black;
     text-align:center;
-    padding:15px;
+    /* padding:15px; */
     box-sizing:border-box;
 
 }
@@ -19,9 +25,10 @@
 }
 
 .dreamImage{
+    width:100%;
     display:inline-block;
-    width:80%;
-    border:1px solid black;
+    border:solid 1px black;
+    text-align:center;
 }
 
 .dreamName{
