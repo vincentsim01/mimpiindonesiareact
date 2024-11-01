@@ -65,12 +65,16 @@ const TriviaDetail = () =>{
 
     return(
         <>
-        TriviaDetail
-        {Previousbutton()}
 
-        <TriviaDetailDisplay listData={triviadetail}/>
+        <div className="triviadetailcontainer">
+ 
+            <div className="triviapreviousbutton">{Previousbutton()}</div>
 
-        {Nextbutton()}
+            <div className="triviadetaildisplaylink"><TriviaDetailDisplay listData={triviadetail}/></div>
+
+            <div className="trivianextbutton">{Nextbutton()}</div>
+
+        </div>
         
         </>
     )

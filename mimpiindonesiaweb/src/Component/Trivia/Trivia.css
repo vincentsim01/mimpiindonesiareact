@@ -26,3 +26,46 @@
 .hargaTrivia{
     display:block;
 }
+
+.triviadetailcontainer{
+
+    border: solid 1px black;
+    position:relative;
+
+}
+
+.triviadetaildisplaylink{
+
+
+
+
+}
+
+.triviapreviousbutton{
+    position:absolute;
+    top:30%;
+    left:0;
+
+
+
+
+}
+
+.trivianextbutton{
+    position:absolute;
+    top:30%;
+    right:0;
+
+
+
+
+}
+
+.triviadetaildisplaycontainer{
+    display:inline-block;
+    width:100%;
+    text-align:center;
+    border:solid 1px black;
+
+
+}

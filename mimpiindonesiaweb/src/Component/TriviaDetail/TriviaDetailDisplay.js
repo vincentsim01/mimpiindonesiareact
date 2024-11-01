@@ -31,12 +31,19 @@ const TriviaDetailDisplay = (props) =>{
 
                     return(
                         <>
-                        <img src={item.image}/>
-                        <br></br>
-                        <span>{item.name}</span>
-                        <br></br>
-                        <Link to="/Trivia"><button onClick={removesessionstorage}>Go Back Trivia</button></Link>
-                        <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button>   
+                        <div className="triviadetaildisplaycontainer">
+                            <div className="triviadisplayimage">
+                                <img src={item.image}/>
+                            </div>
+                            <br></br>
+
+                            <div className="triviadisplayname">{item.name}</div>
+                            <br></br>
+                            <div className="triviadisplaybuttoncontainer">
+                                <Link to="/Trivia"><button onClick={removesessionstorage}>Go Back Trivia</button></Link>
+                                <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button>  
+                            </div>
+                        </div> 
                         
                         
                         </>
