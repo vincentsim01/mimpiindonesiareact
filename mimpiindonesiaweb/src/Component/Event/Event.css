@@ -8,10 +8,9 @@
     text-align:center;
     width:30%;
     display:inline-block;
-    height:300px;
     margin:30px;
     border:1px solid black;
-    font-size: 10px;
+    /* font-size: 10px; */
 }
 
 .eventname{
@@ -21,7 +20,7 @@
 }
 
 .eventimage{
-    width:60%;
+    width:100%;
     display:inline-block;
     border:solid 1px black;
 }
@@ -34,30 +33,18 @@
 
 .eventdetailcontainer{
     text-align:center;
-
-
     align-items: center;
     padding-bottom:10%;
     padding-top:10%;
-
     border:solid 1px black;
     vertical-align: middle;
-    /* z-index: -1; */
-
-
-
 }
 
 
 .eventdetaildisplay{
     display:inline-block;
     width:65%;
-
     position:relative;
-
-
-
-
 
 }
 
@@ -67,38 +54,19 @@
 }
 
 .previousbutton{
-    /* display:inline-block; */
-    /* width:50%; */
     margin-left:0px;
     text-align:center;
     position: absolute;
     top:50%;
     left:10px;
-
-
-
-
-
-
 }
 
 
 .nextbutton{
-
-    /* display:inline-block; */
-    /* width:50%; */
     margin-right:0px;
     text-align:center;
-
     position: absolute;
     top:50%;
     right:10px;
-
-
-
-
-
-
-
 
 }
