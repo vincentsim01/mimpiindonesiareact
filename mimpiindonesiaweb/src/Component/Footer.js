@@ -17,10 +17,11 @@ const Footer = () =>{
                 <div className="col footercontent">
                     Card Types
                 </div>
-
+                <Link to ='/blog'>
                 <div className="col footercontent">
                     Blogs
                 </div>
+                </Link>
                 <Link to ='/contactus'>
                 <div className="col footercontent">
                     Contact Us

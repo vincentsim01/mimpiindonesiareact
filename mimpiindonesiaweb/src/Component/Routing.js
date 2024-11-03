@@ -34,6 +34,7 @@ import ContactUs from './ContactUs/ContactUs';
 import ThankYou from './ContactUs/ThankYou';
 import Subscriber from './Subscriber/Subscriber';
 import Fanletter from './Fanletter/Fanletter';
+import Blog from './Blogs/blogs';
 
 
 const Routing = ()=>{
@@ -76,6 +77,7 @@ const Routing = ()=>{
             <Route path="thankyou" element={<ThankYou/>}/>
             <Route path="subscriber" element={<Subscriber/>}/>
             <Route path="fanletter" element={<Fanletter/>}/>
+            <Route path="blog" element={<Blog/>}/>
 
             
 
