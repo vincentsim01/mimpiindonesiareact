@@ -26,6 +26,11 @@ const Footer = () =>{
                     Contact Us
                 </div>
                 </Link>
+                <Link to ='/fanletter'>
+                <div className="col footercontent">
+                    Fanletter
+                </div>
+                </Link>
             </div>
         </div>
         <br></br>
