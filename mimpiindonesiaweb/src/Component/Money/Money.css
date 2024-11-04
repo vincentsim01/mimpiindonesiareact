@@ -1,7 +1,16 @@
-.moneycontainer{
+.moneytopcontainer{
     display:inline;
     border: 1px black solid;
     text-align:center;
+}
+
+.moneycontainer{
+    display: inline-block;
+    width:30%;
+    text-align:center;
+    margin:10px;
+    border:1px solid black;
+
 
 }
 
