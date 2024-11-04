@@ -1,15 +1,22 @@
-.row{
+.triviamaincontainer{
     display:inline;
+    text-align:center;
+    padding-bottom:10px;
 }
 
 .triviacontent{
-    display:inline-block;
+    display: inline-block;
     width:30%;
+    text-align:center;
+    margin:30px;
+    border:1px solid black;
 }
 
 .imageTrivia{
+    width:100%;
     display:inline-block;
-    width:90%;
+    border:solid 1px black;
+    text-align:center;
 
 
 

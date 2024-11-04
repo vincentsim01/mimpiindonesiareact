@@ -25,10 +25,10 @@ const TriviaDisplay = (props) =>{
                 }
                  return(
                      <>                    {/* <div className="container-fluid rowi"> */}
-                     <div className="row rowi">
+                     <div className="row triviamaincontainer">
                          <div className="triviacontent">
                             <Link to={`/triviadetail/${item.id2}`}>
-                             <span className="nameTrivia" onClick={savetriviadetail}>{item.name}</span><br></br>
+                             <span className="nameTrivia" onClick={savetriviadetail}><h5>{item.name}</h5></span><br></br>
                              <span><img className="imageTrivia" src={item.image} onClick={savetriviadetail}/></span><br></br>
                              <div className="kategoriTrivia" onClick={savetriviadetail}>{item.kategori}</div><br></br>
                              <div className="hargaTrivia" onClick={savetriviadetail}>{item.Harga}</div>
