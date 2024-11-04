@@ -16,7 +16,7 @@ const Money = () =>{
 
     return(
         <>
-        <div style={{textAlign:"center"}}>This is Money<br></br></div>
+        {/* <div style={{textAlign:"center"}}>This is Money<br></br></div> */}
         <MoneyDisplay themoney={money}/>
         
         </>

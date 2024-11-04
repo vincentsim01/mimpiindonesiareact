@@ -1,24 +1,21 @@
 .moneytopcontainer{
-    display:inline;
-    border: 1px black solid;
-    text-align:center;
+
 }
 
 .moneycontainer{
-    display: inline-block;
-    width:30%;
+    display:inline;
+    border: 1px black solid;
     text-align:center;
-    margin:10px;
-    border:1px solid black;
 
 
 }
 
 .moneyindividual{
-    display:inline-block;
+    display: inline-block;
     width:30%;
-    border: 1px black solid;
     text-align:center;
+    margin:10px;
+    border:1px solid black;
 
 
 
