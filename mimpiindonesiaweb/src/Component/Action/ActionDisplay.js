@@ -31,11 +31,12 @@ const ActionDisplay = (props) =>{
                     <div className="row rowi">
                         <div className="actioncontent">
                             <Link to={`/actiondetail/${item.id2}`}>
-                            <span className="nameAction" onClick={saveactiondetail}>{item.name}</span><br></br>
                             <span><img className="imageAction" onClick={saveactiondetail} src={item.image}/></span><br></br>
+                            <span className="nameAction" onClick={saveactiondetail}><h5>{item.name}</h5></span><br></br>
                             <div className="effectAction" onClick={saveactiondetail}>{item.effect}</div><br></br>
                             </Link>
                             <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button>   
+                            <br></br><br></br>
                         </div>
                     </div>
                     {/* </div> */}
