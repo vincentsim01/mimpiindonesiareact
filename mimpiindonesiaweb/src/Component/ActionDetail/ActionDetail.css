@@ -40,9 +40,9 @@
 }
 
 .ActionDetailDisplayEffect:hover{
-    font-size: 25px;
+    font-size: 17px;
     /* animation-name: effective; */
-    transition: 5s;
+    transition: 2s;
 
 }
 
