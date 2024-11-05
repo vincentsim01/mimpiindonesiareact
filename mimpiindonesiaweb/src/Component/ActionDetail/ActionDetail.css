@@ -27,6 +27,13 @@
 
 }
 
+.ActionDetailDisplayImage:hover{
+    animation-name: glimmering;
+    animation-duration: 12s;
+}
+
+
+
 .ActionDetailDisplayEffect{
 
     text-align:center;
@@ -97,4 +104,109 @@
     100%{
         font-size:100px;
     }
+}
+
+@keyframes glimmering{
+    0%{
+        position:relative;
+        top:15px;
+        right:14px;
+    }
+    5%{
+        position:relative;
+        top:-17px;
+        right:-16px;
+    }
+    10%{
+        position:relative;
+        bottom:20px;
+        right:16px;
+
+    }
+    15%{
+        position:relative;
+        top:-4px;
+        right:-6px;
+    }
+    20%{
+        position:relative;
+        bottom:16px;
+        left:18px;
+
+    }
+    25%{
+        position:relative;
+        top:-15px;
+        left:-12px;
+    }
+    30%{
+        position:relative;
+        top:16px;
+        left:17px;
+    }
+    35%{    
+        position:relative;
+        top:-3px;
+        left:-5px;
+    }
+    40%{
+        position:relative;
+        top:24px;
+        right:16px;
+    }
+    45%{
+        position:relative;
+        top:-16px;
+        right:-26px;
+    }
+    50%{
+        position:relative;
+        bottom:-2px;
+        right:3px;
+
+    }
+    55%{
+        position:relative;
+        bottom:-22px;
+        left:19px;
+    }
+    60%{
+        position:relative;
+        top:1px;
+        right:1px;
+    }
+    75%{
+        position:relative;
+        top:-16px;
+        right:-17px;
+    }
+    80%{
+        position:relative;
+        bottom:19px;
+        right:18px;
+
+    }
+    85%{
+        position:relative;
+        top:2px;
+        right:-4px;
+    }
+    90%{
+        position:relative;
+        bottom:18px;
+        left:19px;
+
+    }
+    95%{
+        position:relative;
+        top:-19px;
+        left:-21px;
+    }
+    100%{
+        position:relative;
+        top:0px;
+        left:0px;
+    }
+
+
 }
