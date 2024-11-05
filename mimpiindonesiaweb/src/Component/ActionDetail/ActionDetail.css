@@ -1,0 +1,67 @@
+.ActionDetailDisplayContainer{
+
+
+
+    text-align:center;
+    position:relative;
+
+
+
+
+}
+
+.ActionDetailDisplayName{
+    display:inline-block;
+    width:100%;
+
+
+
+
+}
+
+.ActionDetailDisplayImage{
+    display:inline-block;
+    width:30%;
+
+
+
+}
+
+
+
+.ActionDetailDisplayImageContainer{
+    display:inline-block;
+    text-align:center;
+    width:80%;
+}
+
+.ActionDetailContainer{
+    position:relative;      
+
+
+
+}
+
+.PreviousButtonContainer{
+    position:absolute;
+    left:5%;
+    top:40%;
+
+
+}
+
+
+
+.NextButtonContainer{
+    position:absolute;
+    right:5%;
+    top:40%;
+
+
+}
+
+.buttoncontainer{
+
+    display:block;
+}
+

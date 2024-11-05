@@ -2,7 +2,8 @@ import React,{useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import ActionDetailDisplay from './ActionDetailDisplay';
-import '../Action/Action.css';
+// import '../Action/Action.css';
+import './ActionDetail.css';
 const baseUrl = "http://localhost:9120";
 
 
@@ -35,7 +36,7 @@ const ActionDetail = () =>{
         }
 
         return(
-            <button className="btn-btn primary" onClick={previousaction}>Previous</button>
+            <button className="btn btn-primary" onClick={previousaction}>Previous</button>
         )
 
     }
@@ -53,7 +54,7 @@ const ActionDetail = () =>{
         }
 
         return(
-            <button className="btn-btn primary" onClick={nextaction}>Next</button>
+            <button className="btn btn-primary" onClick={nextaction}>Next</button>
         )
 
     }
@@ -67,11 +68,11 @@ const ActionDetail = () =>{
 
         <>
         <div className="ActionDetailContainer">
-            <div className="PreviousButtonContainer">{Previousbutton()}</div>
+            <div className="PreviousButtonContainer btn btn-default">{Previousbutton()}</div>
 
             <div className="ActionDetailDisplayContainerLink"><ActionDetailDisplay listData={actiondetail}/></div>
 
-            <div className="NextButtonContainer">{Nextbutton()}</div>
+            <div className="NextButtonContainer btn btn-default">{Nextbutton()}</div>
         </div>
         
         

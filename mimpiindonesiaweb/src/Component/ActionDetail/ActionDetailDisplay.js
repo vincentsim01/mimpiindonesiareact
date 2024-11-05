@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import {Link} from 'react-router-dom';
+
 const baseUrl = "http://localhost:9120";
 
 
@@ -28,7 +29,7 @@ const ActionDetailDisplay = (props) => {
                         <div className="row ActionDetailDisplayName">{item.name}</div><br></br>
                         <div className="row ActionDetailDisplayImageContainer"><img className="ActionDetailDisplayImage" src={item.image}/></div><br></br>
                         <div className="buttoncontainer">
-                            <Link to="/Actioning"><button onClick={removesessionstorage}>Go Back Action</button></Link>
+                            <Link to="/Actioning"><button className="btn btn-info" onClick={removesessionstorage}>Go Back Action</button></Link>
                             <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button>   
                         </div>
                     </div>
