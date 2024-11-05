@@ -1,21 +1,34 @@
+.footercontainer{
+  background-color:#2596be;
+  margin-top:15px;
+
+}
+
+.rowa{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+
+
 .footercontent{
-    margin-top:10px;
+
     display: inline-block;
-    width:19%;
+    width:15%;
     margin-top:20px;
     margin-bottom:20px;
     padding:5px;
     color:white;
 
+    color: aliceblue;
+
 
     text-align:center;
 }
 
-.footercontainer{
-    background-color:#2596be;
-    margin-top:15px;
 
-}
+
 
 .subscribercontainer{
     background-color:#2596be;

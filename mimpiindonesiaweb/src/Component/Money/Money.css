@@ -4,7 +4,7 @@
 
 .moneycontainer{
     display:inline;
-    border: 1px black solid;
+
     text-align:center;
 
 
@@ -23,7 +23,7 @@
 
 .moneyname{
     display:block;
-    border: 1px black solid;
+
     text-align:center;
 
 

@@ -8,8 +8,8 @@ const Footer = () =>{
 
     return (
         <div className="footercontainer">
-        <div className="container ">
-            <div className="row">
+        {/* <div className="container "> */}
+            <div className="rowa">
                 <div className="col footercontent">
                     Social Media
                 </div>
@@ -17,22 +17,26 @@ const Footer = () =>{
                 <div className="col footercontent">
                     Card Types
                 </div>
+                <div className="col footercontent">
                 <Link to ='/blog'>
-                <div className="col footercontent">
+
                     Blogs
-                </div>
+
                 </Link>
+                </div>
+                <div className="col footercontent">
                 <Link to ='/contactus'>
-                <div className="col footercontent">
                     Contact Us
-                </div>
                 </Link>
-                <Link to ='/fanletter'>
+                </div>
                 <div className="col footercontent">
+                <Link to ='/fanletter'>
+
                     Fanletter
-                </div>
+
                 </Link>
-            </div>
+                </div>
+            {/* </div> */}
         </div>
         <br></br>
         <div className="subscribercontainer">
