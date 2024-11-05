@@ -27,6 +27,25 @@
 
 }
 
+.ActionDetailDisplayEffect{
+
+    text-align:center;
+    border:solid 1px black;
+    display:inline-block;
+    width:70%;
+    height:40%;
+    overflow: scroll;
+    border-radius:20px;
+
+}
+
+.ActionDetailDisplayEffect:hover{
+    font-size: 25px;
+    /* animation-name: effective; */
+    transition: 5s;
+
+}
+
 
 
 .ActionDetailDisplayImageContainer{
@@ -65,3 +84,17 @@
     display:block;
 }
 
+@keyframes effective{
+    0%{
+        font-size: 20px;
+    }
+    30%{
+        font-size:50px;
+    }
+    60%{
+        font-size:70px;
+    }
+    100%{
+        font-size:100px;
+    }
+}
