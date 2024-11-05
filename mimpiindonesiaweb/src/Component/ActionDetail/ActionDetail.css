@@ -28,8 +28,9 @@
 }
 
 .ActionDetailDisplayImage:hover{
-    animation-name: glimmering;
-    animation-duration: 12s;
+    animation-name: glimmering2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
 }
 
 
@@ -207,6 +208,49 @@
         top:0px;
         left:0px;
     }
+
+
+}
+
+@keyframes glimmering2{
+    0%{
+        position:relative;
+        top:25px;
+        right:25px;
+    }
+    15%{
+        position:relative;
+        top: 0px;
+        right:25px;
+    }
+    30%{
+        position:relative;
+        top:25px;
+        right:25px;
+
+    }
+    45%{
+        position:relative;
+        top:0px;
+        right:25px;
+    }
+    60%{
+        position:relative;
+        top:25px;
+        right:25px;
+
+    }
+    75%{
+        position:relative;
+        top:0px;
+        right:25px;
+    }
+    100%{
+        position:relative;
+        top:0px;
+        right:0px;
+    }
+  
 
 
 }
