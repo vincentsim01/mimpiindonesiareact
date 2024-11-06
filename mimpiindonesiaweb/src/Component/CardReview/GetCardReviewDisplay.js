@@ -9,8 +9,8 @@ const GetCardReviewDisplay = (props) =>{
         if(CardReview){
             return CardReview.map((item)=>{
                 return(
-                    <div >
-                        This is GetCardReviewDisplay
+                    <div>
+                 
                         <h2>Card Name: {item.cardname}</h2>
                         <p>Name: {item.name}</p>
                         <p>Rating: {item.rating}</p>

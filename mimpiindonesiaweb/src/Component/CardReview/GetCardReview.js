@@ -20,7 +20,7 @@ const GetCardReview = (props) =>{
     return(
         <>
 
-        <div className="submit-card-review">This is Get Card Review</div>
+
         <GetCardReviewDisplay CardReview={getCardReview}/>
         
         
