@@ -68,9 +68,10 @@ const ActionDetail = () =>{
 
         <>
         <div className="ActionDetailContainer">
-            <div className="PreviousButtonContainer btn btn-default">{Previousbutton()}</div>
+
 
             <div className="ActionDetailDisplayContainerLink"><ActionDetailDisplay listData={actiondetail}/></div>
+            <div className="PreviousButtonContainer btn btn-default">{Previousbutton()}</div>
 
             <div className="NextButtonContainer btn btn-default">{Nextbutton()}</div>
         </div>

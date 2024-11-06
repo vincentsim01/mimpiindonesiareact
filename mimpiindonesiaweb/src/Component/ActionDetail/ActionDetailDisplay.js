@@ -27,7 +27,7 @@ const ActionDetailDisplay = (props) => {
                     <div className="container-fluid ActionDetailDisplayContainer">
 
                         <div className="row ActionDetailDisplayName"><h1>{item.name}</h1></div><br></br>
-                        <div className="row ActionDetailDisplayImageContainer"><img className="ActionDetailDisplayImage" src={item.image}/></div><br></br>
+                        <div className="row ActionDetailDisplayImageContainer"><img className="ActionDetailDisplayImage" src={item.image}/></div><br></br><br></br><br></br>
                         <div className="row ActionDetailDisplayEffect">{item.effect}</div><br></br>
                         <br></br>
                         <div className="buttoncontainer">

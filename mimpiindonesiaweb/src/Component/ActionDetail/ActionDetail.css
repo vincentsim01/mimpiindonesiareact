@@ -29,7 +29,7 @@
 
 .ActionDetailDisplayImage:hover{
     animation-name: glimmering2;
-    animation-duration: 4s;
+    animation-duration: 5s;
     animation-iteration-count: infinite;
 }
 
@@ -215,40 +215,40 @@
 @keyframes glimmering2{
     0%{
         position:relative;
-        top:25px;
-        right:25px;
+        top:-25px;
+        right:-25px;
     }
     15%{
         position:relative;
-        top: 0px;
-        right:25px;
+        top: -0px;
+        right:-25px;
     }
     30%{
         position:relative;
-        top:25px;
-        right:25px;
+        top:-25px;
+        right:-25px;
 
     }
     45%{
         position:relative;
-        top:0px;
-        right:25px;
+        top:-0px;
+        right:-25px;
     }
     60%{
         position:relative;
-        top:25px;
-        right:25px;
+        top:-25px;
+        right:-25px;
 
     }
     75%{
         position:relative;
-        top:0px;
-        right:25px;
+        top:-0px;
+        right:-25px;
     }
     100%{
         position:relative;
-        top:0px;
-        right:0px;
+        top:-25px;
+        right:-25px;
     }
   
 
