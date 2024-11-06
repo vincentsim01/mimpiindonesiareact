@@ -2,6 +2,7 @@ import React,{useState, useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import {Link} from 'react-router-dom';
 import SubmitCardReview from '../CardReview/SubmitCardReview';
+import GetCardReview from '../CardReview/GetCardReview';
 
 const baseUrl = "http://localhost:9120";
 
@@ -41,6 +42,8 @@ const ActionDetailDisplay = (props) => {
                     </div>
 
                     <div className="ReviewContainer">
+
+                        <GetCardReview zacardname={item.name}/>
 
                         <SubmitCardReview zacardname={item.name}/>
                     </div>
