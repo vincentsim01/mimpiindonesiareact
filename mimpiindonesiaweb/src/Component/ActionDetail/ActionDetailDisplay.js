@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import {Link} from 'react-router-dom';
+import SubmitCardReview from '../CardReview/SubmitCardReview';
 
 const baseUrl = "http://localhost:9120";
 
@@ -34,6 +35,11 @@ const ActionDetailDisplay = (props) => {
                             <Link to="/Actioning"><button className="btn btn-info" onClick={removesessionstorage}>Go Back Action</button></Link>
                             <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button>   
                         </div>
+                    </div>
+
+                    <div className="ReviewContainer">
+
+                        <SubmitCardReview />
                     </div>
                     
                     
