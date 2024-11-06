@@ -23,6 +23,9 @@ const ActionDetailDisplay = (props) => {
                 
                 
                     }
+
+                
+
                     return(
                     <>
                     <div className="container-fluid ActionDetailDisplayContainer">
@@ -39,7 +42,7 @@ const ActionDetailDisplay = (props) => {
 
                     <div className="ReviewContainer">
 
-                        <SubmitCardReview />
+                        <SubmitCardReview zacardname={item.name}/>
                     </div>
                     
                     

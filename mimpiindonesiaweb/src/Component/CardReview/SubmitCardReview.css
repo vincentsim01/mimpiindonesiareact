@@ -1,0 +1,61 @@
+.submitreviewcontainer{
+    display:block;
+    position:relative;
+    border:solid 1px black;
+    text-align:center;
+    margin-top:20px;
+    /* align-items: center; */
+    
+
+
+}
+
+
+
+.submitreviewcontainer2{
+    display:inline-block;
+    width:60%;
+    position:relative;
+
+    margin:15px;
+    padding:15px;
+    align-items: center;
+    
+
+
+}
+
+
+
+.submitreviewtitle{
+
+    display: block;
+    text-align:center;
+}
+
+.submitreview{
+
+    display:block;
+
+
+
+
+}
+
+.reviewlabel{
+    display: inline-block;
+    width:40%;
+
+
+}
+
+.reviewform{
+    display: inline-block;
+    width:60%;
+
+
+
+}
+
+
+
