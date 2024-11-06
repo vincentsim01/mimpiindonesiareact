@@ -42,8 +42,10 @@ const ActionDetailDisplay = (props) => {
                     </div>
 
                     <div className="ReviewContainer">
+                        <br></br>                       
 
                         <GetCardReview zacardname={item.name}/>
+                        <br></br>                      
 
                         <SubmitCardReview zacardname={item.name}/>
                     </div>
