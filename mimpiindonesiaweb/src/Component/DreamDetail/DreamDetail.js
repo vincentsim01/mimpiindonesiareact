@@ -38,7 +38,7 @@ const DreamDetail = () => {
         
         return(   
             <>
-            a
+            
 
             <button onClick={previousevent}>Previous</button>
 

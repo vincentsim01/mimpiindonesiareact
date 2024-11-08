@@ -30,6 +30,7 @@ const ActionDetailDisplay = (props) => {
                     return(
                     <>
                     <div className="container-fluid ActionDetailDisplayContainer">
+                        <img src={item.image} className="imgbg"></img>
 
                         <div className="row ActionDetailDisplayName"><h1>{item.name}</h1></div><br></br>
                         <div className="row ActionDetailDisplayImageContainer"><img className="ActionDetailDisplayImage" src={item.image}/></div><br></br><br></br><br></br>
