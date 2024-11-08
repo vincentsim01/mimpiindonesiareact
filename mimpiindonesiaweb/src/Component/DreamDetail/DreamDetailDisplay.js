@@ -2,6 +2,7 @@ import React,{useState, useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import {Link} from 'react-router-dom';
 import SubmitCardReview from '../CardReview/SubmitCardReview';
+import GetCardReview from '../CardReview/GetCardReview';
 const baseUrl = "http://localhost:9120";
 
 const DreamDetailDisplay = (props) => {
@@ -35,6 +36,7 @@ const DreamDetailDisplay = (props) => {
                     <Link to="/Dream"><button onClick={removesessionstorage}>Go Back Dream</button></Link>
                     <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button> 
                     <br></br> 
+                    <GetCardReview zacardname={item.name}/>
                     <SubmitCardReview zacardname={item.name}/> 
                     
                     </>
