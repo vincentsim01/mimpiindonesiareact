@@ -12,7 +12,7 @@ const DreamDetail = () => {
 
     const [dreamDetail,setDreamDetail] = useState([]);
 
-    let sessionData = sessionStorage.getItem('carddreamdetail');
+    let sessionData = Number(sessionStorage.getItem('carddreamdetail'));
 
     useEffect(()=> {
         fetch(`${baseUrl}/dreamDetail/${sessionData}`,{method:'GET'})
@@ -38,6 +38,7 @@ const DreamDetail = () => {
         
         return(   
             <>
+            a
 
             <button onClick={previousevent}>Previous</button>
 
@@ -98,12 +99,11 @@ const DreamDetail = () => {
     return (
         <>
 
-        This is DreamDetail
         <div className="dreamdetailcontainer">
             <div className="twobutton">
-            <div className="previousbutton">{previousbutton()}</div>
-            <div className="dreamdetaildisplay"><DreamDetailDisplay listData={dreamDetail}/></div>
-            <div className="nextbutton">{nextbutton()}</div>
+                <div className="previousbutton">{previousbutton()}</div>
+                <div className="dreamdetaildisplay"><DreamDetailDisplay listData={dreamDetail}/></div>
+                <div className="nextbutton">{nextbutton()}</div>
             </div>
 
 

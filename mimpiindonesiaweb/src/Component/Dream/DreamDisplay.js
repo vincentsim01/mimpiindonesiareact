@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const DreamDisplay = (props) => {
     let navigate = useNavigate();
 
-    console.log(">>>",props);
+    // console.log(">>>",props);
     const dreamList=({thedream})=>{
         if(thedream){
             return thedream.map((item)=>{
@@ -25,9 +25,9 @@ const DreamDisplay = (props) => {
                 return(
                     <div className="dreamContentContainer">  
                     <div className="dreamindividual">
-                    <Link to={`/DreamDetail/${item.id2}`}>
+                    <Link to={`/dreamdetail/${item.id2}`}>
                         {/* <div className="imageContainer" onClick={savedreamdetail}><img src={item.image} className="dreamImage" alt="1"/></div><br></br> */}
-                        <img src={item.image} className="dreamImage" alt="1"/>
+                        <img src={item.image} onClick={savedreamdetail} className="dreamImage" alt="1"/>
                         <div className="dreamName" onClick={savedreamdetail}><h5>{item.name} </h5></div><br></br>       <br></br>           
                         
                         <div className="dreamCharacter" onClick={savedreamdetail}>Karakter: {item.character}</div><br></br><br></br>

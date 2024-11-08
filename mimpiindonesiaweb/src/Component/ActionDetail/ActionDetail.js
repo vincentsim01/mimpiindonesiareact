@@ -12,7 +12,7 @@ const ActionDetail = () =>{
 
     const [actiondetail,setactiondetail]=useState([]);
 
-    let sessionData = sessionStorage.getItem('cardactiondetail');
+    let sessionData = Number(sessionStorage.getItem('cardactiondetail'));
 
     useEffect(()=>{
         fetch(`${baseUrl}/actiondetail/${sessionData}`,{method:'GET'})

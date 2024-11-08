@@ -1,6 +1,7 @@
 import React,{useState, useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import {Link} from 'react-router-dom';
+import SubmitCardReview from '../CardReview/SubmitCardReview';
 const baseUrl = "http://localhost:9120";
 
 const DreamDetailDisplay = (props) => {
@@ -32,7 +33,9 @@ const DreamDetailDisplay = (props) => {
                     {item.character}
                     <br></br>
                     <Link to="/Dream"><button onClick={removesessionstorage}>Go Back Dream</button></Link>
-                    <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button>   
+                    <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button> 
+                    <br></br> 
+                    <SubmitCardReview zacardname={item.name}/> 
                     
                     </>
                 )
@@ -67,7 +70,6 @@ const DreamDetailDisplay = (props) => {
 
         <>
 
-        This is DreamDetailDisplay
         {renderDream(props)}
         
         
