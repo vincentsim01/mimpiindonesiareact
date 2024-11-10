@@ -28,6 +28,10 @@ const DreamDetailDisplay = (props) => {
                 return(
                     <>
                     <div className="dreamdetailcontainer">
+                        <div className="bgimagedreamdetailcontainer">
+                             <img src="https://i.ibb.co/Cw0SrbN/templatehorizontaldream.png" className="bgimagedreamdetail"></img>
+                            
+                        </div>
                         <div className="dreamdetailname dreamdetailcontent"><h1>{item.name}</h1></div>
                         <br></br>
                         <div className="dreamdetailimage dreamdetailcontent"><img src={item.image}/></div>

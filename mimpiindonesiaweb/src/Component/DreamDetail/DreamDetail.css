@@ -1,9 +1,30 @@
 .dreamdetailcontainer{
+    margin-top:30px;
+    margin-bottom:90px;
 
 
     text-align:center;
 
     padding:40px;
+    position:relative;
+}
+
+.bgimagedreamdetailcontainer{
+    position:absolute;
+    border:1px solid black;
+    display:inline;
+    z-index: -1;
+    left:0px;
+    top:-20px;
+    opacity:0.4;
+
+}
+
+.bgimagedreamdetail{
+    display:inline-block;
+    width:1450px;
+    height:900px;
+    border-radius:50px;
 }
 
 .dreamdetailreviewcontainer{
