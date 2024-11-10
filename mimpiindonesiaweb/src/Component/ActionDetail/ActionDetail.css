@@ -4,10 +4,14 @@
 
     text-align:center;
     position:relative;
-    border:solid 1px black;
+    /* border:solid 1px black; */
     border-radius:20px;
 
     padding:20px;
+    align-items: center;
+    margin-bottom:60px;
+    margin-top:60px;
+    padding:40px;
 
 
 
@@ -26,7 +30,7 @@
     /* background-image: url("https://i.ibb.co/NsK1x49/templatecloud.png");
     background-repeat:no-repeat;
     transform: rotate(90deg); */
-    align-items: center;;
+
 }
 
 
@@ -40,14 +44,16 @@
 .bgimage{
 
     display:inline-block;
-    width:900px;
-    height:800px;
+    width:1500px;
+    height:950px;
     /* background-image: url("https://i.ibb.co/8YSDPZC/templatecloudhori.png"); */
     background-repeat:no-repeat;
-    border:solid 1px black;
+    /* border:solid 1px black; */
     /* transform: rotate(90deg); */
     position:absolute;
-    margin-bottom:10px;
+    top:-90px;
+
+
 
 
     /* top:30px; */
