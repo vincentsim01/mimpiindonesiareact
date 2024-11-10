@@ -30,7 +30,14 @@ const ActionDetailDisplay = (props) => {
                     return(
                     <>
                     <div className="container-fluid ActionDetailDisplayContainer">
-                        <img src={item.image} className="imgbg"></img>
+                        <div className="imgbgcontainer">
+                            <img src="https://i.ibb.co/X8r31Fk/templatebackaction7399.png"></img>
+                            <img src="https://i.ibb.co/X8r31Fk/templatebackaction7399.png"></img>
+                        </div>
+                        {/* <div className="imgbg"></div> */}
+
+                       
+                   
 
                         <div className="row ActionDetailDisplayName"><h1>{item.name}</h1></div><br></br>
                         <div className="row ActionDetailDisplayImageContainer"><img className="ActionDetailDisplayImage" src={item.image}/></div><br></br><br></br><br></br>
