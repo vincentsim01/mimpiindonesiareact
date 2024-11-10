@@ -4,6 +4,11 @@
 
     text-align:center;
     position:relative;
+    border:solid 1px black;
+    border-radius:20px;
+
+    padding:20px;
+
 
 
 
@@ -12,30 +17,43 @@
 
 .imgbgcontainer{
 
-    display:inline;
+
     position: absolute;
     
     z-index: -1;
-    opacity:0.21;
+    opacity:0.3;
+    /* background-image: url("https://i.ibb.co/X8r31Fk/templatebackaction7399.png"); */
 }
 
 
 .imgbg{
 
-    background-size: cover;
+    /* background-size: cover; */
     /* background-position: center; */
     /* height: 150%; */
     /* background-repeat: repeat-x; */
-    background-image: url("https://i.ibb.co/X8r31Fk/templatebackaction7399.png");
-    width:20%;
+    /* background-image: url("https://i.ibb.co/X8r31Fk/templatebackaction7399.png"); */
 
 
-    display: inline-block;
-    position: absolute;
+
+    display: inline;
+
+    margin:10px;
+
+
+    /* position: absolute; */
     /* left:5%; */
 
-    z-index: -1;
-    opacity:0.21;
+    /* z-index: -1;
+    opacity:0.21; */
+}
+
+.bgimage{
+
+    display:inline-block;
+    margin:60px;
+    width:35%;
+
 }
 
 .ActionDetailDisplayName{

@@ -7,11 +7,12 @@
 }
 
 .ReviewSingle{
-    margin:5px;
+    margin:25px;
 
     display:inline-block;
     text-align: center;
     border:solid 1px black;
+    border-radius: 20px;
     width:30%;
 
 
@@ -21,4 +22,5 @@
 
     height:100px;
     overflow:scroll;
+    border-radius: 20px;    
 }

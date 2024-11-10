@@ -31,8 +31,14 @@ const ActionDetailDisplay = (props) => {
                     <>
                     <div className="container-fluid ActionDetailDisplayContainer">
                         <div className="imgbgcontainer">
-                            <img src="https://i.ibb.co/X8r31Fk/templatebackaction7399.png"></img>
-                            <img src="https://i.ibb.co/X8r31Fk/templatebackaction7399.png"></img>
+                            <div className="imgbg">
+                                <img src="https://i.ibb.co/X8r31Fk/templatebackaction7399.png" className="bgimage"></img>
+                            </div>
+                            <div className="imgbg">
+                                <img src="https://i.ibb.co/X8r31Fk/templatebackaction7399.png" className="bgimage"></img>
+                            </div>
+                            {/* <img src="https://i.ibb.co/X8r31Fk/templatebackaction7399.png"></img>
+                            <img src="https://i.ibb.co/X8r31Fk/templatebackaction7399.png"></img> */}
                         </div>
                         {/* <div className="imgbg"></div> */}
 
