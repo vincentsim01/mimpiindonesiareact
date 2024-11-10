@@ -36,7 +36,7 @@ const Actions = () =>{
             <div className="theActionFilterContainer container-fluid">        
                 <ActionFilter actionfiltering={(data)=>{setDataPerFilter(data)}}/>
             </div><br></br><br></br>
-            <h1 align="center">Character Cards </h1>
+            <h1 align="center">Action Cards </h1>
             <br></br><br></br>
 
 

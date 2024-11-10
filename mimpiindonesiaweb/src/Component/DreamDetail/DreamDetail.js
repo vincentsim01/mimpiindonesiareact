@@ -2,6 +2,7 @@ import React,{useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import DreamDetailDisplay from './DreamDetailDisplay';
+import './DreamDetail.css';
 const baseUrl = "http://localhost:9120";
 
 
@@ -40,7 +41,7 @@ const DreamDetail = () => {
             <>
             
 
-            <button onClick={previousevent}>Previous</button>
+            <button className="btn btn-primary" onClick={previousevent}>Previous</button>
 
 
 
@@ -79,7 +80,7 @@ const DreamDetail = () => {
 
 
 
-            <button onClick={nextevent}>Next</button>
+            <button className="btn btn-primary" onClick={nextevent}>Next</button>
 
 
 

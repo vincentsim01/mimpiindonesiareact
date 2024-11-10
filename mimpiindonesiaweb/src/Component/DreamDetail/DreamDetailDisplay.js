@@ -27,17 +27,25 @@ const DreamDetailDisplay = (props) => {
 
                 return(
                     <>
-                    <img src={item.image}/>
-                    <br></br>
-                    {item.name}
-                    <br></br>
-                    {item.character}
-                    <br></br>
-                    <Link to="/Dream"><button onClick={removesessionstorage}>Go Back Dream</button></Link>
+                    <div className="dreamdetailcontainer">
+                        <div className="dreamdetailname dreamdetailcontent"><h1>{item.name}</h1></div>
+                        <br></br>
+                        <div className="dreamdetailimage dreamdetailcontent"><img src={item.image}/></div>
+                        <br></br>
+
+                        <div className="dreamdetailcharacter dreamdetailcontent">Karakter: {item.character}</div>
+                        <br></br>
+                        <div className="dreamdetailharga dreamdetailcontent">Harga: Rp {item.Harga} M</div>
+                        <br></br>
+                    <Link to="/Dream"><button className="btn btn-info" onClick={removesessionstorage}>Go Back Dream</button></Link>
                     <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button> 
                     <br></br> 
+                    </div>
+
+                    <div className="dreamdetailreviewcontainer">
                     <GetCardReview zacardname={item.name}/>
                     <SubmitCardReview zacardname={item.name}/> 
+                    </div>
                     
                     </>
                 )
