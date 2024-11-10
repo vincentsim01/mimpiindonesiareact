@@ -21,6 +21,7 @@
 }
 
 .effecttypedisplaycontainer2{
+    margin:5px;
 
 
 
@@ -29,7 +30,9 @@
 .eventdisplayeffect2{
     display:inline-block;
     margin-right:10px;
-    width:60%;   
+    width:90%;   
+    border:1px solid black;
+    border-radius:20px;
 
 
 }

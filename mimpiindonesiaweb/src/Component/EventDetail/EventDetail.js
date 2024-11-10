@@ -50,7 +50,7 @@ const EventDetail = () =>{
         return(   
             <>
 
-            <button onClick={previousevent}>Previous</button>
+            <button className="btn btn-primary" onClick={previousevent}>Previous</button>
 
 
 
@@ -89,7 +89,7 @@ const EventDetail = () =>{
 
 
 
-            <button onClick={nextevent}>Next</button>
+            <button className="btn btn-primary" onClick={nextevent}>Next</button>
 
 
 
