@@ -2,6 +2,7 @@ import React,{useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import CharacterDetailDisplay from './CharacterDetailDisplay';
+import './CharacterDetail.css';
 const baseUrl = "http://localhost:9120";
 
 
@@ -40,7 +41,7 @@ const CharacterDetail = () =>{
         return(   
             <>
 
-            <button onClick={previousevent}>Previous</button>
+            <button className="btn btn-primary" onClick={previousevent}>Previous</button>
 
 
 
@@ -78,7 +79,7 @@ const CharacterDetail = () =>{
 
 
 
-            <button onClick={nextevent}>Next</button>
+            <button className="btn btn-primary" onClick={nextevent}>Next</button>
 
 
 

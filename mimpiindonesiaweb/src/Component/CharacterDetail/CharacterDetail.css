@@ -1,0 +1,21 @@
+.CharacterDetailDisplayContainer{
+    text-align:center;
+    border:1px solid black;
+    border-radius:20px;
+
+    padding:20px;
+    align-items: center;
+    margin-bottom:60px;
+    margin-top:60px;
+    padding:40px;
+
+}
+
+.chracterdetaildisplaycontent{
+
+    text-align: center;
+    margin:5px;
+
+
+
+}

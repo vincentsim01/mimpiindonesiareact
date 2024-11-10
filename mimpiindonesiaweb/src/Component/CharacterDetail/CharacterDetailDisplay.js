@@ -1,6 +1,8 @@
 import React,{useState, useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import {Link} from 'react-router-dom';
+import SubmitCardReview from '../CardReview/SubmitCardReview';
+import GetCardReview from '../CardReview/GetCardReview';
 const baseUrl = "http://localhost:9120";
 
 
@@ -27,12 +29,37 @@ const CharacterDetailDisplay = (props) =>{
                     }
                     return(
                         <>
-                        <div className="charactername">{item.name}</div>
-                        <br></br>
-                        <div className="characterimage"><img src={item.image}/></div>
-                        <br></br>
-                        <Link to="/Character"><button onClick={removesessionstorage}>Go Back Character</button></Link>
-                        <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button>   
+                        <div className="CharacterDetailDisplayContainer">
+                            <div className="charactername chracterdetaildisplaycontent"><h1>{item.name}</h1></div>
+                            <br></br>
+                            <div className="characterimage chracterdetaildisplaycontent"><img src={item.image}/></div>
+                            <br></br>
+                            <div className="characterNIK chracterdetaildisplaycontent">Surat Izin Penduduk:  {item.NIK}</div>
+                            <br></br>
+                            <div className="charactergaji chracterdetaildisplaycontent">Gaji: {item.Gaji}</div>
+                            <br></br>
+                            <div className="characteraction chracterdetaildisplaycontent">Action: {item.Gaji}</div>
+                            <br></br>
+                            <div className="characterdream chracterdetaildisplaycontent">Dream: {Object.entries(item.Dream)}</div>
+                            <br></br>
+                            <Link to="/Character"><button className="btn btn-info" onClick={removesessionstorage}>Go Back Character</button></Link>
+                            <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button> 
+
+                        </div>  
+
+                        <div className="ReviewContainer">
+                            <br></br>                       
+
+                            <GetCardReview zacardname={item.name}/>
+                            <br></br>                      
+
+                            <SubmitCardReview zacardname={item.name}/>
+                        </div>
+                        
+
+
+                        
+
 
                         </>
                     )
