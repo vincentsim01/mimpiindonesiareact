@@ -19,40 +19,44 @@
 
 
     position: absolute;
-    
+
     z-index: -1;
     opacity:0.3;
-    /* background-image: url("https://i.ibb.co/X8r31Fk/templatebackaction7399.png"); */
+    text-align:center;
+    /* background-image: url("https://i.ibb.co/NsK1x49/templatecloud.png");
+    background-repeat:no-repeat;
+    transform: rotate(90deg); */
+    align-items: center;;
 }
 
 
 .imgbg{
-
-    /* background-size: cover; */
-    /* background-position: center; */
-    /* height: 150%; */
-    /* background-repeat: repeat-x; */
-    /* background-image: url("https://i.ibb.co/X8r31Fk/templatebackaction7399.png"); */
-
-
-
-    display: inline;
-
-    margin:10px;
-
-
-    /* position: absolute; */
-    /* left:5%; */
-
-    /* z-index: -1;
-    opacity:0.21; */
+    display: inline-block;
+    position: absolute;
+    width:900px;
+    height:500px;
 }
 
 .bgimage{
 
     display:inline-block;
-    margin:60px;
-    width:35%;
+    width:900px;
+    height:800px;
+    /* background-image: url("https://i.ibb.co/8YSDPZC/templatecloudhori.png"); */
+    background-repeat:no-repeat;
+    border:solid 1px black;
+    /* transform: rotate(90deg); */
+    position:absolute;
+    margin-bottom:10px;
+
+
+    /* top:30px; */
+
+    
+
+
+
+
 
 }
 
