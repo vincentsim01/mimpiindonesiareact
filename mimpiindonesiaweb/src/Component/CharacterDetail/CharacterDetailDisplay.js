@@ -40,10 +40,25 @@ const CharacterDetailDisplay = (props) =>{
                             <br></br>
                             <div className="characteraction chracterdetaildisplaycontent">Action: {item.Gaji}</div>
                             <br></br>
-                            <div className="characterdream chracterdetaildisplaycontent">Dream: {Object.entries(item.Dream)}</div>
+                            <div className="characterprovince chracterdetaildisplaycontent">Action: {item.provinsi}</div>
+                            <br></br>
+                            <div className="characterdream chracterdetaildisplaycontent">Dream: <br>
+                            </br>
+          
+                                    <ul>
+                                        {Object.values(item.Dream).map((value, index) => (
+                                        <li key={index}>{value}</li>
+                                        ))}
+                                    </ul>
+
+                            </div>
                             <br></br>
                             <Link to="/Character"><button className="btn btn-info" onClick={removesessionstorage}>Go Back Character</button></Link>
                             <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button> 
+
+           
+
+
 
                         </div>  
 
