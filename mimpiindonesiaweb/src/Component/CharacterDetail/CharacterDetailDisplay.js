@@ -34,25 +34,30 @@ const CharacterDetailDisplay = (props) =>{
                             <br></br>
                             <div className="characterimage chracterdetaildisplaycontent"><img src={item.image}/></div>
                             <br></br>
-                            <div className="characterNIK chracterdetaildisplaycontent">Surat Izin Penduduk:  {item.NIK}</div>
-                            <br></br>
-                            <div className="charactergaji chracterdetaildisplaycontent">Gaji: {item.Gaji}</div>
-                            <br></br>
-                            <div className="characteraction chracterdetaildisplaycontent">Action: {item.Gaji}</div>
-                            <br></br>
-                            <div className="characterprovince chracterdetaildisplaycontent">Action: {item.provinsi}</div>
-                            <br></br>
-                            <div className="characterdream chracterdetaildisplaycontent">Dream: <br>
-                            </br>
-          
-                                
-                                        {Object.values(item.Dream).map((value, index) => (
-                                        <p>{value}</p>
-                                        ))}
-                               
+                            <div className="characterdisplaytext">
+                                <div className="characterdisplaytext2">
+                                    <span className="characterNIK characterdetaildisplaycontent">Surat Izin Penduduk:  {item.NIK}</span>
+                                    <br></br>
+                                    <span className="charactergaji characterdetaildisplaycontent">Gaji: {item.Gaji}</span>
+                                    <br></br>
+                                    <div className="characteraction characterdetaildisplaycontent">Action: {item.Gaji}</div>
+                                    <br></br>
+                                    <div className="characterprovince characterdetaildisplaycontent">Action: {item.provinsi}</div>
+                                    <br></br>
+                                    <div className="characterdream characterdetaildisplaycontent">Dream: <br>
+                                    </br>
+                
+                                        
+                                                {Object.values(item.Dream).map((value, index) => (
+                                                <p>{value}</p>
+                                                ))}
+                                    
 
+                                    </div>
+                                <br></br>
+
+                                </div>
                             </div>
-                            <br></br>
                             <Link to="/Character"><button className="btn btn-info" onClick={removesessionstorage}>Go Back Character</button></Link>
                             <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button> 
 

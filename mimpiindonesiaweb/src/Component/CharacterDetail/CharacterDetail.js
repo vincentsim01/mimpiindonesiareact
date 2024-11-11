@@ -41,7 +41,13 @@ const CharacterDetail = () =>{
         return(   
             <>
 
-            <button className="btn btn-primary" onClick={previousevent}>Previous</button>
+            {/* <button className="btn btn-primary" onClick={previousevent}>Previous</button> */}
+            <div className="previousbuttonins" onClick={previousevent}>
+                <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+                <img className="previouschevronimg" src="https://i.ibb.co/j3vDCBq/chevron2.png"></img>
+            </div>
+
+
 
 
 
@@ -80,7 +86,10 @@ const CharacterDetail = () =>{
 
 
             {/* <button className="btn btn-primary" onClick={nextevent}>Next</button> */}
-            <div className="nextbuttonins" onClick={nextevent}><br></br><br></br><br></br><br></br><br></br><br></br><img className="nextchevronimg" src="https://i.ibb.co/sK4qSHC/chevron.png"></img></div>
+            <div className="nextbuttonins" onClick={nextevent}>
+                <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+                <img className="nextchevronimg" src="https://i.ibb.co/sK4qSHC/chevron.png"></img>
+                </div>
 
 
 
