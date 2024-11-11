@@ -79,7 +79,10 @@ const CharacterDetail = () =>{
 
 
 
-            <button className="btn btn-primary" onClick={nextevent}>Next</button>
+            {/* <button className="btn btn-primary" onClick={nextevent}>Next</button> */}
+            <div className="nextbuttonins" onClick={nextevent}><br></br><br></br><br></br><br></br><br></br><br></br><img className="nextchevronimg" src="https://i.ibb.co/sK4qSHC/chevron.png"></img></div>
+
+
 
 
 
@@ -105,7 +108,7 @@ const CharacterDetail = () =>{
         <div className="previousbutton">{previousbutton()}</div>
 
         <div className="characterdetaildisplay"><CharacterDetailDisplay listData={characterdetail}/></div>
-        <div className="nextbutton">{nextbutton()}</div>
+        <div className="nextbutton"><br></br>{nextbutton()}</div>
 
         </div>
         </div>
