@@ -45,11 +45,11 @@ const CharacterDetailDisplay = (props) =>{
                             <div className="characterdream chracterdetaildisplaycontent">Dream: <br>
                             </br>
           
-                                    <ul>
+                                
                                         {Object.values(item.Dream).map((value, index) => (
-                                        <li key={index}>{value}</li>
+                                        <p>{value}</p>
                                         ))}
-                                    </ul>
+                               
 
                             </div>
                             <br></br>
