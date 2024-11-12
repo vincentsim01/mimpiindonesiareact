@@ -77,12 +77,25 @@
     padding:40px;
 }
 
+.characterimage{
+    animation:glimmering2;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+
+}
+
 .characterdisplaytext{
     border:solid 1px black;
     margin-bottom:10px;
     display:block;
     margin-top:20px;
     border-radius:20px;
+}
+
+.characterdisplaytext:hover{
+    transform:scale(1.05);
+    transition-duration: 500ms;
+
 }
 
 
@@ -119,3 +132,49 @@
 
 
 } */
+
+
+
+
+@keyframes glimmering2{
+    0%{
+        position:relative;
+        top:-25px;
+        right:-25px;
+    }
+    15%{
+        position:relative;
+        top: -0px;
+        right:-25px;
+    }
+    30%{
+        position:relative;
+        top:-25px;
+        right:-25px;
+
+    }
+    45%{
+        position:relative;
+        top:-0px;
+        right:-25px;
+    }
+    60%{
+        position:relative;
+        top:-25px;
+        right:-25px;
+
+    }
+    75%{
+        position:relative;
+        top:-0px;
+        right:-25px;
+    }
+    100%{
+        position:relative;
+        top:-25px;
+        right:-25px;
+    }
+  
+
+
+}
