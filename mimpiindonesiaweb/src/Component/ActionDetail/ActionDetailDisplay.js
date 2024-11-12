@@ -42,7 +42,8 @@ const ActionDetailDisplay = (props) => {
 
                         <div className="row ActionDetailDisplayName"><h1>{item.name}</h1></div><br></br>
                         <div className="row ActionDetailDisplayImageContainer"><img className="ActionDetailDisplayImage" src={item.image}/></div><br></br><br></br><br></br>
-                        <div className="row ActionDetailDisplayEffect">{item.effect}</div><br></br>
+                        <div className="row ActionDetailDisplayEffect"><h3>Effect</h3><br></br>
+                        {item.effect}</div><br></br>
                         <br></br>
                         <div className="buttoncontainer">
                             <Link to="/Actioning"><button className="btn btn-info" onClick={removesessionstorage}>Go Back Action</button></Link>

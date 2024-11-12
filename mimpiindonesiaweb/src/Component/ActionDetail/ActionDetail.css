@@ -1,30 +1,90 @@
+.ActionDetailContainer{
+    position:relative;      
+}
+
+/* .PreviousButtonContainer{
+    position:absolute;
+    left:5%;
+    top:40%;
+} */
+
+
+
+.nextbuttoncontainer{
+    position:absolute;
+    right:5%;
+    top:40%;
+    display:inline-block;
+    width:100px;
+    height:500px;
+    top:0px;
+    background: rgb(87,128,247);
+    background: radial-gradient(circle, rgba(87,128,247,1) 1%, rgba(0,212,255,1) 23%, rgba(255,255,255,1) 81%);
+    cursor:pointer;
+}
+
+.nextbuttoncontainer:hover{
+    transform:scale(1.05);
+    transition-duration:0.5s;
+}
+
+
+.nextchevronimg{
+    display:inline-block;
+    width:100%;
+}
+
+.previousbuttoncontainer{
+    position:absolute;
+    left:5%;
+    top:40%;
+    display:inline-block;
+    width:100px;
+    height:500px;
+    top:0px;
+    background: rgb(87,128,247);
+    background: radial-gradient(circle, rgba(87,128,247,1) 1%, rgba(0,212,255,1) 23%, rgba(255,255,255,1) 81%);
+    cursor:pointer;
+}
+
+.previousbuttoncontainer:hover{
+    transform:scale(1.05);
+    transition-duration:0.5s;
+}
+
+.previouschevronimg{
+    display:inline-block;
+    width:100%;
+}
+
+
+.buttoncontainer{
+    display:block;
+}
+
+
+
+
+
+
+
+
 .ActionDetailDisplayContainer{
-
-
-
     text-align:center;
     position:relative;
-    /* border:solid 1px black; */
     border-radius:20px;
-
     padding:20px;
     align-items: center;
     margin-bottom:60px;
     margin-top:60px;
     padding:40px;
-
-
-
-
-
 }
 
 .imgbgcontainer{
     position: absolute;
     z-index: -1;
-    opacity:0.9;
+    opacity:0.2;
     text-align:center;
-
 }
 
 
@@ -36,42 +96,22 @@
 }
 
 .bgimage{
-
     display:inline-block;
     width:1600px;
     height:950px;
     position:absolute;
     top:-100px;
     left:-80px
-
-
-
-
-    /* top:30px; */
-
-    
-
-
-
-
-
 }
 
 .ActionDetailDisplayName{
     display:inline-block;
     width:100%;
-
-
-
-
 }
 
 .ActionDetailDisplayImage{
     display:inline-block;
     width:30%;
-
-
-
 }
 
 .ActionDetailDisplayImage:hover{
@@ -95,10 +135,8 @@
 }
 
 .ActionDetailDisplayEffect:hover{
-    font-size: 17px;
-    /* animation-name: effective; */
+    transform:scale(1.05);
     transition: 2s;
-
 }
 
 
@@ -109,35 +147,7 @@
     width:80%;
 }
 
-.ActionDetailContainer{
-    position:relative;      
 
-
-
-}
-
-.PreviousButtonContainer{
-    position:absolute;
-    left:5%;
-    top:40%;
-
-
-}
-
-
-
-.NextButtonContainer{
-    position:absolute;
-    right:5%;
-    top:40%;
-
-
-}
-
-.buttoncontainer{
-
-    display:block;
-}
 
 @keyframes effective{
     0%{
