@@ -115,7 +115,6 @@ const CharacterDetail = () =>{
         <div className="characterdetailcontainer">
         <div className="twoButtons">
         <div className="previousbutton">{previousbutton()}</div>
-
         <div className="characterdetaildisplay"><CharacterDetailDisplay listData={characterdetail}/></div>
         <div className="nextbutton"><br></br>{nextbutton()}</div>
 

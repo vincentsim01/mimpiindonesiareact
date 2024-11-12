@@ -30,21 +30,27 @@ const CharacterDetailDisplay = (props) =>{
                     return(
                         <>
                         <div className="CharacterDetailDisplayContainer">
-                            <div className="charactername chracterdetaildisplaycontent"><h1>{item.name}</h1></div>
+                            <div className="charactername"><h1>{item.name}</h1></div>
                             <br></br>
-                            <div className="characterimage chracterdetaildisplaycontent"><img src={item.image}/></div>
+                            <div className="characterimage"><img src={item.image}/></div>
                             <br></br>
                             <div className="characterdisplaytext">
                                 <div className="characterdisplaytext2">
                                     <span className="characterNIK characterdetaildisplaycontent">Surat Izin Penduduk:  {item.NIK}</span>
-                                    <br></br>
+
                                     <span className="charactergaji characterdetaildisplaycontent">Gaji: {item.Gaji}</span>
+                   
+                                    <span className="characteraction characterdetaildisplaycontent">Action: {item.Gaji}</span>
+                     
+                                    <span className="characterprovince characterdetaildisplaycontent">Action: {item.provinsi}</span>
                                     <br></br>
-                                    <div className="characteraction characterdetaildisplaycontent">Action: {item.Gaji}</div>
+                      
+
                                     <br></br>
-                                    <div className="characterprovince characterdetaildisplaycontent">Action: {item.provinsi}</div>
-                                    <br></br>
-                                    <div className="characterdream characterdetaildisplaycontent">Dream: <br>
+
+                                </div>
+
+                                <div className="characterdream ">Dream: <br>
                                     </br>
                 
                                         
@@ -54,9 +60,6 @@ const CharacterDetailDisplay = (props) =>{
                                     
 
                                     </div>
-                                <br></br>
-
-                                </div>
                             </div>
                             <Link to="/Character"><button className="btn btn-info" onClick={removesessionstorage}>Go Back Character</button></Link>
                             <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button> 
