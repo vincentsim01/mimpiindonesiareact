@@ -8,24 +8,35 @@
     top:40%;
 } */
 
+.PreviousButtonContainerAction{
 
 
-.nextbuttoncontainer{
+}
+
+.NextButtonContainerAction{
+
+
+}
+
+
+.nextbuttoncontaineraction{
     position:absolute;
     right:5%;
     top:40%;
     display:inline-block;
     width:100px;
     height:500px;
-    top:0px;
-    background: rgb(87,128,247);
-    background: radial-gradient(circle, rgba(87,128,247,1) 1%, rgba(0,212,255,1) 23%, rgba(255,255,255,1) 81%);
+    top:100px;
     cursor:pointer;
+
 }
 
-.nextbuttoncontainer:hover{
+.nextbuttoncontaineraction:hover{
     transform:scale(1.05);
     transition-duration:0.5s;
+    opacity:0.9;
+    background: rgb(87,128,247);
+    background: radial-gradient(circle, rgba(87,128,247,1) 1%, rgba(0,212,255,1) 23%, rgba(255,255,255,1) 81%);
 }
 
 
@@ -34,22 +45,25 @@
     width:100%;
 }
 
-.previousbuttoncontainer{
+.previousbuttoncontaineraction{
     position:absolute;
     left:5%;
     top:40%;
     display:inline-block;
     width:100px;
     height:500px;
-    top:0px;
-    background: rgb(87,128,247);
-    background: radial-gradient(circle, rgba(87,128,247,1) 1%, rgba(0,212,255,1) 23%, rgba(255,255,255,1) 81%);
+    top:100px;
+
     cursor:pointer;
+
 }
 
-.previousbuttoncontainer:hover{
+.previousbuttoncontaineraction:hover{
     transform:scale(1.05);
     transition-duration:0.5s;
+    background: rgb(87,128,247);
+    background: radial-gradient(circle, rgba(87,128,247,1) 1%, rgba(0,212,255,1) 23%, rgba(255,255,255,1) 81%);
+    opacity:0.9;
 }
 
 .previouschevronimg{

@@ -37,8 +37,8 @@ const ActionDetail = () =>{
 
         return(
             // <button className="btn btn-primary" onClick={previousaction}>Previous</button>
-            <div className="previousbuttoncontainer" onClick={previousaction}>
-                <br></br><br></br><br></br><br></br><br></br>
+            <div className="previousbuttoncontaineraction" onClick={previousaction}>
+                <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
                 <img className="previouschevronimg" src="https://i.ibb.co/j3vDCBq/chevron2.png"></img>
                 </div>
         )
@@ -59,8 +59,8 @@ const ActionDetail = () =>{
 
         return(
             // <button className="btn btn-primary" onClick={nextaction}>Next</button>
-            <div className="nextbuttoncontainer" onClick={nextaction}>
-                <br></br><br></br><br></br><br></br><br></br>
+            <div className="nextbuttoncontaineraction" onClick={nextaction}>
+                <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
                 <img className="nextchevronimg" src="https://i.ibb.co/sK4qSHC/chevron.png"></img>
             </div>
         )
@@ -77,8 +77,8 @@ const ActionDetail = () =>{
         <>
         <div className="ActionDetailContainer">
             <div className="ActionDetailDisplayContainerLink"><ActionDetailDisplay listData={actiondetail}/></div>
-            <div className="PreviousButtonContainer">{Previousbutton()}</div>
-            <div className="NextButtonContainer">{Nextbutton()}</div>
+            <div className="PreviousButtonContainerAction">{Previousbutton()}</div>
+            <div className="NextButtonContainerAction">{Nextbutton()}</div>
         </div>
         
         
