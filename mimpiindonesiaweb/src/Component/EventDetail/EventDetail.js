@@ -89,7 +89,9 @@ const EventDetail = () =>{
 
 
 
-            <button className="btn btn-primary" onClick={nextevent}>Next</button>
+
+            <div className="nextbuttoncontainerevent" onClick={nextevent}><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+            <img className="nextchevronimg" src="https://i.ibb.co/sK4qSHC/chevron.png"></img></div>
 
 
 

@@ -21,14 +21,16 @@
     vertical-align: middle;
     display:inline-block;
     height:600px;
-    background: rgb(87,128,247);
-    background: radial-gradient(circle, rgba(87,128,247,1) 1%, rgba(0,212,255,1) 23%, rgba(255,255,255,1) 81%);
+
     border-radius:20px;
 }
 
 .nextbuttonins:hover{
     transform:scale(1.1);
     transition-duration: 500ms;
+    background: rgb(87,128,247);
+    background: radial-gradient(circle, rgba(87,128,247,1) 1%, rgba(0,212,255,1) 23%, rgba(255,255,255,1) 81%);
+    opacity:0.9;
 }
 
 .nextchevronimg{
@@ -47,14 +49,15 @@
     vertical-align: middle;
     display:inline-block;
     height:600px;
-    background: rgb(87,128,247);
-    background: radial-gradient(circle, rgba(87,128,247,1) 1%, rgba(0,212,255,1) 23%, rgba(255,255,255,1) 81%);
     border-radius:20px;
 }
 
 .previousbuttonins:hover{
     transform:scale(1.1);
     transition-duration: 500ms;
+    background: rgb(87,128,247);
+    background: radial-gradient(circle, rgba(87,128,247,1) 1%, rgba(0,212,255,1) 23%, rgba(255,255,255,1) 81%);
+    opacity:0.9;
 }
 
 .previouschevronimg{
@@ -78,9 +81,15 @@
 }
 
 .characterimage{
+
+}
+
+.characterimage:hover{
     animation:glimmering2;
     animation-duration: 5000ms;
     animation-iteration-count: infinite;
+
+
 
 }
 
