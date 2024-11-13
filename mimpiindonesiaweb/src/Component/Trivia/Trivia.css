@@ -9,7 +9,7 @@
     width:30%;
     text-align:center;
     margin:30px;
-    border:1px solid black;
+
 }
 
 .imageTrivia{
@@ -37,7 +37,10 @@
 .triviadetailcontainer{
 
     border: solid 1px black;
+    margin-top:10px;
+    margin-bottom:10px;
     position:relative;
+    padding:10px;
 
 }
 
@@ -45,6 +48,50 @@
 
 
 
+
+}
+
+.previousbuttoncontainertrivia{
+
+    position:absolute;
+    left:5%;
+    top:40%;
+    display:inline-block;
+    width:100px;
+    height:500px;
+    top:100px;
+
+    cursor:pointer;
+}
+
+.previousbuttoncontainertrivia:hover{
+    transform:scale(1.05);
+    transition-duration:0.5s;
+    background: rgb(87,128,247);
+    background: radial-gradient(circle, rgba(87,128,247,1) 1%, rgba(0,212,255,1) 23%, rgba(255,255,255,1) 81%);
+    opacity:0.9;
+
+}
+
+.nextbuttoncontainerevent{
+    position:absolute;
+    right:5%;
+    top:40%;
+    display:inline-block;
+    width:100px;
+    height:500px;
+    top:100px;
+
+    cursor:pointer;
+
+}
+
+.nextbuttoncontainerevent:hover{
+    transform:scale(1.05);
+    transition-duration:0.5s;
+    background: rgb(87,128,247);
+    background: radial-gradient(circle, rgba(87,128,247,1) 1%, rgba(0,212,255,1) 23%, rgba(255,255,255,1) 81%);
+    opacity:0.9;
 
 }
 
@@ -73,7 +120,61 @@
     display:inline-block;
     width:100%;
     text-align:center;
-    border:solid 1px black;
+
+
+}
+
+.triviadisplayimage:hover{
+    animation-name:glimmering2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+
+
+
+
+
+@keyframes glimmering2{
+    0%{
+        position:relative;
+        top:-25px;
+        right:-25px;
+    }
+    15%{
+        position:relative;
+        top: -0px;
+        right:-25px;
+    }
+    30%{
+        position:relative;
+        top:-25px;
+        right:-25px;
+
+    }
+    45%{
+        position:relative;
+        top:-0px;
+        right:-25px;
+    }
+    60%{
+        position:relative;
+        top:-25px;
+        right:-25px;
+
+    }
+    75%{
+        position:relative;
+        top:-0px;
+        right:-25px;
+    }
+    100%{
+        position:relative;
+        top:-25px;
+        right:-25px;
+    }
+  
 
 
 }

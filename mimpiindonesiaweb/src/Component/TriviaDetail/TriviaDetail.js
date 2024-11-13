@@ -2,6 +2,8 @@ import React,{useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import TriviaDetailDisplay from './TriviaDetailDisplay';
 import { useNavigate } from 'react-router-dom';
+import SubmitCardReview from '../CardReview/SubmitCardReview';
+import GetCardReview from '../CardReview/GetCardReview';
 const baseUrl = "http://localhost:9120";
 
 
@@ -33,7 +35,11 @@ const TriviaDetail = () =>{
 
         return(
             <>
-            <button className="btn-btn-primary" onClick={previousevent}>Previous</button>
+
+            <div className="previousbuttoncontainertrivia" onClick={previousevent}>
+                <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+                <img className="previouschevronimg" src="https://i.ibb.co/j3vDCBq/chevron2.png"></img>
+                </div>
             
             </>
         )
@@ -56,7 +62,11 @@ const TriviaDetail = () =>{
 
         return(
             <>
-             <button className="btn-btn-primary" onClick={nextevent}>Next</button>
+             {/* <button className="btn-btn-primary" onClick={nextevent}>Next</button> */}
+             <div className="nextbuttoncontainerevent" onClick={nextevent}>
+                <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+                <img className="nextchevronimg" src="https://i.ibb.co/sK4qSHC/chevron.png"></img>
+             </div>
             
             </>
         )
@@ -75,6 +85,9 @@ const TriviaDetail = () =>{
             <div className="trivianextbutton">{Nextbutton()}</div>
 
         </div>
+
+
+                    
         
         </>
     )
