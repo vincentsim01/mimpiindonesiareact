@@ -33,23 +33,25 @@ const EventDetailDisplay = (props) => {
                     return(
                         <>
                         <div className="eventdisplaybigcontainer2">
-                                 <div className="eventdisplayname2"><h1>{item.name}</h1></div>
-                                 <br></br>
-                                 <div className="eventdisplayimagecontainer2"><img className="eventimage2" src={item.image} alt={item.image}/></div>
-                                 <br>
-                                 </br>
-                                 <div className="effecttypedisplaycontainer2">
-                                        <div className="eventdisplayeffect2">Efek: {item.effect}</div>
-                                        <div className="eventdisplaytype2">Tipe Event: {item.type}</div>
-                                </div>                
+                            <div className="eventdisplaycontainerinside">
+                                    <div className="eventdisplayname2"><h1>{item.name}</h1></div>
+                                    <br></br>
+                                    <div className="eventdisplayimagecontainer2"><img className="eventimage2" src={item.image} alt={item.image}/></div>
+                                    <br>
+                                    </br>
+                                    <div className="effecttypedisplaycontainer2">
+                                            <div className="eventeffectcontent eventdisplayeffect2"><h3>Efek:</h3> <br></br>{item.effect}<br></br><br></br></div>
+                                            <div className="eventeffectcontent eventdisplaytype2">Tipe Event: {item.type}</div>
+                                    </div>                
                                 <br></br>
-                                 <div className="buttoncontainer2">
-                    
-                       
-                                 <Link to="/Event"><button className="btn btn-info" onClick={removesessionstorage}>Go Back Event</button></Link>
-                                 <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button>   
-                                 </div>
-                                 </div>
+                                        <div className="buttoncontainer2">
+                            
+                            
+                                            <Link to="/Event"><button className="btn btn-info" onClick={removesessionstorage}>Go Back Event</button></Link>
+                                            <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button>   
+                                        </div>
+                                </div>
+                            </div>
 
                                  <div className="eventdetailreviewcontainer">
                                     <GetCardReview zacardname={item.name}/>

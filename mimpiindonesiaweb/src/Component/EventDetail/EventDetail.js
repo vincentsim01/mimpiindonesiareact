@@ -50,7 +50,11 @@ const EventDetail = () =>{
         return(   
             <>
 
-            <button className="btn btn-primary" onClick={previousevent}>Previous</button>
+
+            <div className="previousbuttoncontainerevent" onClick={previousevent}>
+                <br></br><br></br><br></br><br></br><br></br><br></br>
+                <img className="previouschevronimg" src="https://i.ibb.co/j3vDCBq/chevron2.png"></img>
+            </div>
 
 
 
@@ -158,9 +162,9 @@ const EventDetail = () =>{
 
         <div className="eventdetailcontainer">
         <div className="twobuttons">
-            <div className="previousbutton">{Previousbutton()}</div>
+            <div className="previousbuttonevent">{Previousbutton()}</div>
             <div className="eventdetaildisplay"><EventDetailDisplay listData={eventdetail}/></div>
-            <div className="nextbutton">{Nextbutton()}</div>
+            <div className="nextbuttonevent">{Nextbutton()}</div>
         </div>
 
 
