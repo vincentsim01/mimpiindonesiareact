@@ -56,8 +56,14 @@
     z-index: -1;
     left:0px;
     top:-20px;
-    opacity:0.4;
+    opacity:0.1;
 
+}
+
+.bgimagedreamdetailcontainer:hover{
+    animation-name: glimmering2;
+    animation-duration: 5s;
+    animation-iteration-count:  infinite;
 }
 
 .bgimagedreamdetail{
@@ -65,6 +71,13 @@
     width:1450px;
     height:900px;
     border-radius:50px;
+    
+}
+
+.bgimagedreamdetail:hover{
+    animation-name: glimmering2;
+    animation-duration: 5s;
+    animation-iteration-count:  infinite;
 }
 
 .dreamdetailreviewcontainer{
@@ -76,6 +89,58 @@
 
 
     margin:5px;
+}
+
+.dreamdetailimage:hover{
+    animation-name: glimmering2;
+    animation-duration: 5s;
+    animation-iteration-count:  infinite;
+
+}
+
+
+
+@keyframes glimmering2{
+    0%{
+        position:relative;
+        top:-25px;
+        right:-25px;
+    }
+    15%{
+        position:relative;
+        top: -0px;
+        right:-25px;
+    }
+    30%{
+        position:relative;
+        top:-25px;
+        right:-25px;
+
+    }
+    45%{
+        position:relative;
+        top:-0px;
+        right:-25px;
+    }
+    60%{
+        position:relative;
+        top:-25px;
+        right:-25px;
+
+    }
+    75%{
+        position:relative;
+        top:-0px;
+        right:-25px;
+    }
+    100%{
+        position:relative;
+        top:-25px;
+        right:-25px;
+    }
+  
+
+
 }
 
 
