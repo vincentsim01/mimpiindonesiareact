@@ -1,6 +1,8 @@
 import React,{useState, useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import {Link} from 'react-router-dom';
+import SubmitCardReview from '../CardReview/SubmitCardReview';
+import GetCardReview from '../CardReview/GetCardReview';
 const baseUrl = "http://localhost:9120";
 
 
@@ -27,7 +29,7 @@ const MoneyDetailDisplay = (props) =>{
                 
                 
                     }
-                    return(
+                    return(<>
                         <div className='item' key={item._id}>
                             <div className='row rowi moneydetaildisplaycontainer'>
                                 <div className='col-md-5'>
@@ -52,7 +54,20 @@ const MoneyDetailDisplay = (props) =>{
                                 
                             </div>
 
+
+
+                            
+
                         </div>
+                        <div className="ReviewContainer">
+                        <br></br>                       
+
+                                <GetCardReview zacardname={item.name}/>
+                                <br></br>                      
+
+                                <SubmitCardReview zacardname={item.name}/>
+                        </div>
+                        </>
                     )
                 })
             }

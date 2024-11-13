@@ -39,7 +39,12 @@ const MoneyDetail = () =>{
 
         return(
             <>
-            <button onClick={previousevent} className="btn btn-primary">Previous</button>
+            {/* <div className="previousbuttoncontainermoney" onClick={previousevent}>   */}
+            <div className="previousbuttoncontainermoney" onClick={previousevent}>
+                <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+                <img className="previouschevronimg" src="https://i.ibb.co/j3vDCBq/chevron2.png"></img>
+                </div>
+   
             </>
         )
         
@@ -64,7 +69,10 @@ const MoneyDetail = () =>{
 
         return(
             <>
-            <button onClick={nextevent} className="btn btn-primary">Next</button>
+            <div className="nextbuttoncontainermoney" onClick={nextevent}>
+                <br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+                <img className="nextchevronimg" src="https://i.ibb.co/sK4qSHC/chevron.png"></img>
+            </div>
             </>
         )
         }
