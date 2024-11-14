@@ -91,14 +91,15 @@ const MoneyDetail = () =>{
             <div className="previousbuttoncontainer">
                 <div>{Previousbutton()}</div>
             </div>
-
-            <div className="moneyDetailDisplayContainer">
-                <MoneyDetailDisplay listData={moneydetail}/>
-            </div>
-
             <div className="nextbuttoncontainer">
                 <div>{Nextbutton()}</div>
             </div>
+
+            <div className="moneyDetailDisplayContainer1">
+                <MoneyDetailDisplay listData={moneydetail}/>
+            </div>
+
+
 
 
 
