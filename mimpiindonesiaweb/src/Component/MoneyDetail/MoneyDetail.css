@@ -1,23 +1,24 @@
 .moneydetailcontainer{
     position:relative;
     text-align:center;
-    border:solid 1px black;
-
 
 }
 
 .previousbuttoncontainer{
     position:absolute;
-    top:50%;
-    left:0;
+    left:5%;
     display:inline-block;
     border:1px solid black;
-
-
 }
 
-.previousbuttoncontainermoneyn{
+.nextbuttoncontainer{
+    position:absolute;
+    right:5%;    
+    display:inline-block;
+    border:1px solid black;
+}
 
+.previousbuttoncontainermoney{
     position:absolute;
     left:5%;
     top:40%;
@@ -25,7 +26,6 @@
     width:100px;
     height:500px;
     top:100px;
-
     cursor:pointer;
 }
 
@@ -57,22 +57,13 @@
 }
 
 .moneyDetailDisplayContainer{
-    position:relative;
+
     display:inline-block;
-    border:1px solid black;
-
-
+    text-align:center;
+    
 }
 
-.nextbuttoncontainer{
-    position:absolute;
-    top:50%;
-    right:0;    
-    display:inline-block;
-    border:1px solid black;
 
-
-}
 
 .moneydetaildisplaycontainer{
     position:relative;
