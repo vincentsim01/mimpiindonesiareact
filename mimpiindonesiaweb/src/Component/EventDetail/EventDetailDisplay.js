@@ -34,6 +34,10 @@ const EventDetailDisplay = (props) => {
                         <>
                         <div className="eventdisplaybigcontainer2">
                             <div className="eventdisplaycontainerinside">
+                                <div className="eventdisplaybg">
+                                    <img className="eventdisplaybgimg" src="https://i.ibb.co/LNf0b0T/templatehorizontalrandomevent.png"></img>
+                                
+                                </div>
                                     <div className="eventdisplayname2"><h1>{item.name}</h1></div>
                                     <br></br>
                                     <div className="eventdisplayimagecontainer2"><img className="eventimage2" src={item.image} alt={item.image}/></div>
@@ -52,6 +56,7 @@ const EventDetailDisplay = (props) => {
                                         </div>
                                 </div>
                             </div>
+                            <br></br><br></br><br></br>
 
                                  <div className="eventdetailreviewcontainer">
                                     <GetCardReview zacardname={item.name}/>

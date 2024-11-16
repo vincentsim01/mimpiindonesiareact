@@ -34,6 +34,11 @@ const TriviaDetailDisplay = (props) =>{
                     return(
                         <>
                         <div className="triviadetaildisplaycontainer">
+                            <div className="triviaimagebgcontainer">
+                                <img className="triviaimagebg" src="https://i.ibb.co/98Yv8Cw/RGB-02.jpg"></img>
+                                
+
+                            </div>
                             <div className="triviadisplayname"><h1>{item.name}</h1></div>
                             <br></br>
                             <div className="triviadisplayimage">
@@ -49,7 +54,7 @@ const TriviaDetailDisplay = (props) =>{
                         </div> 
 
                         <div className="ReviewContainer">
-                        <br></br>                       
+                        <br></br> <br></br> <br></br>                     
 
                         <GetCardReview zacardname={item.name}/>
                         <br></br>                      

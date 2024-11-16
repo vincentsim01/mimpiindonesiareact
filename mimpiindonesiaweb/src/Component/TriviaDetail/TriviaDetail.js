@@ -4,6 +4,7 @@ import TriviaDetailDisplay from './TriviaDetailDisplay';
 import { useNavigate } from 'react-router-dom';
 import SubmitCardReview from '../CardReview/SubmitCardReview';
 import GetCardReview from '../CardReview/GetCardReview';
+import './TriviaDetail.css';
 const baseUrl = "http://localhost:9120";
 
 
@@ -78,9 +79,10 @@ const TriviaDetail = () =>{
 
         <div className="triviadetailcontainer">
  
-            <div className="triviapreviousbutton">{Previousbutton()}</div>
+
 
             <div className="triviadetaildisplaylink"><TriviaDetailDisplay listData={triviadetail}/></div>
+            <div className="triviapreviousbutton">{Previousbutton()}</div>
 
             <div className="trivianextbutton">{Nextbutton()}</div>
 

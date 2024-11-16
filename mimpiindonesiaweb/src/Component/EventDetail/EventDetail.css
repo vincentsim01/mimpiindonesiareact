@@ -1,7 +1,38 @@
 .eventdisplaybigcontainer2{
     display:block;
-    border: solid 1px black;
+
     padding:20px;
+    border-radius:20px;
+
+}
+
+.eventdetaildisplay{
+    display:inline-block;
+    width:95%;
+    position:relative;
+
+
+}
+
+.eventdisplaybg{
+    position: absolute;
+    z-index:-1;
+    width:100%;
+    text-align: center;
+    top:-30px;
+
+
+
+}
+
+.eventdisplaybgimg{
+    display:inline-block;
+    width:1450px;
+    height:900px;
+    border-radius:50px;
+    opacity:0.1;
+
+
 
 }
 
@@ -17,7 +48,7 @@
 
 .eventdisplayimage2{
     text-align:center;
-    width:50%;
+    width:70%;
 }
 
 .effecttypedisplaycontainer2{
@@ -71,6 +102,7 @@
 
 .eventdisplaycontainerinside{
     /* border: solid 1px black; */
+
 
 }
 
