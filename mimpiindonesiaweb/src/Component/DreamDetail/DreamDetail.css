@@ -9,6 +9,31 @@
     position:relative;
 }
 
+.previousbuttondream{
+    position:absolute;
+    left:5%;
+    top:40%;
+    display:inline-block;
+    width:100px;
+    height:500px;
+    top:100px;
+
+
+}
+
+.nextbuttondream{
+    position:absolute;
+    right:5%;
+    top:40%;
+    display:inline-block;
+    width:100px;
+    height:500px;
+    top:100px;
+    cursor:pointer;
+
+
+}
+
 .previousbuttoncontainerdream{
     position:absolute;
     left:5%;

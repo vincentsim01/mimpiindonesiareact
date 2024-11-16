@@ -106,9 +106,10 @@ const DreamDetail = () => {
 
         <div className="dreamdetailcontainer">
             <div className="twobutton">
-                <div className="previousbutton">{previousbutton()}</div>
+
                 <div className="dreamdetaildisplay"><DreamDetailDisplay listData={dreamDetail}/></div>
-                <div className="nextbutton">{nextbutton()}</div>
+                <div className="previousbuttondream">{previousbutton()}</div>
+                <div className="nextbuttondream">{nextbutton()}</div>
             </div>
 
 
