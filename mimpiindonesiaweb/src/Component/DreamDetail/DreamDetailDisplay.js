@@ -36,11 +36,15 @@ const DreamDetailDisplay = (props) => {
                         <br></br>
                         <div className="dreamdetailimage dreamdetailcontent"><img src={item.image}/></div>
                         <br></br>
+                        <div className="dreamsmalldetail">
 
-                        <div className="dreamdetailcharacter dreamdetailcontent">Karakter: {item.character}</div>
-                        <br></br>
-                        <div className="dreamdetailharga dreamdetailcontent">Harga: Rp {item.Harga} M</div>
-                        <br></br>
+                            <div className="dreamdetailcharacter dreamdetailcontent">Karakter: {item.character}</div>
+                            <br></br>
+                            <div className="dreamdetailharga dreamdetailcontent">Harga: Rp {item.Harga} M</div>
+                            <br></br>
+
+                        </div>
+                        <br></br><br></br>
                     <Link to="/Dream"><button className="btn btn-info" onClick={removesessionstorage}>Go Back Dream</button></Link>
                     <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button> 
                     <br></br> 

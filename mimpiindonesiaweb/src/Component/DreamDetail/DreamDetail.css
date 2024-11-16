@@ -105,6 +105,18 @@
     animation-iteration-count:  infinite;
 }
 
+.dreamsmalldetail{
+    border:solid 1px black;
+    display:inline-block;
+    width:80%;
+    border-radius:20px;
+}
+
+.dreamsmalldetail:hover{
+    transform:scale(1.05);
+    transition-duration:0.5s;
+}
+
 .dreamdetailreviewcontainer{
 
     text-align:center;
