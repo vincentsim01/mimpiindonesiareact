@@ -11,8 +11,10 @@ const EventDetail = () =>{
 
     let params = useParams();
     let cardnameid = params.cardId;
+    let navigate = useNavigate();
 
     const [eventdetail,seteventdetail]=useState([]);
+    const [eventobject,seteventobject] = useState([]);
     let sessionData = sessionStorage.getItem('cardeventdetail');
 
     useEffect(() => {
@@ -24,6 +26,16 @@ const EventDetail = () =>{
 
         })
     },[])
+
+    var eventobjectlength;
+
+    (function() {
+
+        fetch(`${baseUrl}/event`, {method:'GET'})
+        .then((res)=>res.json())
+        .then((data)=>seteventobject(data))
+        eventobjectlength=eventobject.length;
+      })();
 
     const setDataPerNextPrevious = (data) =>{
         seteventdetail(data);
@@ -37,12 +49,22 @@ const EventDetail = () =>{
         let Navigate = useNavigate();
 
         function previousevent(){
-            fetch(`${baseUrl}/eventdetail2/${sessionData-1}`,{method:'GET'})
-            .then((res) => res.json())
-            .then((data) =>seteventdetail(data))
-            sessionStorage.setItem('cardeventdetail',JSON.stringify(sessionData-1));
+            if(Number(sessionData)>1){
+                fetch(`${baseUrl}/eventdetail2/${sessionData-1}`,{method:'GET'})
+                .then((res) => res.json())
+                .then((data) =>seteventdetail(data))
+                sessionStorage.setItem('cardeventdetail',JSON.stringify(sessionData-1));
 
-            Navigate(`/eventdetail/${sessionData-1}`)
+                Navigate(`/eventdetail/${sessionData-1}`)
+            }else if(Number(sessionData)<=1){
+                fetch(`${baseUrl}/eventdetail2/1`,{method:'GET'})
+                .then((res) => res.json())
+                .then((data) =>seteventdetail(data))
+                sessionStorage.setItem('cardeventdetail',JSON.stringify(1));
+
+                navigate(`/eventdetail/1`)
+
+            }
         }
 
 
@@ -77,12 +99,24 @@ const EventDetail = () =>{
 
 
         function nextevent(){
-            fetch(`${baseUrl}/eventdetail2/${Number(sessionData)+1}`,{method:'GET'})
-            .then((res) => res.json())
-            .then((data) =>seteventdetail(data))
-            sessionStorage.setItem('cardeventdetail',JSON.stringify(Number(sessionData)+1));
 
-            Navigate(`/eventdetail/${Number(sessionData)+1}`)
+            if(Number(sessionData)<eventobjectlength){
+                fetch(`${baseUrl}/eventdetail2/${Number(sessionData)+1}`,{method:'GET'})
+                .then((res) => res.json())
+                .then((data) =>seteventdetail(data))
+                sessionStorage.setItem('cardeventdetail',JSON.stringify(Number(sessionData)+1));
+
+                Navigate(`/eventdetail/${Number(sessionData)+1}`)
+            }else if(Number(sessionData)>eventobjectlength){
+                fetch(`${baseUrl}/eventdetail2/${eventobjectlength}`,{method:'GET'})
+                .then((res) => res.json())
+                .then((data) =>seteventdetail(data))
+                sessionStorage.setItem('cardeventdetail',JSON.stringify(Number(eventobjectlength)));
+
+                Navigate(`/eventdetail/${eventobjectlength}`)
+
+
+            }
 
             
         }
