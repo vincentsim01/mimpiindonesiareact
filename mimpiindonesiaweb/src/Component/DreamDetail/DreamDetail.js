@@ -12,8 +12,21 @@ const DreamDetail = () => {
     let navigate = useNavigate();
 
     const [dreamDetail,setDreamDetail] = useState([]);
+    const [dreamobject,setdreamobject] = useState([]);
 
     let sessionData = Number(sessionStorage.getItem('carddreamdetail'));
+    var dreamobjectlength;
+
+    (function() {
+
+        fetch(`${baseUrl}/dream`, {method:'GET'})
+        .then((res)=>res.json())
+        .then((data)=>setdreamobject(data))
+        dreamobjectlength=dreamobject.length;
+      })();
+
+
+    console.log(dreamobjectlength);
 
     useEffect(()=> {
         fetch(`${baseUrl}/dreamDetail/${sessionData}`,{method:'GET'})
@@ -27,12 +40,22 @@ const DreamDetail = () => {
         // let navigate = useNavigate();
 
         function previousevent(){
-            fetch(`${baseUrl}/dreamDetail/${sessionData-1}`,{method:'GET'})
-            .then((res) => res.json())
-            .then((data) =>setDreamDetail(data))
-            sessionStorage.setItem('carddreamdetail',JSON.stringify(sessionData-1));
+            if(Number(sessionData)>1){
+                fetch(`${baseUrl}/dreamDetail/${sessionData-1}`,{method:'GET'})
+                .then((res) => res.json())
+                .then((data) =>setDreamDetail(data))
+                sessionStorage.setItem('carddreamdetail',JSON.stringify(sessionData-1));
 
-            navigate(`/dreamdetail/${sessionData-1}`)
+                navigate(`/dreamdetail/${sessionData-1}`)
+            }else if(Number(sessionData)<=1){
+                fetch(`${baseUrl}/dreamDetail/1`,{method:'GET'})
+                .then((res) => res.json())
+                .then((data) =>setDreamDetail(data))
+                sessionStorage.setItem('carddreamdetail',JSON.stringify(1));
+
+                navigate(`/dreamdetail/1`)
+
+            }
         }
 
 
@@ -66,12 +89,23 @@ const DreamDetail = () => {
 
 
         function nextevent(){
-            fetch(`${baseUrl}/dreamDetail/${Number(sessionData)+1}`,{method:'GET'})
-            .then((res) => res.json())
-            .then((data) =>setDreamDetail(data))
-            sessionStorage.setItem('carddreamdetail',JSON.stringify(Number(sessionData)+1));
+            if(Number(sessionData)<dreamobjectlength){
+                fetch(`${baseUrl}/dreamDetail/${Number(sessionData)+1}`,{method:'GET'})
+                .then((res) => res.json())
+                .then((data) =>setDreamDetail(data))
+                sessionStorage.setItem('carddreamdetail',JSON.stringify(Number(sessionData)+1));
 
-            navigate(`/dreamdetail/${Number(sessionData)+1}`)
+                navigate(`/dreamdetail/${Number(sessionData)+1}`)
+
+
+            }else if(Number(sessionData)>dreamobjectlength){
+                fetch(`${baseUrl}/dreamDetail/${dreamobjectlength}`,{method:'GET'})
+                .then((res) => res.json())
+                .then((data) =>setDreamDetail(data))
+                sessionStorage.setItem('carddreamdetail',JSON.stringify(dreamobjectlength));
+
+                navigate(`/dreamdetail/${dreamobjectlength}`)
+            }
 
             
         }
