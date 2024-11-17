@@ -11,6 +11,16 @@ const CharacterDetail = () =>{
     let navigate = useNavigate();
 
     const [characterdetail, setcharacterdetail] = useState([]);
+    const [characterobject,setcharacterobject] = useState([]);
+
+    var characterobjectlength;
+
+    (function(){
+        fetch(`${baseUrl}/character`, {method:'GET'})
+        .then((res)=>res.json())
+        .then((data)=>setcharacterobject(data))
+        characterobjectlength=characterobject.length;
+    })();
 
     const sessionData = sessionStorage.getItem('cardcharacterdetail');
 
@@ -28,12 +38,22 @@ const CharacterDetail = () =>{
 
 
         function previousevent(){
-            fetch(`${baseUrl}/characterdetail/${sessionData-1}`,{method:'GET'})
-            .then((res) => res.json())
-            .then((data) =>setcharacterdetail(data));
-            sessionStorage.setItem('cardcharacterdetail',JSON.stringify(sessionData-1));
+            if(Number(sessionData)>1){
+                fetch(`${baseUrl}/characterdetail/${sessionData-1}`,{method:'GET'})
+                .then((res) => res.json())
+                .then((data) =>setcharacterdetail(data));
+                sessionStorage.setItem('cardcharacterdetail',JSON.stringify(sessionData-1));
 
-            navigate(`/characterdetail/${sessionData-1}`)
+                navigate(`/characterdetail/${sessionData-1}`)
+            }else if(Number(sessionData)<=1){
+                fetch(`${baseUrl}/characterdetail/1`,{method:'GET'})
+                .then((res) => res.json())
+                .then((data) =>setcharacterdetail(data));
+                sessionStorage.setItem('cardcharacterdetail',JSON.stringify(1));
+
+                navigate(`/characterdetail/1`)
+
+            }
         }
 
 
@@ -69,12 +89,22 @@ const CharacterDetail = () =>{
 
 
         function nextevent(){
-            fetch(`${baseUrl}/characterdetail/${Number(sessionData)+1}`,{method:'GET'})
-            .then((res) => res.json())
-            .then((data) =>setcharacterdetail(data));
-            sessionStorage.setItem('cardcharacterdetail',JSON.stringify(Number(sessionData)+1));
+            if(Number(sessionData)<characterobjectlength){
+                fetch(`${baseUrl}/characterdetail/${Number(sessionData)+1}`,{method:'GET'})
+                .then((res) => res.json())
+                .then((data) =>setcharacterdetail(data));
+                sessionStorage.setItem('cardcharacterdetail',JSON.stringify(Number(sessionData)+1));
 
-            navigate(`/characterdetail/${Number(sessionData)+1}`)
+                navigate(`/characterdetail/${Number(sessionData)+1}`)
+            }else if(Number(sessionData)>characterobjectlength){
+                fetch(`${baseUrl}/characterdetail/${characterobjectlength}`,{method:'GET'})
+                .then((res) => res.json())
+                .then((data) =>setcharacterdetail(data));
+                sessionStorage.setItem('cardcharacterdetail',JSON.stringify(Number(characterobjectlength)));
+
+                navigate(`/characterdetail/${characterobjectlength}`)
+
+            }
 
             
         }
