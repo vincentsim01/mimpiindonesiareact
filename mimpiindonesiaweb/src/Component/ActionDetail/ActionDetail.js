@@ -11,6 +11,16 @@ const ActionDetail = () =>{
 
 
     const [actiondetail,setactiondetail]=useState([]);
+    const [actionobject,setactionobject] = useState([]);
+
+    let actionobjectlength;
+
+    (function(){
+        fetch(`${baseUrl}/actioning`,{method:'GET'})
+        .then((res)=>res.json())
+        .then((data)=>setactionobject(data))
+        actionobjectlength=actionobject.length;
+    })();
 
     let sessionData = sessionStorage.getItem('cardactiondetail');
 
@@ -27,12 +37,22 @@ const ActionDetail = () =>{
         let navigate = useNavigate();
 
         function previousaction(){
-            fetch(`${baseUrl}/actiondetail/${sessionData-1}`,{method:'GET'})
-            .then((res)=>res.json())
-            .then((data)=>setactiondetail(data));
-            sessionStorage.setItem('cardactiondetail', JSON.stringify(sessionData-1));
+            if(sessionData>1){
+                fetch(`${baseUrl}/actiondetail/${sessionData-1}`,{method:'GET'})
+                .then((res)=>res.json())
+                .then((data)=>setactiondetail(data));
+                sessionStorage.setItem('cardactiondetail', JSON.stringify(sessionData-1));
 
-            navigate(`/actiondetail/${sessionData-1}`);
+                navigate(`/actiondetail/${sessionData-1}`);
+            }else if(sessionData<1){
+                fetch(`${baseUrl}/actiondetail/1`,{method:'GET'})
+                .then((res)=>res.json())
+                .then((data)=>setactiondetail(data));
+                sessionStorage.setItem('cardactiondetail', JSON.stringify(1));
+
+                navigate(`/actiondetail/1`);
+
+            }
         }
 
         return(
@@ -49,12 +69,22 @@ const ActionDetail = () =>{
         let navigate = useNavigate();
 
         function nextaction(){
-            fetch(`${baseUrl}/actiondetail/${Number(sessionData)+1}`,{method:'GET'})
-            .then((res)=>res.json())
-            .then((data)=>setactiondetail(data));
-            sessionStorage.setItem('cardactiondetail', JSON.stringify(Number(sessionData)+1));
+            if(sessionData<actionobjectlength){
+                fetch(`${baseUrl}/actiondetail/${Number(sessionData)+1}`,{method:'GET'})
+                .then((res)=>res.json())
+                .then((data)=>setactiondetail(data));
+                sessionStorage.setItem('cardactiondetail', JSON.stringify(Number(sessionData)+1));
 
-            navigate(`/actiondetail/${Number(sessionData)+1}`);
+                navigate(`/actiondetail/${Number(sessionData)+1}`);
+            }else if(sessionData>actionobjectlength){
+                fetch(`${baseUrl}/actiondetail/${Number(actionobjectlength)}`,{method:'GET'})
+                .then((res)=>res.json())
+                .then((data)=>setactiondetail(data));
+                sessionStorage.setItem('cardactiondetail', JSON.stringify(Number(actionobjectlength)));
+
+                navigate(`/actiondetail/${Number(actionobjectlength)}`);
+
+            }
         }
 
         return(
