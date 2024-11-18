@@ -12,6 +12,15 @@ const TriviaDetail = () =>{
 
     const [triviadetail,settriviadetail] = useState([]);
     let sessionData = sessionStorage.getItem('cardtriviadetail');
+    const [triviaobject, settriviaobject]= useState([]);
+
+    let triviaobjectlength;
+    (function(){
+        fetch(`${baseUrl}/trivia`,{method:'GET'})
+       .then((res) => res.json())
+       .then((data) => settriviaobject(data))
+        triviaobjectlength = triviaobject.length;
+    })();
 
     useEffect(()=>{
         fetch(`${baseUrl}/triviadetail/${sessionData}`,{method:'GET'})
@@ -25,12 +34,21 @@ const TriviaDetail = () =>{
         let navigate = useNavigate();
 
         function previousevent(){
-            fetch(`${baseUrl}/triviadetail/${sessionData}-1`,{method:'GET'})
-            .then((res)=>res.json())
-            .then((data)=>settriviadetail(data));
-            sessionStorage.setItem('cardtriviadetail', JSON.stringify(sessionData-1));
+            if(sessionData>1){
+                fetch(`${baseUrl}/triviadetail/${sessionData}-1`,{method:'GET'})
+                .then((res)=>res.json())
+                .then((data)=>settriviadetail(data));
+                sessionStorage.setItem('cardtriviadetail', JSON.stringify(sessionData-1));
 
-            navigate(`/triviadetail/${sessionData-1}`);
+                navigate(`/triviadetail/${sessionData-1}`);
+            }else if(sessionData<1){
+                fetch(`${baseUrl}/triviadetail/1`, {method:'GET'})
+                .then((res)=>res.json())
+                .then((data)=>settriviadetail(data));
+                sessionStorage.setItem('cardtriviadetail',JSON.stringify(1) );
+
+                navigate(`triviadetail/1`);
+            }
 
         };
 
@@ -52,12 +70,24 @@ const TriviaDetail = () =>{
         let navigate = useNavigate();
 
         function nextevent(){
-            fetch(`${baseUrl}/triviadetail/${Number(sessionData)+1}`,{method:'GET'})
-            .then((res)=>res.json())
-            .then((data)=>settriviadetail(data));
-            sessionStorage.setItem('cardtriviadetail', JSON.stringify(Number(sessionData)+1));
+            if(sessionData<triviaobjectlength){
+                fetch(`${baseUrl}/triviadetail/${Number(sessionData)+1}`,{method:'GET'})
+                .then((res)=>res.json())
+                .then((data)=>settriviadetail(data));
+                sessionStorage.setItem('cardtriviadetail', JSON.stringify(Number(sessionData)+1));
 
-            navigate(`/triviadetail/${Number(sessionData)+1}`);
+                navigate(`/triviadetail/${Number(sessionData)+1}`);
+            }   else if(sessionData>triviaobjectlength){
+                fetch(`${baseUrl}/triviadetail/${Number(triviaobjectlength)}`, {method:'GET'})
+                .then((res)=>res.json())
+                .then((data)=>settriviadetail(data));
+                sessionStorage.setItem('cardtriviadetail', JSON.stringify(Number(triviaobjectlength)) );
+
+                navigate(`/triviadetail/${Number(triviaobjectlength)}`);
+
+
+            }
+
 
         };
 
