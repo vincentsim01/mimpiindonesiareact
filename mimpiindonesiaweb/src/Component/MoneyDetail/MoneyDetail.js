@@ -11,6 +11,17 @@ const MoneyDetail = () =>{
 
     const [moneydetail,setmoneyDetail] = useState([]);
     let sessionData = Number(sessionStorage.getItem('cardmoneydetail'));
+    const [moneyobject, setmoneyobject] = useState([]);
+
+    let moneyobjectlength;
+
+    (function(){
+        fetch (`${baseUrl}/money`, {method:'GET'})
+        .then((res)=>res.json())
+        .then((data)=>setmoneyobject(data))
+        moneyobjectlength = moneyobject.length;
+
+    })();
 
     console.log(sessionData);
 
@@ -29,12 +40,22 @@ const MoneyDetail = () =>{
 
         let navigate = useNavigate();
         function previousevent(){ 
-            fetch(`${baseUrl}/moneydetail/${Number(sessionData)-1}`,{method:'GET'})
-            .then((res) => res.json())
-            .then((data) => setmoneyDetail(data));
-            sessionStorage.setItem('cardmoneydetail',JSON.stringify(sessionData-1));
+            if(sessionData>1){
+                fetch(`${baseUrl}/moneydetail/${Number(sessionData)-1}`,{method:'GET'})
+                .then((res) => res.json())
+                .then((data) => setmoneyDetail(data));
+                sessionStorage.setItem('cardmoneydetail',JSON.stringify(sessionData-1));
 
-            navigate(`/moneydetail/${sessionData-1}`);
+                navigate(`/moneydetail/${sessionData-1}`);
+            }else if(sessionData<1){
+                fetch(`${baseUrl}/moneydetail/1`,{method:'GET'})
+                .then((res) => res.json())
+                .then((data) => setmoneyDetail(data));
+                sessionStorage.setItem('cardmoneydetail',JSON.stringify(1));
+
+                navigate(`/moneydetail/1`);
+
+            }
         }
 
         return(
@@ -56,15 +77,30 @@ const MoneyDetail = () =>{
 
     const Nextbutton = () =>{
 
+
+
         let navigate = useNavigate();
         function nextevent(){
-        fetch(`${baseUrl}/moneydetail/${Number(sessionData)+1}`,{method:'GET'})
-        .then((res) => res.json())
-        .then((data) => setmoneyDetail(data));
-        sessionStorage.setItem('cardmoneydetail',JSON.stringify(sessionData+1));
-       
+            if(sessionData<moneyobjectlength){
+                fetch(`${baseUrl}/moneydetail/${Number(sessionData)+1}`,{method:'GET'})
+                .then((res) => res.json())
+                .then((data) => setmoneyDetail(data));
+                sessionStorage.setItem('cardmoneydetail',JSON.stringify(sessionData+1));
+            
 
-        navigate(`/moneydetail/${Number(sessionData)+1}`);
+                navigate(`/moneydetail/${Number(sessionData)+1}`);
+            }else if(sessionData>moneyobjectlength){
+
+                fetch(`${baseUrl}/moneydetail/${moneyobjectlength}`,{method:'GET'})
+                .then((res) => res.json())
+                .then((data) => setmoneyDetail(data));
+                sessionStorage.setItem('cardmoneydetail',JSON.stringify(moneyobjectlength));
+            
+
+                navigate(`/moneydetail/${moneyobjectlength}`);
+
+
+            }
         }
 
         return(
