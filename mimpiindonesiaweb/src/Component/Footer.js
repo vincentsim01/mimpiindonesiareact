@@ -6,6 +6,17 @@ import './Footer.css';
 
 const Footer = () =>{
 
+    function cardtypereveal(){
+        // document.getElementById("cardtypefooter").classList.toggle("block");
+        document.getElementById("cardtypefooter").classList.remove("none");
+
+    }
+
+    function cardtypehidden(){
+        document.getElementById("cardtypefooter").classList.add("none");
+
+    }
+
     return (
         <div className="footercontainer">
         {/* <div className="container "> */}
@@ -15,7 +26,8 @@ const Footer = () =>{
                 </div>
 
                 <div className="col footercontent">
-                    Card Types
+                    <span id="cardtypetext" onMouseOver={cardtypereveal} onMouseOut={cardtypehidden}>Card Types</span>
+                    <div id="cardtypefooter" className="none">This is inside cardtype footer</div>
                 </div>
                 <div className="col footercontent">
                 <Link to ='/blog'>
