@@ -48,7 +48,7 @@ const TriviaDetailDisplay = (props) =>{
 
 
                             <div className="triviadisplaybuttoncontainer">
-                                <Link to="/Trivia"><button onClick={removesessionstorage}>Go Back Trivia</button></Link>
+                                <Link to="/Trivia"><button className="btn btn-info" onClick={removesessionstorage}>Go Back Trivia</button></Link>
                                 <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button>  
                             </div>
                         </div> 
