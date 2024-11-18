@@ -38,7 +38,7 @@ const MoneyDetailDisplay = (props) =>{
                                     className='MoneyImage'/></div>
                                     <div className="moneydetailbuttoncontainer">
 
-                                            <Link to="/Money"><button onClick={removesessionstorage} >Go Back Money</button></Link>
+                                            <Link to="/Money"><button className="btn btn-info" onClick={removesessionstorage} >Go Back Money</button></Link>
 
 
                                             <button className="btn btn-primary addfavouritebutton" onClick={savesession}>Add as Favorite</button>   
