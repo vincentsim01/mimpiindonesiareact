@@ -25,9 +25,28 @@ const Footer = () =>{
                     Social Media
                 </div>
 
-                <div className="col footercontent">
-                    <span id="cardtypetext" onMouseOver={cardtypereveal} onMouseOut={cardtypehidden}>Card Types</span>
-                    <div id="cardtypefooter" className="none">This is inside cardtype footer</div>
+                <div className="col footercontent" id="cardtypefootercontainer">
+                    <div id="cardtypetext" onMouseOver={cardtypereveal} onMouseOut={cardtypehidden}>Card Types
+                            <div id="cardtypefooter" className="none" style={{width:"250px"}} >
+                                <table style={{textAlign:"center", width:"100%"}}>
+                                    <tr>
+                                        <td>
+                                            <Link to="/character">Character</Link>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <Link to="/Dream">Dream</Link>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <Link to="/Event">Event</Link>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                    </div>
                 </div>
                 <div className="col footercontent">
                 <Link to ='/blog'>
