@@ -17,7 +17,7 @@ const Wordofwisdom = () =>{
     return(
         <>
         This is word of wisdom
-        <Wordofwisdomdisplay />
+        <Wordofwisdomdisplay listData={usewordwisdom}/>
 
         </>
     )
