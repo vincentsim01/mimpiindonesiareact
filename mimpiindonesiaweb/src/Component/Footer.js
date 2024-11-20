@@ -37,12 +37,22 @@ const Footer = () =>{
                     <table style={{textAlign:"center", width:"100%"}}>
                                     <tr>
                                         <td>
-                                            <Link to="/character">Facebook</Link>
+                                            <a href="http://www.facebook.com" target="_blank">Facebook</a>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <Link to="/Dream">Instagram</Link>
+                                            <Link to="http://www.instagram.com" target="_blank">Instagram</Link>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="http://www.tiktok.com" target="_blank">TikTok</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="http://www.snapchat.com" target="_blank">Snapchat</a>
                                         </td>
                                     </tr>
                         </table>
