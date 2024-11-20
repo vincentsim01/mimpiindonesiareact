@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from 'react';
 import {useNavigate,Link} from 'react-router-dom';
 import Wordofwisdomdisplay from './Wordofwisdomdisplay';
+import "./Wordofwisdom.css";
 
 const baseUrl = "http://localhost:9120";
 

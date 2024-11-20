@@ -1,0 +1,14 @@
+.wordofwisdomcontainer{
+    position:relative;
+    padding:10px;
+    text-align:center;
+    border:solid 1px black;
+    margin:10px;
+}
+.containerwisdom{
+
+    padding:10px;
+    border:solid 1px black;
+    display:inline-block;
+    width:60%;
+}

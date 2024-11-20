@@ -8,6 +8,7 @@ const Wordofwisdomdisplay = (props) =>{
         return listData.map((item)=>{
             return(
                 <>
+                <div className="wordofwisdomcontainer">
                     <div className="containerwisdom"> Event:{item.event} </div>
                     <div className="containerwisdom"> Word:{item.word} </div>
                     <div className="containerwisdom"> Figure:{item.figure.map((item2)=>{
@@ -19,6 +20,8 @@ const Wordofwisdomdisplay = (props) =>{
                             </>
                         )
                     })} </div>
+
+                </div>
                 </>
             )
         }
