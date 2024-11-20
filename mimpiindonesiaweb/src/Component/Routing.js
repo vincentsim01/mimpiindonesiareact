@@ -35,6 +35,7 @@ import ThankYou from './ContactUs/ThankYou';
 import Subscriber from './Subscriber/Subscriber';
 import Fanletter from './Fanletter/Fanletter';
 import Blog from './Blogs/blogs';
+import Wordofwisdom from './Wordofwisdom/Wordofwisdom';
 
 
 const Routing = ()=>{
@@ -78,6 +79,7 @@ const Routing = ()=>{
             <Route path="subscriber" element={<Subscriber/>}/>
             <Route path="fanletter" element={<Fanletter/>}/>
             <Route path="blog" element={<Blog/>}/>
+            <Route path="wordofwisdom" element={<Wordofwisdom/>}/>
 
             
 
