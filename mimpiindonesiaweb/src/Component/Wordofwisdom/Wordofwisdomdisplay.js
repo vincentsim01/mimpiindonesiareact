@@ -7,7 +7,19 @@ const Wordofwisdomdisplay = (props) =>{
     const renderdata = ({listData}) => {
         return listData.map((item)=>{
             return(
-            <div className="containerwisdom"> {item.name} </div>
+                <>
+                    <div className="containerwisdom"> Event:{item.event} </div>
+                    <div className="containerwisdom"> Word:{item.word} </div>
+                    <div className="containerwisdom"> Figure:{item.figure.map((item2)=>{
+                        return(
+                            <>
+                                name: {item2.name} 
+                                <br></br>
+                                color: {item2.color}
+                            </>
+                        )
+                    })} </div>
+                </>
             )
         }
 
