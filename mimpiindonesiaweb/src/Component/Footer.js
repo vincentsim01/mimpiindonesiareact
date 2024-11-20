@@ -17,12 +17,38 @@ const Footer = () =>{
 
     }
 
+    function socialmediareveal(){
+        document.getElementById("socialmediafooter").classList.remove("none");
+
+    }
+
+    function socialmediahide(){
+        document.getElementById("socialmediafooter").classList.add("none");
+
+    }
+
     return (
         <div className="footercontainer">
         {/* <div className="container "> */}
             <div className="rowa">
-                <div className="col footercontent">
-                    Social Media
+                <div id="socialmediafootercontainer" className="col footercontent">
+                    <div id="socialmediafootertext" onMouseOver={socialmediareveal} onMouseOut={socialmediahide}>Social Media
+                    <div id="socialmediafooter" className="none" style={{width:"250px"}}>
+                    <table style={{textAlign:"center", width:"100%"}}>
+                                    <tr>
+                                        <td>
+                                            <Link to="/character">Facebook</Link>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <Link to="/Dream">Instagram</Link>
+                                        </td>
+                                    </tr>
+                        </table>
+                    </div>
+                    </div>
+
                 </div>
 
                 <div className="col footercontent" id="cardtypefootercontainer">
@@ -44,24 +70,39 @@ const Footer = () =>{
                                             <Link to="/Event">Event</Link>
                                         </td>
                                     </tr>
+                                    <tr>
+                                        <td>
+                                            <Link to="/Actioning">Action</Link>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <Link to="/Trivia">Trivia</Link>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <Link to="/Money">Money</Link>
+                                        </td>
+                                    </tr>
                                 </table>
                             </div>
                     </div>
                 </div>
                 <div className="col footercontent">
-                <Link to ='/blog'>
+                <Link to ='/blog' style={{ color: 'white' }}>
 
                     Blogs
 
                 </Link>
                 </div>
                 <div className="col footercontent">
-                <Link to ='/contactus'>
+                <Link to ='/contactus'  style={{ color: 'white' }}>
                     Contact Us
                 </Link>
                 </div>
                 <div className="col footercontent">
-                <Link to ='/fanletter'>
+                <Link to ='/fanletter' style={{ color: 'white' }}>
 
                     Fanletter
 
