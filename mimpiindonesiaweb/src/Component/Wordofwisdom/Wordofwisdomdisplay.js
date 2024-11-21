@@ -61,16 +61,25 @@ const Wordofwisdomdisplay = (props) =>{
 
 
 
-    let objectify3=Object.keys(objectifin[1]);
-    let objectify4=[];
+    // let objectify3=Object.keys(objectifin[1]);
+    // let objectify4=[];
 
-    for (const obj of objectifin) {
-        for (const key in obj) {
-          objectify4.push(`${obj[key]}`); // Log each key-value pair
+    // for (const obj of objectifin) {
+    //     for (const key in obj) {
+    //       objectify4.push(`${obj[key]}`); // Log each key-value pair
+    //     }
+    //   }
+
+    //   console.log(objectify4);
+
+    let objectify2=[];
+
+    for (var obj of objectify){
+        for (var key in obj){
+            objectify2.push(`${key}, ${obj[key]}`);
+
         }
-      }
-
-      console.log(objectify4);
+    }
 
     
     
@@ -101,9 +110,38 @@ const Wordofwisdomdisplay = (props) =>{
                                 color: {item2.color}
                             </>
                         )
-                    })} </div>
+                    })} 
+                    </div>
+                    <div>This is objectify
+                        <br></br>
+                        {objectify.map((item)=>{
+                            return(
+                                <>
+                                {item.hobby.map((item2)=>{
+                                    return(
+                                        <>
+                                        {item2.name}
+                                        </>
+                                    )
+                                })}
+                                </>
+                            )
+                        })}
+                    </div>
+                    {/* <div>
+                        {objectifin.forEach((item)=>{
+                 
+                                objectify2.push(item.name);
+                  
 
-                    <div className="containerwisdom"> with map: {objectify.map((item)=>{
+
+                        })}
+                        This is objectify2: {objectify2}
+
+
+                    </div> */}
+
+                    {/* <div className="containerwisdom"> with map: {objectify.map((item)=>{
                         return(
                             <>
                                 objectify: 
@@ -124,10 +162,11 @@ const Wordofwisdomdisplay = (props) =>{
                         )
                     })} 
                     </div>
-                    <br>
-                    </br>
                     <br></br>
-                    <div className="containerwisdom">
+                    <br></br> */}
+
+
+                    {/* <div className="containerwisdom">
                         Map Within {objectify.map((item)=>{
                             return(
                                 <>
@@ -162,7 +201,7 @@ const Wordofwisdomdisplay = (props) =>{
                     <div className="containerwisdom">
                         This is objectify4: {objectify4}
 
-                    </div>
+                    </div> */}
 
 
                 </div>
@@ -181,7 +220,7 @@ const Wordofwisdomdisplay = (props) =>{
     }
     return(
         <>
-        This is word of wisdom display
+
         {renderdata(props)}
 
         </>
