@@ -19,6 +19,16 @@
 
 #homecontainer{
     z-index:1;
+
+}
+
+#homemisccontainer{
+    text-align:center;
+    margin:10px;
+    border:1px solid black;
+    padding-bottom:30px;
+    padding-top:30px;
+
 }
 
 #popupimage{

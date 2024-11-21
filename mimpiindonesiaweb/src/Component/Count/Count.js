@@ -7,30 +7,19 @@ const Count = () => {
 
     function pluscount(){
         setcount(count+1);
-
-
     };
 
     function minuscount(){
         setcount(count-1);
-
     };
-
-
-
 
     return(
         <>
 
-            <button onClick={pluscount}>Plus</button>
-            <button onClick={minuscount}>Minus</button>
+            <button className="btn btn-primary" onClick={pluscount}>Plus</button> &nbsp;
+            <button className="btn btn-primary" onClick={minuscount}>Minus</button>
             <br></br>
-
             This is the: {count}
-
-        
-        
-        
         </>
     )
 }

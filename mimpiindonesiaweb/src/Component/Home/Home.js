@@ -5,6 +5,7 @@ import Count from '../Count/Count';
 import Category from '../Category/Category';
 import Name from '../InsertName/Name';
 import CatDropdown from '../CategoryDropdown/CatDropdown';
+import FindCard from '../FindCard/FindCard';
 
 
 
@@ -72,20 +73,25 @@ const Home = () => {
 
             <div id="homecontainer">
 
-            <Banner/>
-            <br></br>
-            <Category/>
-            <br></br><br></br>
+                <Banner/>
+                <br></br>
+                <Category/>
+                <br></br><br></br>
 
 
-
-            <Count/><br></br>
-            <p id="thetext">This text must change</p>
-            <Name/>
-            <br>
-            </br>
-            <CatDropdown/>
-            <br></br>
+            <div id="homemisccontainer">
+                <Count/>
+                <br></br>
+                <p id="thetext">This text must change</p>
+                <Name/>
+                <br></br>
+                <br></br>
+                <FindCard/>
+                <br></br>
+                <br></br>
+                <CatDropdown/>
+                <br></br>
+            </div>
             </div>
             </div>
 
