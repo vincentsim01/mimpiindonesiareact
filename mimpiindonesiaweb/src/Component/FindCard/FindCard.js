@@ -1,17 +1,36 @@
 import React, {useState, useEffect} from 'react';
 import {useParams,useSearchParams} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
+const baseUrl = "http://localhost:9120";
+
+
+
+var Findcardinputcontent;
 const FindCard = () =>{
-    let Findcardinputcontent;
+    let navigate = useNavigate();
+
     function Findcardinputchange(e){
 
-        Findcardinputcontent = e.target.value;
-        console.log(Findcardinputcontent);
+        return Findcardinputcontent = e.target.value;
+
 
     }
 
     function Buttonsearchclick(){
-        alert ("This is the card that you are searching for: "+Findcardinputcontent);
+        if(Findcardinputcontent){
+
+            navigate(`/event`);
+// Clear the input field after searching
+
+
+        }
+
+            else{
+                alert("Your Search Input is Empty");
+        }
+
     }
     return(
         <>  
