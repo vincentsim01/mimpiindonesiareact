@@ -5,7 +5,6 @@ const baseUrl = "http://localhost:9120";
 
 const Wordofwisdomdisplay = (props) =>{
 
-    const objectify1=[1,2,3,4,5,6];
 
     const objectifin=[
         {
@@ -60,12 +59,29 @@ const Wordofwisdomdisplay = (props) =>{
         }
     ];
 
-    console.log(objectify);
 
-    const objectify3=Object.keys(objectifin);
 
-    console.log("this is objectify3"+objectify3);
-    console.log(objectify3);
+    let objectify3=Object.keys(objectifin[1]);
+    let objectify4=[];
+
+    for (const obj of objectifin) {
+        for (const key in obj) {
+          objectify4.push(`${obj[key]}`); // Log each key-value pair
+        }
+      }
+
+      console.log(objectify4);
+
+    
+    
+
+
+    // console.log(objectify.map((data)=>{
+    //     return data.email
+    // }));
+
+
+
 
 
 
@@ -108,7 +124,9 @@ const Wordofwisdomdisplay = (props) =>{
                         )
                     })} 
                     </div>
-
+                    <br>
+                    </br>
+                    <br></br>
                     <div className="containerwisdom">
                         Map Within {objectify.map((item)=>{
                             return(
@@ -127,6 +145,22 @@ const Wordofwisdomdisplay = (props) =>{
                                 </>
                             )
                         })}
+
+                    </div>
+
+                    <br></br><br></br><br></br>
+                    <div className="containerwisdom">
+                        {objectify3.map((item)=>{
+                            return(
+                                <>
+                                The keys: {item} <br></br>
+                                </>
+                            )
+                        })}
+
+                    </div>
+                    <div className="containerwisdom">
+                        This is objectify4: {objectify4}
 
                     </div>
 
