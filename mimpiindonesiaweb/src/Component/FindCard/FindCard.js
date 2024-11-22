@@ -18,6 +18,7 @@ const FindCard = () =>{
     const [dreamresponse,setdreamresponse] = useState([]);
     const [characterresponse,setcharacterresponse] = useState([]);
     const [actionresponse,setactionresponse] = useState([]);
+    const [triviaresponse,settriviaresponse] = useState([]);
     let navigate = useNavigate();
 
 
@@ -51,6 +52,12 @@ const FindCard = () =>{
         fetch(`${baseUrl}/actioning?name=${Findcardinputcontent}`,{method:'GET'})
         .then((response) => response.json())
         .then((data)=>setactionresponse(data));
+
+        fetch(`${baseUrl}/trivia?name=${Findcardinputcontent}`,{method:'GET'})
+        .then((response) => response.json())
+        .then((data)=>settriviaresponse(data));
+
+        
 
         console.log(eventresponse.map((res)=> {return(res.name)}));
         console.log(dreamresponse.map((res)=> {return(res.name)}));
@@ -94,6 +101,9 @@ const FindCard = () =>{
             }else if(actionresponse.length>0){
 
                 navigate(`/Actiondetailname/${Findcardinputcontent}`);
+            }else if(triviaresponse.length>0){
+
+                navigate(`/Triviadetailname/${Findcardinputcontent}`);
             }
             else{
                 alert("No Results Found");

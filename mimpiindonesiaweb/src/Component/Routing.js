@@ -40,6 +40,7 @@ import EventDetailName from './EventDetailName/EventDetailName';
 import DreamDetailName from './DreamDetailName/DreamDetailName';
 import CharacterDetailName from './CharacterDetailName/CharacterDetailName';
 import ActionDetailName from './ActionDetailName/ActionDetailName';
+import TriviaDetailName from './TriviaDetailName/TriviaDetailName';
 
 
 const Routing = ()=>{
@@ -88,6 +89,7 @@ const Routing = ()=>{
             <Route path="Dreamdetailname/:dreamname" element={<DreamDetailName/>}/>
             <Route path="Characterdetailname/:charactername" element={<CharacterDetailName/>}/>
             <Route path="Actiondetailname/:actionname" element={<ActionDetailName/>}/>
+            <Route path='Triviadetailname/:trivianame' element={<TriviaDetailName/>}/>
 
 
             
