@@ -6,6 +6,7 @@ import Category from '../Category/Category';
 import Name from '../InsertName/Name';
 import CatDropdown from '../CategoryDropdown/CatDropdown';
 import FindCard from '../FindCard/FindCard';
+import './Home.css';
 
 
 
@@ -82,8 +83,10 @@ const Home = () => {
             <div id="homemisccontainer">
                 <Count/>
                 <br></br>
-                <p id="thetext">This text must change</p>
+                <div id="inputnamecontainer">
+                <p id="thetext">Write Your Name Here</p>
                 <Name/>
+                </div>
                 <br></br>
                 <br></br>
                 <FindCard/>

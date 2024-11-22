@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from 'react';
 import {useNavigate,Link} from 'react-router-dom';
 import Logo from '../Component/Logo/Logo';
+import FindCard from './FindCard/FindCard';
 import './Header.css';
 const url = "http://localhost:9120";
 
@@ -104,6 +105,8 @@ const Header = () =>{
             </div>
             <Link to="/"><div id="theLogo"><Logo/></div></Link>
             {conditionalHeader()}
+            <div className="FindCardHeader"><FindCard/></div>
+
            
             
         </div>
