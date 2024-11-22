@@ -44,7 +44,7 @@ const CatDropdown = () =>{
 
     const handleCategory = (event) =>{
         let dacategory=event.target.value;
-        console.log(dacategory);
+
         setdacateg(dacategory);
         fetch(`${baseUrl}/${dacategory}`,{method:'GET'})
         .then((res) => res.json())
@@ -98,7 +98,7 @@ const CatDropdown = () =>{
             <option value="0">Please Select A Value</option>
             {renderCategSpecific(categspecific)}
         </select>
-        <Link to={`/${dacateg}Listing?name=${value}`}>
+        <Link to={`/${dacateg}detailname/${value}`}>
         <button>GO
 
         </button>

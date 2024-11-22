@@ -86,12 +86,12 @@ const Routing = ()=>{
             <Route path="fanletter" element={<Fanletter/>}/>
             <Route path="blog" element={<Blog/>}/>
             <Route path="wordofwisdom" element={<Wordofwisdom/>}/>
-            <Route path="Eventdetailname/:eventname" element={<EventDetailName/>}/>
-            <Route path="Dreamdetailname/:dreamname" element={<DreamDetailName/>}/>
-            <Route path="Characterdetailname/:charactername" element={<CharacterDetailName/>}/>
-            <Route path="Actiondetailname/:actionname" element={<ActionDetailName/>}/>
-            <Route path='Triviadetailname/:trivianame' element={<TriviaDetailName/>}/>
-            <Route path="Moneydetailname/:moneyname" element={<MoneyDetailName/>}/>
+            <Route path="eventdetailname/:eventname" element={<EventDetailName/>}/>
+            <Route path="dreamdetailname/:dreamname" element={<DreamDetailName/>}/>
+            <Route path="characterdetailname/:charactername" element={<CharacterDetailName/>}/>
+            <Route path="actioningdetailname/:actionname" element={<ActionDetailName/>}/>
+            <Route path='triviadetailname/:trivianame' element={<TriviaDetailName/>}/>
+            <Route path="moneydetailname/:moneyname" element={<MoneyDetailName/>}/>
 
 
             

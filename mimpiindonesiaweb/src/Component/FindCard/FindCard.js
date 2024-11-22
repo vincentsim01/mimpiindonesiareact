@@ -95,25 +95,25 @@ const FindCard = () =>{
 
             if(eventresponse.length>0){
 
-                   navigate(`/Eventdetailname/${Findcardinputcontent}`);
+                   navigate(`/eventdetailname/${Findcardinputcontent}`);
             }
             else if(dreamresponse.length>0){
 
-                  navigate(`/Dreamdetailname/${Findcardinputcontent}`);
+                  navigate(`/dreamdetailname/${Findcardinputcontent}`);
             }
             else if(characterresponse.length>0){
 
-                navigate(`/Characterdetailname/${Findcardinputcontent}`);
+                navigate(`/characterdetailname/${Findcardinputcontent}`);
             }else if(actionresponse.length>0){
 
-                navigate(`/Actiondetailname/${Findcardinputcontent}`);
+                navigate(`/actioningdetailname/${Findcardinputcontent}`);
             }else if(triviaresponse.length>0){
 
-                navigate(`/Triviadetailname/${Findcardinputcontent}`);
+                navigate(`/triviadetailname/${Findcardinputcontent}`);
             }
             else if(moneyresponse.length>0){
 
-                navigate(`/Moneydetailname/${Findcardinputcontent}`);
+                navigate(`/moneydetailname/${Findcardinputcontent}`);
             }
             else{
                 alert("No Results Found");
