@@ -38,6 +38,7 @@ import Blog from './Blogs/blogs';
 import Wordofwisdom from './Wordofwisdom/Wordofwisdom';
 import EventDetailName from './EventDetailName/EventDetailName';
 import DreamDetailName from './DreamDetailName/DreamDetailName';
+import CharacterDetailName from './CharacterDetailName/CharacterDetailName';
 
 
 const Routing = ()=>{
@@ -84,6 +85,8 @@ const Routing = ()=>{
             <Route path="wordofwisdom" element={<Wordofwisdom/>}/>
             <Route path="Eventdetailname/:eventname" element={<EventDetailName/>}/>
             <Route path="Dreamdetailname/:dreamname" element={<DreamDetailName/>}/>
+            <Route path="Characterdetailname/:charactername" element={<CharacterDetailName/>}/>
+
 
             
 

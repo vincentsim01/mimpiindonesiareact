@@ -16,6 +16,7 @@ const FindCard = () =>{
     const [thecardname,setthecardname] = useState([]);
     const [eventresponse,seteventresponse] = useState([]);
     const [dreamresponse,setdreamresponse] = useState([]);
+    const [characterresponse,setcharacterresponse] = useState([]);
     let navigate = useNavigate();
 
 
@@ -42,8 +43,13 @@ const FindCard = () =>{
         .then((response) => response.json())
         .then((data)=>setdreamresponse(data));
 
+        fetch(`${baseUrl}/character?name=${Findcardinputcontent}`,{method:'GET'})
+        .then((response) => response.json())
+        .then((data)=>setcharacterresponse(data));
+
         console.log(eventresponse.map((res)=> {return(res.name)}));
         console.log(dreamresponse.map((res)=> {return(res.name)}));
+        console.log(characterresponse.map((res)=> {return(res.name)}));
 
         return Findcardinputcontent;
 
@@ -76,6 +82,10 @@ const FindCard = () =>{
 
                   navigate(`/Dreamdetailname/${Findcardinputcontent}`);
             }
+            else if(characterresponse.length>0){
+
+                navigate(`/Characterdetailname/${Findcardinputcontent}`);
+          }
             else{
                 alert("No Results Found");
             }
