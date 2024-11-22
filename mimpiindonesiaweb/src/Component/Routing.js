@@ -37,6 +37,7 @@ import Fanletter from './Fanletter/Fanletter';
 import Blog from './Blogs/blogs';
 import Wordofwisdom from './Wordofwisdom/Wordofwisdom';
 import EventDetailName from './EventDetailName/EventDetailName';
+import DreamDetailName from './DreamDetailName/DreamDetailName';
 
 
 const Routing = ()=>{
@@ -82,6 +83,7 @@ const Routing = ()=>{
             <Route path="blog" element={<Blog/>}/>
             <Route path="wordofwisdom" element={<Wordofwisdom/>}/>
             <Route path="Eventdetailname/:eventname" element={<EventDetailName/>}/>
+            <Route path="Dreamdetailname/:dreamname" element={<DreamDetailName/>}/>
 
             
 

@@ -28,10 +28,17 @@ const FindCard = () =>{
 
     function Findcardinputchange(e){
         return Findcardinputcontent = e.target.value;
+
     }
+
+    console.log(Findcardinputcontent);
     function Buttonsearchclick(){
         if(Findcardinputcontent){
-            navigate(`/Eventdetailname/${Findcardinputcontent}`);
+            // if(fetch(`${baseUrl}/event?=${Findcardinputcontent}`,{method:'GET'})>0){navigate(`/Eventdetailname/${Findcardinputcontent}`);}
+            // else{navigate(`/Dreamdetailname/${Findcardinputcontent}`)};
+            // navigate(`/Eventdetailname/${Findcardinputcontent}`)
+            navigate(`/Dreamdetailname/${Findcardinputcontent}`)
+
 
         }
             else{

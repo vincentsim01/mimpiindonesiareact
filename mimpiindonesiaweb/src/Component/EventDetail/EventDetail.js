@@ -22,7 +22,7 @@ const EventDetail = () =>{
         .then((res) => res.json())
         .then((data) => {
             seteventdetail(data)
-            console.log(eventdetail);
+
 
         })
     },[])
