@@ -36,6 +36,7 @@ import Subscriber from './Subscriber/Subscriber';
 import Fanletter from './Fanletter/Fanletter';
 import Blog from './Blogs/blogs';
 import Wordofwisdom from './Wordofwisdom/Wordofwisdom';
+import EventDetailName from './EventDetailName/EventDetailName';
 
 
 const Routing = ()=>{
@@ -80,6 +81,7 @@ const Routing = ()=>{
             <Route path="fanletter" element={<Fanletter/>}/>
             <Route path="blog" element={<Blog/>}/>
             <Route path="wordofwisdom" element={<Wordofwisdom/>}/>
+            <Route path="Eventdetailname/:eventname" element={<EventDetailName/>}/>
 
             
 

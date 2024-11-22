@@ -8,25 +8,32 @@ const baseUrl = "http://localhost:9120";
 
 
 var Findcardinputcontent;
+
+
+
+
 const FindCard = () =>{
+    const [thecardname,setthecardname] = useState([]);
     let navigate = useNavigate();
 
+
+
+    // function fetchevent(thecardname){
+    //     fetch(`${baseUrl}/event?name=${thecardname}`)
+    //        .then((response) => response.json())
+    //        .then((data) => {
+    //             useState(data);
+    //         });
+    // }
+
     function Findcardinputchange(e){
-
         return Findcardinputcontent = e.target.value;
-
-
     }
-
     function Buttonsearchclick(){
         if(Findcardinputcontent){
-
-            navigate(`/event`);
-// Clear the input field after searching
-
+            navigate(`/Eventdetailname/${Findcardinputcontent}`);
 
         }
-
             else{
                 alert("Your Search Input is Empty");
         }
