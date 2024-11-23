@@ -8,6 +8,7 @@ const baseUrl = "http://localhost:9120";
 
 
 const CharacterDetailName = () =>{
+    let navigate = useNavigate();
 
     let params = useParams();
     let cardnameid = params.charactername;
@@ -19,13 +20,52 @@ const CharacterDetailName = () =>{
        .then((data) => setCharactercardname(data));
     },[]);
 
-    console.log(cardnameid);
+
+
+    const previousbutton = () =>{
+        function previousevent(){
+                sessionStorage.setItem('cardcharacterdetail',JSON.stringify(1));
+                navigate(`/characterdetail/${1}`)
+        }
+        return(   
+            <>
+            <div className="previousbuttonins" onClick={previousevent}>
+                <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+                <img className="previouschevronimg" src="https://i.ibb.co/j3vDCBq/chevron2.png"></img>
+            </div>
+             </>    
+        )
+
+    }
+
+    const nextbutton = () =>{
+        function nextevent(){
+                sessionStorage.setItem('cardcharacterdetail',JSON.stringify(3));
+                navigate(`/characterdetail/${3}`)
+        }
+        return(   
+            <>
+                <div className="nextbuttonins" onClick={nextevent}>
+                <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+                <img className="nextchevronimg" src="https://i.ibb.co/sK4qSHC/chevron.png"></img>
+                </div>
+             </>    
+        )
+    }
 
 
     return(<>
+            <div className="characterdetailcontainer">
+            <div className="twoButtons">
+            <div className="previousbutton">{previousbutton()}</div>
+            <div className="nextbutton"><br></br>{nextbutton()}</div>
 
-    <CharacterDetailNameDisplay listData={Charactercardname}/>
-    
+                <CharacterDetailNameDisplay listData={Charactercardname}/>
+                </div>
+
+
+            </div>
+            
     
     </>)
 
