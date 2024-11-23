@@ -19,7 +19,7 @@ const Count = () => {
             <button className="btn btn-primary" onClick={pluscount}>Plus</button> &nbsp;
             <button className="btn btn-primary" onClick={minuscount}>Minus</button>
             <br></br>
-            This is the: {count}
+            Pick A Number For A Surprise: {count}
         </>
     )
 }
