@@ -3,11 +3,15 @@
     width:17%;
     margin:5px;
     border: 1px solid black;
+    text-align:center;
+    border-radius:20px;
+
 }
 
 .categorycontainer{
     display:inline;
-    border: 1px solid orange;
+
+
     margin:10px;
 
 
@@ -17,8 +21,9 @@
 .categoryimage{
 
     display:inline;
-    border: 1px solid pink;
+
     width:100%;
+    border-radius:20px;
 
 
     
@@ -27,7 +32,18 @@
 .categoryname{
     display:inline;
     width:50%;
-    border:1px solid blue;
+    text-align:center;
+
+}
+
+.misccontainer{
+    text-align:center;
+}
+
+.categorycontainertop{
+    border:1px solid black;
+    padding:20px;
+    margin:10px;
 }
 
 /* #categorymastercontainer{

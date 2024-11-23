@@ -89,11 +89,7 @@ const Home = () => {
                 </div>
                 <br></br>
                 <br></br>
-                <FindCard/>
-                <br></br>
-                <br></br>
-                <CatDropdown/>
-                <br></br>
+
             </div>
             </div>
             </div>

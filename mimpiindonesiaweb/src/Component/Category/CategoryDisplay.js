@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 
+
 const CategoryDisplay = (props) =>{
     const CategoryListing = ({thecategory}) =>{
         if(thecategory){
@@ -17,6 +18,7 @@ const CategoryDisplay = (props) =>{
                                 <div className="categoryname">{item.name}</div> 
                             </Link>
                         </div>
+
                     </div>
                     {/* </div> */}
                     
