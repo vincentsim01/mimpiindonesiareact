@@ -1,21 +1,30 @@
 .moneydetailcontainer{
+
+    margin-top:10px;
+    margin-bottom:10px;
     position:relative;
-    text-align:center;
+    padding:10px;
 
 }
 
 .previousbuttoncontainer{
     position:absolute;
     left:5%;
+    top:40%;
     display:inline-block;
-    border:1px solid black;
+    width:100px;
+    height:500px;
+    top:100px;
 }
 
 .nextbuttoncontainer{
     position:absolute;
-    right:5%;    
+    right:5%;
+    top:40%;
     display:inline-block;
-    border:1px solid black;
+    width:100px;
+    height:500px;
+    top:100px;
 }
 
 .previousbuttoncontainermoney{
@@ -57,11 +66,8 @@
 }
 
 .moneyDetailDisplayContainer{
-
     display:inline-block;
     text-align:center;
-
-    
 }
 
 
@@ -90,7 +96,7 @@
 
 .moneybutton{
     display:inline-block;
-    border:1px solid black;
+
     padding:5px 10px;margin:10px;
     width:40%;
 }

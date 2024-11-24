@@ -121,14 +121,14 @@ const MoneyDetail = () =>{
 
     return(
        
-        <div className="moneydetailcontainer container-fluid">
+        <div className="moneydetailcontainer">
 
 
             <div className="previousbuttoncontainer">
-                <div>{Previousbutton()}</div>
+                {Previousbutton()}
             </div>
             <div className="nextbuttoncontainer">
-                <div>{Nextbutton()}</div>
+                {Nextbutton()}
             </div>
 
             <div className="moneyDetailDisplayContainer1">
