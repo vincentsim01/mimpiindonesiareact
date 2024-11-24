@@ -17,19 +17,25 @@ const Category = () =>{
 
     return (
         <>
-        <div className="categorycontainertop">
 
-        <CategoryDisplay thecategory={category}/>
-        <br></br>
-        <div className="misccontainer">
+        <div className="categorycontainertop">
+            <div className="imgbgcontainer">
+                <img src="https://i.ibb.co/8YSDPZC/templatecloudhori.png" className="bgimage"></img>
+            </div>
+
+            <CategoryDisplay thecategory={category}/>
             <br></br>
-            <br></br>
-            <FindCard/>
-            <br></br>
-            <br></br>
-            <CatDropdown/>
-            <br></br>
+
         </div>
+
+        <div className="misccontainer">
+                    <br></br>
+                    <br></br>
+                    <FindCard/>
+                    <br></br>
+                    <br></br>
+                    <CatDropdown/>
+                    <br></br>
         </div>
         
         

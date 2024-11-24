@@ -5,35 +5,23 @@
     border: 1px solid black;
     text-align:center;
     border-radius:20px;
-
 }
 
 .categorycontainer{
     display:inline;
-
-
     margin:10px;
-
-
-
 }
 
 .categoryimage{
-
     display:inline;
-
     width:100%;
     border-radius:20px;
-
-
-    
 }
 
 .categoryname{
     display:inline;
     width:50%;
     text-align:center;
-
 }
 
 .misccontainer{
@@ -41,10 +29,27 @@
 }
 
 .categorycontainertop{
-    border:1px solid black;
+
     padding:20px;
     margin:10px;
+    position:relative;
 }
+
+.imgbgcontainer{
+    position: absolute;
+    z-index: -1;
+    opacity:0.2;
+    text-align:center;
+    height:50px;
+    display:inline-block;
+    width:40%;
+}
+
+.bgimage{
+    display:inline-block;
+    border-radius:20px;
+}
+
 
 /* #categorymastercontainer{
     display:inline-block;

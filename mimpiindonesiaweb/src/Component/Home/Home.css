@@ -4,13 +4,10 @@
 
 .opacityhalf{
     opacity:0.5;
-
 }
 
 #totalhomecontainer{
     position:relative;
-
-
 }
 
 #carouselExampleSlidesOnly{
@@ -20,6 +17,7 @@
 #homecontainer{
     z-index:1;
 
+    border-radius:20px;
 }
 
 #homemisccontainer{
@@ -28,7 +26,7 @@
     border:1px solid black;
     padding-bottom:30px;
     padding-top:30px;
-
+    border-radius:20px;
 }
 
 #popupimage{
@@ -43,14 +41,11 @@
     top:50px;
     left:20%;
     background-image: url("https://i.ibb.co/d7JHQP2/www-mimpiindonesia-com.png");
-
     text-align:center;
     border-radius:30px;
-
-
     background-repeat: no-repeat;
     box-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
- 
+
 }
 
 .popupclosebutton{
@@ -66,6 +61,7 @@
 #inputnamecontainer{
     border: 1px solid black;
     display:inline-block;
+    border-radius:20px;
     width:70%;
     margin:10px;
     padding:20px;

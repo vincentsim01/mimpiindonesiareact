@@ -69,28 +69,22 @@ const Home = () => {
                 <button type="button" className="popupclosebutton" onClick={closepopup}>X</button>
                 <img src="https://i.ibb.co/d7JHQP2/www-mimpiindonesia-com.png" id="popupimage"></img>
                 <p> Discount Up To 70% Off Today!</p>
-
             </div>
-
             <div id="homecontainer">
-
                 <Banner/>
                 <br></br>
                 <Category/>
                 <br></br><br></br>
-
-
-            <div id="homemisccontainer">
-                <Count/>
-                <br></br>
-                <div id="inputnamecontainer">
-                <p id="thetext">Write Your Name Here</p>
-                <Name/>
+                <div id="homemisccontainer">
+                    <Count/>
+                    <br></br>
+                    <div id="inputnamecontainer">
+                        <p id="thetext">Write Your Name Here</p>
+                        <Name/>
+                    </div>
+                    <br></br>
+                    <br></br>
                 </div>
-                <br></br>
-                <br></br>
-
-            </div>
             </div>
             </div>
 
