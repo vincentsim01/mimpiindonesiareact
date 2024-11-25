@@ -9,6 +9,7 @@
 .HeaderBG{
     position:absolute;
     left:0px;
+    top:-90px;
 
     opacity:0.2;
     z-index:-2;

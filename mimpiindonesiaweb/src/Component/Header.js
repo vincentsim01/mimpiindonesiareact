@@ -99,7 +99,7 @@ const Header = () =>{
                     <Link to="/Event"><div className="HeaderContent cardhiddenchild">Event</div></Link><br></br>
                     <Link to="/Actioning"><div className="HeaderContent cardhiddenchild">Action</div></Link><br></br>
                     <Link to="/Trivia"><div className="HeaderContent cardhiddenchild">Trivia</div></Link><br></br>
-                    <Link to="/Money"><div className="HeaderContent cardhiddenchild">Money</div></Link>
+                    <Link to="/Money"><div className="HeaderContent cardhiddenchild">Moneys</div></Link>
                 </div>  
             </div>
             <Link to="/contactus"><div className="HeaderContent">Contact Us</div></Link>
