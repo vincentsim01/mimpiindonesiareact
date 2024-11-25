@@ -7,6 +7,10 @@
     border-radius:20px;
 }
 
+.categorycontent:hover{
+    transform:scale(1.05);
+}
+
 .categorycontainer{
     display:inline;
     margin:10px;
