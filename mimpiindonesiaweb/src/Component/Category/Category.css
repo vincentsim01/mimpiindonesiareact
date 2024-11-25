@@ -1,7 +1,7 @@
 .categorycontent{
     display:inline-block;
-    width:17%;
-    margin:5px;
+    width:15%;
+    margin:2px;
     border: 1px solid black;
     text-align:center;
     border-radius:20px;
@@ -10,6 +10,7 @@
 .categorycontainer{
     display:inline;
     margin:10px;
+    width:30%;
 }
 
 .categoryimage{
@@ -57,3 +58,9 @@
     margin:10px;
     border:1px solid blue;
 } */
+
+@media only screen and (max-width: 1100px){
+    .HeaderContainer{
+        display:none;
+    }
+}
