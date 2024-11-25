@@ -3,7 +3,31 @@
     position:relative;
     justify-content:center;
     padding-top:20px;
+
 }
+
+.HeaderBG{
+    position:absolute;
+    left:0px;
+
+    opacity:0.2;
+    z-index:-2;
+    display:inline;
+
+    width:100%;
+    box-shadow: (5px black);
+}
+
+
+.headerimg{
+    position:absolute;
+    display:block;
+    width:100%;
+    top:-5px;
+    
+
+}
+
 
 #theLogo{
     /* display:solid 1px black; */

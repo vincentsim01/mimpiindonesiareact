@@ -85,6 +85,9 @@ const Header = () =>{
 
     return(
         <div className="HeaderContainer">
+            <div className="HeaderBG">
+                <img src="https://i.ibb.co/LRRnfLj/Horizontal-Stretch-Cloud-no-top.png" className="headerimg"></img>
+            </div>
             <div className="HeaderLeft">
            <Link to="/"> <div className="HeaderContent">Home</div></Link>
            <Link to="/About"><div className="HeaderContent">About</div></Link>
