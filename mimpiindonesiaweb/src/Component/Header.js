@@ -75,6 +75,15 @@ const Header = () =>{
         document.getElementById("cardhidden").classList.add("none");
     }
 
+    function mobilereveal(){
+        document.getElementById("mobileHeaderContent").classList.remove("none");
+    }
+
+    function mobilehide(){
+        document.getElementById("mobileHeaderContent").classList.add("none");
+
+    }
+
     // function headerhide(){
     //     document.getElementsByClassName("cardhiddenchild").classList.add(none);
 
@@ -84,6 +93,7 @@ const Header = () =>{
 
 
     return(
+        <>
         <div className="HeaderContainer">
             <div className="HeaderBG">
                 <img src="https://i.ibb.co/LRRnfLj/Horizontal-Stretch-Cloud-no-top.png" className="headerimg"></img>
@@ -113,6 +123,20 @@ const Header = () =>{
            
             
         </div>
+        <div className="mobileHeader">
+        <Link to="/"><div id="theLogo"><Logo /></div></Link>
+        {/* <a href="https://imgbb.com/"><img src="https://i.ibb.co/89KdTq3/menu.png" alt="menu" border="0"></a> */}
+        <div className="burger " onMouseOver={mobilereveal} onMouseOut={mobilehide}><img onMouseOver={mobilereveal} onMouseOut={mobilehide} id="burgericon" src="https://i.ibb.co/89KdTq3/menu.png" alt="menu" border="0"></img></div>
+            <div id="mobileHeaderContent" className="none">
+                <Link to="/"><div className="mobileHeaderContent">Home</div></Link>
+                <Link to="/About"><div className="mobileHeaderContent">About</div></Link>
+                <div className="mobileHeaderContent">Cards</div>
+                <div className="mobileHeaderContent">Contact Us</div>
+            </div>
+
+
+        </div>
+        </>
     )
 
 }

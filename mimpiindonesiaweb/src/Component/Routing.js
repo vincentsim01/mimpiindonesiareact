@@ -42,15 +42,17 @@ import CharacterDetailName from './CharacterDetailName/CharacterDetailName';
 import ActionDetailName from './ActionDetailName/ActionDetailName';
 import TriviaDetailName from './TriviaDetailName/TriviaDetailName';
 import MoneyDetailName from './MoneyDetailName/MoneyDetailName';
+import './Routing.css';
 
 
 const Routing = ()=>{
 
     return(
         <>
-        <BrowserRouter>
-        <Header/>
-        <Routes>
+        <BrowserRouter className="brouter">
+        <Header className="theHeader"/>
+        <br></br><br></br><br></br><br></br>
+        <Routes className="theRoute">
 
         <Route path="/" element={<Main/>}>
             <Route index element={<Home/>}/>
