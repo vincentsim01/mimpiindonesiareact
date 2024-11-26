@@ -126,8 +126,9 @@ const Header = () =>{
         <div className="mobileHeader">
         <Link to="/"><div id="theLogo"><Logo /></div></Link>
         {/* <a href="https://imgbb.com/"><img src="https://i.ibb.co/89KdTq3/menu.png" alt="menu" border="0"></a> */}
-        <div className="burger " onMouseOver={mobilereveal} onMouseOut={mobilehide}><img onMouseOver={mobilereveal} onMouseOut={mobilehide} id="burgericon" src="https://i.ibb.co/89KdTq3/menu.png" alt="menu" border="0"></img></div>
-            <div id="mobileHeaderContent" className="none">
+        <div className="burger " onClick={mobilereveal} ><img id="burgericon" src="https://i.ibb.co/89KdTq3/menu.png" alt="menu" border="0"></img></div>
+            <div id="mobileHeaderContent" className="none" >
+                <span className="closemobileheader" onClick={mobilehide}>X</span>
                 <Link to="/"><div className="mobileHeaderContent">Home</div></Link>
                 <Link to="/About"><div className="mobileHeaderContent">About</div></Link>
                 <div className="mobileHeaderContent">Cards</div>

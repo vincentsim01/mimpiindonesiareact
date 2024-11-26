@@ -157,6 +157,17 @@
     right:10px;
 }
 
+.burger{
+    cursor:pointer;
+}
+
+.closemobileheader{
+    position:absolute;
+    top:0px;
+    right:0px;
+    cursor:pointer;
+}
+
 @media only screen and (max-width: 1100px){
     .HeaderContainer{
         display:none;
