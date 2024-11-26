@@ -27,7 +27,7 @@ const Footer = () =>{
 
     }
 
-    return (
+    return (<>
         <div className="footercontainer">
         {/* <div className="container "> */}
             <div className="rowa">
@@ -129,6 +129,17 @@ const Footer = () =>{
 
         
         </div>
+
+        <div id="mobilefootercontainer">
+            <div id="mobilefootertext">
+                <Link to ='/blog'><p>Blogs</p></Link>
+                <Link to ='/contactus'><p>Contact Us</p></Link>
+                <Link to ='/fanletter'><p>Fanletter</p></Link>
+            </div>
+        
+
+        </div>
+        </>
     )
 
 }

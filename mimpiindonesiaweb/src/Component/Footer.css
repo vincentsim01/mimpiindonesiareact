@@ -122,5 +122,33 @@
   .none{
     display:none;
   }
-  
-  
+
+  #mobilefootercontainer{
+    border:solid 1px black;
+    padding:10px;
+    display:block;
+    position:relative;
+    text-align:center;
+
+  }
+
+  #mobilefootertext{
+    text-align:center;
+    display:block;
+    width:100%;
+    position:relative;
+
+
+  }
+
+  @media only screen and (max-width: 1100px){
+    .footercontainer{
+        display:none;
+    }
+}
+
+@media only screen and (min-width: 1100px){
+    #mobilefootercontainer{
+        display:none;
+    }
+}
