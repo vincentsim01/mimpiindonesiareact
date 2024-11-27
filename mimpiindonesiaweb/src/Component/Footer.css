@@ -2,6 +2,7 @@
   background-color:#2596be;
   margin-top:15px;
   color:white;
+  position:relative;
 
 }
 
@@ -74,26 +75,49 @@
 
 }
 
+#footercontainer2{
+  position:relative;
+  display:block;
+  /* text-align:center; */
+  /* border:solid 1px black; */
+  padding:30px;
+}
+
+.footeraddress{
+
+}
 
 
 
+#socmediconcontainer{
+  position:relative;
+  display:inline-block;
+  width:68%;
+
+  padding:10px;
+}
 
 
 .subscribercontainer{
-    background-color:#2596be;
-    display:block;
+    /* background-color:#2596be; */
+    margin-left:10px;
+    display:inline-block;
     position:relative;
-  
-
-  
+    right:5px;
+    width:25%;
+    top:-110px;
     padding:30px;
+
   }
 
   .subscriberbetween{
     position:relative;
     display:block;
 
-    background-color:#2596be;
+   
+    /* right:0px; */
+
+    /* background-color:#2596be; */
 
 
   }
@@ -108,6 +132,10 @@
     justify-content: flex-end;
 
 
+  }
+
+  #socmedicon{
+    padding:15px;
   }
 
   .form-group{

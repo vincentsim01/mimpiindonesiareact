@@ -50,12 +50,12 @@ const Subscriber = () =>{
                     </div>
                     <br></br>
                         <div className="row">
-                            <div className="col-md-2 form-group">
+                            <div className="col-lg-12 col-md-12 col-sm-12 form-group">
                                 <label for="name" className="control-label">Name</label>
                                 <input className="form-control" id="name"
                                 name="name" value={thesubscriber.name} onChange={handleInputChange}/>
                             </div>
-                            <div className="col-md-2 form-group">
+                            <div className="col-lg-12 col-md-12 col-sm-12 form-group">
                                 <label for="email" className="control-label">Email</label>
                                 <input className="form-control" id="email"
                                 name="email" value={thesubscriber.email} onChange={handleInputChange}/>

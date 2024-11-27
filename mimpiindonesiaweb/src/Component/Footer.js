@@ -33,34 +33,32 @@ const Footer = () =>{
             <div className="rowa">
                 <div id="socialmediafootercontainer" className="col footercontent">
                     <div id="socialmediafootertext" onMouseOver={socialmediareveal} onMouseOut={socialmediahide}>Social Media
-                    <div id="socialmediafooter" className="none" style={{width:"250px"}}>
-                    <table style={{textAlign:"center", width:"100%"}}>
-                                    <tr>
-                                        <td>
-                                            <a href="http://www.facebook.com" target="_blank">Facebook</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <Link to="http://www.instagram.com" target="_blank">Instagram</Link>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="http://www.tiktok.com" target="_blank">TikTok</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="http://www.snapchat.com" target="_blank">Snapchat</a>
-                                        </td>
-                                    </tr>
-                        </table>
+                        <div id="socialmediafooter" className="none" style={{width:"250px"}}>
+                            <table style={{textAlign:"center", width:"100%"}}>
+                                            <tr>
+                                                <td>
+                                                    <a href="http://www.facebook.com" target="_blank">Facebook</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <Link to="http://www.instagram.com" target="_blank">Instagram</Link>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="http://www.tiktok.com" target="_blank">TikTok</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <a href="http://www.snapchat.com" target="_blank">Snapchat</a>
+                                                </td>
+                                            </tr>
+                                </table>
+                        </div>
                     </div>
-                    </div>
-
                 </div>
-
                 <div className="col footercontent" id="cardtypefootercontainer">
                     <div id="cardtypetext" onMouseOver={cardtypereveal} onMouseOut={cardtypehidden}>Card Types
                             <div id="cardtypefooter" className="none" style={{width:"250px"}} >
@@ -100,32 +98,50 @@ const Footer = () =>{
                     </div>
                 </div>
                 <div className="col footercontent">
-                <Link to ='/blog' style={{ color: 'white' }}>
-
-                    Blogs
-
-                </Link>
+                    <Link to ='/blog' style={{ color: 'white' }}>
+                        Blogs
+                    </Link>
                 </div>
                 <div className="col footercontent">
-                <Link to ='/contactus'  style={{ color: 'white' }}>
-                    Contact Us
-                </Link>
+                    <Link to ='/contactus'  style={{ color: 'white' }}>
+                        Contact Us
+                    </Link>
                 </div>
-                <div className="col footercontent">
-                <Link to ='/fanletter' style={{ color: 'white' }}>
-
-                    Fanletter
-
-                </Link>
+                    <div className="col footercontent">
+                    <Link to ='/fanletter' style={{ color: 'white' }}>
+                        Fanletter
+                    </Link>
                 </div>
             {/* </div> */}
-        </div>
-        <br></br>
-        <div className="subscribercontainer">
-            <div className="subscriberbetween">
-                <Subscriber></Subscriber>
             </div>
+        <br></br><br></br>
+        <div id="footercontainer2">
+
+            <div id="socmediconcontainer">
+                <h4>Address</h4>
+                <br></br>
+                <span className="footeraddress">Jalan Asal Selamat Nomor 0 Kelurahan Gajah Mungkur, Kecamatan Kucing Goreng, 
+                    <br></br>Kotamadya Cidingin, Kabupaten Segar, Perjakarta Tenggara 
+                </span>
+                <br></br>
+                <br></br>
+
+                <div id="socmedicon" style={{ color: 'white' }}>
+                    <a href="https://www.facebook.com/mimpiindonesia" target="_blank" style={{ color: 'white' }}> FB </a>
+                    <Link to="http://www.instagram.com" target="_blank" style={{ color: 'white' }}> IG </Link>
+                    <a href="http://www.tiktok.com" target="_blank" style={{ color: 'white' }}> TT </a>
+                    <a href="http://www.snapchat.com" target="_blank" style={{ color: 'white' }}> SC </a>
+                </div>
+            </div>    
+            <div className="subscribercontainer">
+                <div className="subscriberbetween">
+                    <Subscriber></Subscriber>
+                </div>
+            </div>
+
+
         </div>
+       
 
         
         </div>
@@ -136,8 +152,6 @@ const Footer = () =>{
                 <Link to ='/contactus' style={{ color: 'white' }}><p>Contact Us</p></Link>
                 <Link to ='/fanletter' style={{ color: 'white' }}><p>Fanletter</p></Link>
             </div>
-        
-
         </div>
         </>
     )
