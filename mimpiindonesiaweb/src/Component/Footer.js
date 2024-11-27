@@ -132,9 +132,9 @@ const Footer = () =>{
 
         <div id="mobilefootercontainer">
             <div id="mobilefootertext">
-                <Link to ='/blog'><p>Blogs</p></Link>
-                <Link to ='/contactus'><p>Contact Us</p></Link>
-                <Link to ='/fanletter'><p>Fanletter</p></Link>
+                <Link to ='/blog' style={{ color: 'white' }}><p>Blogs</p></Link>
+                <Link to ='/contactus' style={{ color: 'white' }}><p>Contact Us</p></Link>
+                <Link to ='/fanletter' style={{ color: 'white' }}><p>Fanletter</p></Link>
             </div>
         
 
