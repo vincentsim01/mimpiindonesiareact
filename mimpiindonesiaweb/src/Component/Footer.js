@@ -128,12 +128,14 @@ const Footer = () =>{
 
                 {/* <a href="https://imgbb.com/"><img src="https://i.ibb.co/fnrRX8R/icons8-facebook-48.png" alt="icons8-facebook-48" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>online photo upload and share</a><br /> */}
                 {/* <a href="https://imgbb.com/"><img src="https://i.ibb.co/QbvMHn4/icons8-instagram-48.png" alt="icons8-instagram-48" border="0"></a> */}
+                {/* <a href="https://imgbb.com/"><img src="https://i.ibb.co/9nKDBXD/icons8-tik-tok-50.png" alt="icons8-tik-tok-50" border="0"></a><br /><a target='_blank' href='https://poetandpoem.com/Carl-Sandburg/quotes'>carl sandburg quotes</a><br /> */}
+                {/* <a href="https://imgbb.com/"><img src="https://i.ibb.co/KFhYz5y/icons8-snapchat-48.png" alt="icons8-snapchat-48" border="0"></a> */}
 
                 <div id="socmedicon" style={{ color: 'white' }}>
                     <a href="https://www.facebook.com/mimpiindonesia" target="_blank" style={{ color: 'white' }}> <img src="https://i.ibb.co/fnrRX8R/icons8-facebook-48.png"></img> </a>
                     <Link to="http://www.instagram.com" target="_blank" style={{ color: 'white' }}> <img src="https://i.ibb.co/QbvMHn4/icons8-instagram-48.png"></img> </Link>
-                    <a href="http://www.tiktok.com" target="_blank" style={{ color: 'white' }}> TT </a>
-                    <a href="http://www.snapchat.com" target="_blank" style={{ color: 'white' }}> SC </a>
+                    <a href="http://www.tiktok.com" target="_blank" style={{ color: 'white' }}> <img src="https://i.ibb.co/9nKDBXD/icons8-tik-tok-50.png"></img> </a>
+                    <a href="http://www.snapchat.com" target="_blank" style={{ color: 'white' }}> <img src="https://i.ibb.co/KFhYz5y/icons8-snapchat-48.png"></img> </a>
                 </div>
             </div>    
             <div className="subscribercontainer">
