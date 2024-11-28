@@ -146,6 +146,8 @@ const Footer = () =>{
 
 
         </div>
+        <br></br><br></br>
+        <div className="copyrightfooter"><p>© Mimpi Indonesia 2024</p></div>
        
 
         
@@ -157,6 +159,15 @@ const Footer = () =>{
                 <Link to ='/contactus' style={{ color: 'white' }}><p>Contact Us</p></Link>
                 <Link to ='/fanletter' style={{ color: 'white' }}><p>Fanletter</p></Link>
             </div>
+
+            <div id="socmediconmobile" style={{ color: 'white' }}>
+                    <a href="https://www.facebook.com/mimpiindonesia" target="_blank" style={{ color: 'white' }}> <img src="https://i.ibb.co/fnrRX8R/icons8-facebook-48.png"></img> </a>
+                    <Link to="http://www.instagram.com" target="_blank" style={{ color: 'white' }}> <img src="https://i.ibb.co/QbvMHn4/icons8-instagram-48.png"></img> </Link>
+                    <a href="http://www.tiktok.com" target="_blank" style={{ color: 'white' }}> <img src="https://i.ibb.co/9nKDBXD/icons8-tik-tok-50.png"></img> </a>
+                    <a href="http://www.snapchat.com" target="_blank" style={{ color: 'white' }}> <img src="https://i.ibb.co/KFhYz5y/icons8-snapchat-48.png"></img> </a>
+            </div>
+            <br></br><br></br>
+            <div className="copyrightfooter" style={{color:'white'}}><p>© Mimpi Indonesia 2024</p></div>
         </div>
         </>
     )
