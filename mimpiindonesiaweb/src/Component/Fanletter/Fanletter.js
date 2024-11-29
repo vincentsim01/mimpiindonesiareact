@@ -3,20 +3,14 @@ import { useNavigate } from 'react-router-dom';
 const baseUrl = "http://localhost:9120";
 
 const Fanletter = () =>{
-
     let navigate = useNavigate();
-
     const initialvalues = {
         name:"Arthur",
         email:"arthur@gmail.com",
         message:"Mimpi Indonesia is the best"
-
     };
-
     const [thefanletter, setthefanletter] = useState(initialvalues);
-
     const checkout = () =>{
-
         fetch(`${baseUrl}/fanletter`,{method: 'POST',
             headers:{
                 'accept':'application/json',
@@ -25,11 +19,7 @@ const Fanletter = () =>{
             body:JSON.stringify(thefanletter)
         })
         .then(alert('You are now fanlettered'))
-
     }
-
-
-
     const handleInputChange = (e) =>{
         const {name,value} = e.target;
         setthefanletter({
@@ -38,11 +28,8 @@ const Fanletter = () =>{
         })
     }
 
-
-
     return(
         <>
-
         <div className="container-fluid">
             <div className="row">
                 <div>
@@ -60,7 +47,7 @@ const Fanletter = () =>{
                 <div>
                 <button className='btn btn-success' onClick={checkout}>
                                 Submit
-                        </button>
+                </button>
 
                 </div>
 
