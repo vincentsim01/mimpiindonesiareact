@@ -30,10 +30,19 @@ const DreamFilter = (props) =>{
     }
 
     const handlefilterharga = (event)=>{
-        dreamUrl = `${baseUrl}/dreamfilter?theharga=${Number(event.target.value)}`;
-        fetch(dreamUrl, {method: 'GET'})
-       .then((data)=>data.json())
-       .then((res)=> {props.dreamfiltering(res)})
+        if(event.target.value!=="NA"){
+            dreamUrl = `${baseUrl}/dreamfilter?theharga=${Number(event.target.value)}`;
+            fetch(dreamUrl, {method: 'GET'})
+           .then((data)=>data.json())
+           .then((res)=> {props.dreamfiltering(res)})
+        }else{
+            dreamUrl = `${baseUrl}/dreamfilter`;
+            fetch(dreamUrl, {method: 'GET'})
+           .then((data)=>data.json())
+           .then((res)=> {props.dreamfiltering(res)})
+        }
+
+
     }
 
     const DreamDropdown2 = () =>{
@@ -58,7 +67,8 @@ const DreamFilter = (props) =>{
         </select>
 
         <select onChange={handlefilterharga}>
-            <option value="NA">NA</option>
+            <option value="NA">All Price</option>
+            <option value="0">0</option>
             <option value="10">10</option>
             <option value="20">20</option>
             <option value="30">30</option>
