@@ -33,6 +33,10 @@ const Dream= () =>{
 
     return(
         <>
+        
+        <div id="dreambannercontainer">
+            <img id="dreambanner" src="https://i.ibb.co/M5ZQFG9/dreampic.jpg"></img>
+        </div>
         <div id="dreamfiltercontainer">        
             <DreamFilter  thedream={dream} dreamfiltering={(data) => {setDataPerFilter(data)}}/>
         </div>
