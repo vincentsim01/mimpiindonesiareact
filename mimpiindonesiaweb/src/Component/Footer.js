@@ -147,7 +147,7 @@ const Footer = () =>{
 
         </div>
         <br></br><br></br>
-        <div className="copyrightfooter"><p>© Mimpi Indonesia 2024</p></div>
+        <div className="copyrightfooter"><p>© Mimpi Indonesia 2024</p></div> 
        
 
         
