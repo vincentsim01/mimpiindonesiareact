@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {useParams,useSearchParams,useNavigate,Link, Navigate} from 'react-router-dom';
+import './ActionFilter.css';
 const baseUrl = "http://localhost:9120";
 
 
@@ -16,6 +17,12 @@ const ActionFilter = (props) =>{
         .then((res)=>res.json())
         .then((data)=> props.actionfiltering(data))
     }
+
+    // const handleChangeDurationPhase = (event) =>{
+    //     fetch(`${baseUrl}/actionfilter?duration=${event.target.value}&phase=${event.target.value}`, {method: 'GET'})
+    //     .then((res)=>res.json())
+    //     .then((data)=> props.actionfiltering(data))
+    // }
 
     const handleReset = (event) =>{
         fetch(`${baseUrl}/actioning`, {method: 'GET'})
@@ -39,8 +46,6 @@ const ActionFilter = (props) =>{
         <div onChange={handleChangePhase} className="Filter">
             <label className="filterValue">
                 <input type="radio" name="phase" value="own turn"/>own turn
-
-
             </label>
             <label className="filterValue">
                 <input type="radio" name="phase" value="anytime"/>anytime
@@ -49,21 +54,12 @@ const ActionFilter = (props) =>{
 
 
         Duration
-        {/* <select onChange={handleChangeDuration} type="radio">
-            <option value="instant">instant</option>
-            <option value="multi turn">multi turn</option>
-        </select> */}
-
-
-
         <div onChange={handleChangeDuration} className="Filter">
             <label className="filterValue"> 
                 <input type="radio" name="duration" value="instant"/>instant
             </label>
             <label className="filterValue">
                 <input type="radio" name="duration" value="multi turn"/>multi turn
-
-
             </label>
         </div>
 

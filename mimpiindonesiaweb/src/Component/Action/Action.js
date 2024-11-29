@@ -17,7 +17,6 @@ const Actions = () =>{
 
     const setDataPerFilter = (data) =>{
         setactions(data);
-
     }
 
     return(
