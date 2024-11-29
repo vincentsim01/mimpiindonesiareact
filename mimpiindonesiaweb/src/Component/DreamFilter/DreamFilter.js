@@ -23,8 +23,8 @@ const DreamFilter = (props) =>{
     const handlefilter = (event) =>{
             dreamUrl = `${baseUrl}/dreamfilter?character=${event.target.value}`;
             fetch(dreamUrl, {method: 'GET'})
-            .then((data)=>data.json())
-            .then((res)=> {props.dreamfiltering(res)})
+                .then((data)=>data.json())
+                .then((res)=> {props.dreamfiltering(res)})
             // axios.get(dreamUrl)
             // .then((res) => {props.dreamfiltering(res.data)})
     }
@@ -41,8 +41,6 @@ const DreamFilter = (props) =>{
            .then((data)=>data.json())
            .then((res)=> {props.dreamfiltering(res)})
         }
-
-
     }
 
     const DreamDropdown2 = () =>{
@@ -56,17 +54,17 @@ const DreamFilter = (props) =>{
     }
 
     return (
-
         <>
-        <div>Dream Filter Based On Character</div>
+        <div><h4>Dream Filter</h4></div>
 
-        <select onChange={handlefilter}>
+        <select onChange={handlefilter} className="dreamfilterselect">
             <option value="">Select All</option>
             {DreamDropdown2(props)}
             <option value="NA">NA</option>
         </select>
 
-        <select onChange={handlefilterharga}>
+
+        <select onChange={handlefilterharga} className="dreamfilterselect">
             <option value="NA">All Price</option>
             <option value="0">0</option>
             <option value="10">10</option>
