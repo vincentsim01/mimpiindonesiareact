@@ -25,6 +25,7 @@
 
 #dreambanner:hover{
     transform:scale(1.05);
+    animation-duration: 1s infinite;
 }
 
 .dreamindividual{
