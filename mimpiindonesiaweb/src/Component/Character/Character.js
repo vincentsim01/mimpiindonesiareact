@@ -22,6 +22,11 @@ const Character= () =>{
 
     return(
         <>
+        <div id="characterbannercontainer">
+    
+            <div id="bgimagecharacter">            <h1 style={{color:"white"}}><br></br><br></br><br></br>CHOOSE YOUR CHARACTER</h1></div>
+        </div>
+        <br></br><br></br>
         <h1 align="center">Character Cards </h1>
         <CharacterDisplay thecharacter={character}/>
         </>
