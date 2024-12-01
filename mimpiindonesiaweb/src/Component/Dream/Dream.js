@@ -35,7 +35,9 @@ const Dream= () =>{
         <>
         
         <div id="dreambannercontainer">
-            <img id="dreambanner" src="https://i.ibb.co/M5ZQFG9/dreampic.jpg"></img>
+            {/* <img id="dreambanner" src="https://i.ibb.co/tLtGs8d/dream-orange.webp"></img> */}
+            <br></br><br></br>            <br></br><br></br>            <br></br><br></br>
+            <p id="dreambannertitle"><h1 >CHASE YOUR DREAM</h1></p>
         </div>
         <div id="dreamfiltercontainer">        
             <DreamFilter  thedream={dream} dreamfiltering={(data) => {setDataPerFilter(data)}}/>

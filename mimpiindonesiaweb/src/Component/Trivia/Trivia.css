@@ -12,6 +12,17 @@
 
 }
 
+#triviafiltercontainer{
+    text-align:center;
+    background-color:lightblue;
+    padding:15px;
+}
+
+.triviafiltercontent{
+    margin:10px;
+    padding:5px;
+}
+
 .imageTrivia{
     width:100%;
     display:inline-block;
@@ -20,6 +31,17 @@
 
 
 
+}
+
+#triviafiltercontainer{
+    text-align:center;
+    background-color:lightblue;
+    padding:15px;
+}
+
+.triviafiltercontent{
+    margin:10px;
+    padding:5px;
 }
 
 .nameTrivia{

@@ -24,25 +24,29 @@ const EventFilter = (props) =>{
 
     return(
         <>
+        <div id="eventfiltercontainer">
+            <h4>Card Type Filter:</h4>
 
-        <div onChange={handleFilterChange}>
+            <div onChange={handleFilterChange}>
+                
 
-        <label>
-            <input type="radio" name="type" value="positive"/>Positive
-        </label>
+            <label>
+                <input className="eventfiltercontent" type="radio" name="type" value="positive"/>Positive
+            </label>
 
-        <label>
-            <input type="radio" name="type" value="negative"/>Negative
-        </label>
+            <label>
+                <input className="eventfiltercontent" type="radio" name="type" value="negative"/>Negative
+            </label>
 
-        <label>
-            <input type="radio" name="type" value="positive/negative"/>Positive/Negative
-        </label>        
-        
-        <label>
-            <input type="radio" name="type" value="All"/>Reset Filter
-        </label>
+            <label>
+                <input className="eventfiltercontent" type="radio" name="type" value="positive/negative"/>Positive/Negative
+            </label>        
+            
+            <label>
+                <input className="eventfiltercontent" type="radio" name="type" value="All"/>Reset Filter
+            </label>
 
+            </div>
         </div>
         
         

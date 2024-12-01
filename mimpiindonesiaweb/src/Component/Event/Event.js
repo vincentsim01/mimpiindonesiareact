@@ -34,7 +34,16 @@ const Event = () =>{
     return(
         <>
         {/* This is Event */}
+        <div id="eventbgbanner">
+            {/* <img src="https://i.ibb.co/tLtGs8d/dream-orange.webp"></img> */}
+            <div id="eventbannercontent"><br></br><p id="eventbannertitle"><h1 >EXPECT THE UNEXPECTED</h1></p></div>
+               
+
+            
+        </div>
+        <br></br>
         <EventFilter eventFiltering={(data)=>setDataPerFilter(data)}/>
+            <br></br><br></br>
         <h1 align="center">Event Cards </h1>
         <EventDisplay theevent={event}/>
         <Eventpromotion thepromo={daypromotion[Math.floor(Math.random() * daypromotion.length)]}/>

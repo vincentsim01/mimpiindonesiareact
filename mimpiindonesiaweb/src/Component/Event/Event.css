@@ -3,6 +3,31 @@
     text-align:center;
 }
 
+#eventbgbanner{
+    background-color: #9256a3;
+    text-align:center;
+    background-image:url('https://i.ibb.co/1nF5Rdn/eventbanner.webp');
+    background-size: cover;
+    background-repeat:no-repeat;
+    border-radius:20px;
+}
+
+#eventbannertitle{
+    color:white;
+}
+
+#eventbannercontent{
+    display:inline-block;
+    width:100%;
+    height:500px;
+    padding:100px;
+    vertical-align: middle;
+    opacity:0.8;
+    border-radius:20px;
+}
+
+
+
 
 .eventcontainer{
     text-align:center;
@@ -31,7 +56,17 @@
     height:150px;
 }
 
+#eventfiltercontainer{
+    padding:15px;
+    border-radius:20px;
+    background-color: #9256a3;
+    text-align:center;
+}
 
+.eventfiltercontent{
+
+    margin:15px;
+}
 
 
 .twobuttons{

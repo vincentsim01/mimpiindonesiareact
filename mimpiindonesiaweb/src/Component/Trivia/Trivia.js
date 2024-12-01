@@ -23,7 +23,9 @@ const Trivia = () =>{
     return(
 
         <>
-            <TriviaFilter triviafiltering={(data)=>{setDataPerFilter(data)}}/>
+        <div id="triviafiltercontainer">
+            <TriviaFilter className="triviafiltercontent" triviafiltering={(data)=>{setDataPerFilter(data)}}/>
+        </div>
                 <br></br>
          
             <TriviaDisplay thetrivias={trivias}/>
