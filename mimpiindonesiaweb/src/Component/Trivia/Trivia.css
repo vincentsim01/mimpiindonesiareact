@@ -56,5 +56,25 @@
     display:block;
 }
 
+#triviabannercontainer{
+    text-align:center;
+    background-color:lightblue;
+    padding:15px;
+    background-image:url('https://i.ibb.co/2K9f3XM/banner.jpg');
+
+    background-repeat: no-repeat;
+    background-size:cover;
+    opacity:0.8;
+    border-radius:20px;
+    
+}
+
+#triviabannercontent{
+    border-radius:20px;
+    display:inline-block;
+    height:500px;
+    width:100%;
+
+}
 
 

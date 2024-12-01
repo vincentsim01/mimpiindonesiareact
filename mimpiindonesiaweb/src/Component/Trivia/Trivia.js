@@ -23,6 +23,12 @@ const Trivia = () =>{
     return(
 
         <>
+        <div id="triviabannercontainer">
+            <br></br><br></br>            <br></br><br></br>
+            <h1 style={{color:"white"}}>Unleash Your Knowledge</h1>
+            <div id="triviabannercontent"></div>
+        </div>
+        <br></br><br></br>
         <div id="triviafiltercontainer">
             <TriviaFilter className="triviafiltercontent" triviafiltering={(data)=>{setDataPerFilter(data)}}/>
         </div>
