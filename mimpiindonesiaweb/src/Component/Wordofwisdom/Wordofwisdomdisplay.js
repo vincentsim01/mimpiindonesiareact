@@ -59,6 +59,23 @@ const Wordofwisdomdisplay = (props) =>{
         }
     ];
 
+    let letters = ['a','b','c','a','b','b','c','a','a','a','a','b','c'];
+
+    let sum=0;
+
+    let objectletter={};
+
+    letters.forEach((item) =>{
+        if(objectletter[item]){
+            objectletter[item]++;
+        }else{
+            objectletter[item]=1;
+        }
+    });
+
+    console.log(objectletter);
+    console.log(letters);
+
 
 
     // let objectify3=Object.keys(objectifin[1]);
