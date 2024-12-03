@@ -61,8 +61,6 @@ const Wordofwisdomdisplay = (props) =>{
 
     let letters = ['a','b','c','a','b','b','c','a','a','a','a','b','c'];
 
-    let sum=0;
-
     let objectletter={};
 
     letters.forEach((item) =>{
@@ -73,10 +71,43 @@ const Wordofwisdomdisplay = (props) =>{
         }
     });
 
-    console.log(objectletter);
-    console.log(letters);
 
 
+    let letterorder = ['a','d','b','g','t','w'];
+
+    let orderedletter = letterorder.sort();
+
+    // console.log(orderedletter);
+
+
+    let numberorder = [3,56,22,23,54,10,7,88];
+
+    let orderednumber = numberorder.sort((a,b) => a - b);
+    //affect the original array
+    // console.log(orderednumber);
+    // console.log(numberorder);
+
+    let slicearray = ["Abraham", "Jonathan","Jose","Lucas","Jodie","Andreas","Yonathan"];
+
+    let slicearray2 = slicearray.slice(2,5);
+
+    // console.log(slicearray2);
+    // console.log(slicearray);
+
+
+    let splicearray = ["Abraham", "Jonathan","Jose","Lucas","Jodie","Andreas","Yonathan"];
+    let splicearray2=splicearray.splice(1,4,"Josh","Mario","Aldi");
+    let splicearray3=splicearray.splice(4,2,"Kafi",22,33)
+    //affect the original array
+    // console.log(splicearray2);
+    // console.log(splicearray3);
+    // console.log(splicearray);
+
+
+    let foreacharray = ["Lala","Lulu","Lele","Lili","Lolo"];
+    let foreached = foreacharray.forEach((item) => `Hi I am ${item}`);
+    console.log(foreached);
+    console.log(foreacharray);
 
     // let objectify3=Object.keys(objectifin[1]);
     // let objectify4=[];
@@ -94,22 +125,8 @@ const Wordofwisdomdisplay = (props) =>{
     for (var obj of objectify){
         for (var key in obj){
             objectify2.push(`${key}, ${obj[key]}`);
-
         }
     }
-
-    
-    
-
-
-    // console.log(objectify.map((data)=>{
-    //     return data.email
-    // }));
-
-
-
-
-
 
     const renderdata = ({listData}) => {
         if(listData.length>0){
@@ -134,13 +151,13 @@ const Wordofwisdomdisplay = (props) =>{
                         {objectify.map((item)=>{
                             return(
                                 <>
-                                {item.hobby.map((item2)=>{
-                                    return(
-                                        <>
-                                        {item2.name}
-                                        </>
-                                    )
-                                })}
+                                    {item.hobby.map((item2)=>{
+                                        return(
+                                            <>
+                                            {item2.name}
+                                            </>
+                                        )
+                                    })}
                                 </>
                             )
                         })}
@@ -235,11 +252,25 @@ const Wordofwisdomdisplay = (props) =>{
             )
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     return(
         <>
-
         {renderdata(props)}
-
         </>
     )
 }
