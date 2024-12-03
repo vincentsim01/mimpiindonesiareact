@@ -135,9 +135,25 @@ const Wordofwisdomdisplay = (props) =>{
 
     //reduce objectify
 
-    let phonenumberobjectifyreduce = objectify.reduce((accu,item) => accu+item.telephone,0);
+    // let phonenumberobjectifyreduce = objectify.reduce((accu,item) => accu+item.telephone,0);
 
-    console.log(phonenumberobjectifyreduce);
+    // console.log(phonenumberobjectifyreduce);
+
+    const employeeA =  {
+        name: "John Doe",
+        age: 30,
+        hobbies: ["reading", "painting", "cooking"],
+        introduction: function(){console.log(`Hi My name is ${this.name} and I am ${this.age}`)}
+    }
+
+    employeeA.introduction();
+
+
+
+
+
+
+
     // for (const obj of objectifin) {
     //     for (const key in obj) {
     //       objectify4.push(`${obj[key]}`); // Log each key-value pair
