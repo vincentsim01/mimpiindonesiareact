@@ -105,13 +105,39 @@ const Wordofwisdomdisplay = (props) =>{
 
 
     let foreacharray = ["Lala","Lulu","Lele","Lili","Lolo"];
-    let foreached = foreacharray.forEach((item) => `Hi I am ${item}`);
+    let foreached = foreacharray.forEach((item) => console.log("Hi I am "+item));
     console.log(foreached);
     console.log(foreacharray);
+
+
+    let reducearray = [3,2,5,6,10];
+
+    let thereduced = reducearray.reduce((acc, item)=> acc+item ,0);
+
+    // console.log(thereduced);
+    // console.log(reducearray);
+
+    let thereducemax = reducearray.reduce(callback,0);
+
+    function callback(accu,item){
+        if(accu>item){
+            return accu;
+        }else{
+            return item;
+        }
+    }
+    // no effect old array
+    // console.log(thereducemax);
+    // console.log(reducearray);
 
     // let objectify3=Object.keys(objectifin[1]);
     // let objectify4=[];
 
+    //reduce objectify
+
+    let phonenumberobjectifyreduce = objectify.reduce((accu,item) => accu+item.telephone,0);
+
+    console.log(phonenumberobjectifyreduce);
     // for (const obj of objectifin) {
     //     for (const key in obj) {
     //       objectify4.push(`${obj[key]}`); // Log each key-value pair
