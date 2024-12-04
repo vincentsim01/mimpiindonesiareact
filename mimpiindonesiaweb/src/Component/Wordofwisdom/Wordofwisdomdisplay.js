@@ -210,13 +210,55 @@ const Wordofwisdomdisplay = (props) =>{
     function vehicle(brand, model){
         this.brand=brand;
         // this.brand=brand;
-        // this.model=model
+        this.model=model
     }
 
     let carA = new vehicle("Toyota", "Camry");
     // let carB = new Car("Honda","Freed");
 
-    console.log(`CarA is a ${carA.brand} `);
+    // console.log(`CarA is a ${carA.brand} `);
+    // console.log(`CarA is a ${carA.model}`);
+
+
+
+    class student{
+
+        static studentcount=0;
+        constructor(name, age, course){
+            this.name=name;
+            this.age=age;
+            this.course=course;
+            student.studentcount++;
+        }
+
+        getstudentdetail(){
+            console.log(`Name: ${this.name}, Age: ${this.age}, Course: ${this.course}`);
+        }
+
+        static gettotalstudentcount(){
+            console.log(`Total Student Count: ${student.studentcount}`);
+        }
+    }
+
+    let studentA = new student("John", 20, "Computer Science");
+    let studentB = new student("James", 22, "Math Science");
+    let studentC = new student("Jane", 21, "English Science");
+    let studentD = new student("Jim", 23, "Biology Science");
+
+    // student.gettotalstudentcount();
+    // studentC.getstudentdetail();
+
+    function arcstudent(name, school, power){
+        this.name=name;
+        this.school=school;
+        this.kekuatan=power;
+
+    }
+
+    let arcstudentA = new arcstudent("John", "ABC School", "Strong");
+    let arcstudentB = new arcstudent("Jonathan", "DEF School", "telekinesis");
+
+    console.log(arcstudentB.kekuatan);
 
 
 
