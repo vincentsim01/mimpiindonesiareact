@@ -105,9 +105,9 @@ const Wordofwisdomdisplay = (props) =>{
 
 
     let foreacharray = ["Lala","Lulu","Lele","Lili","Lolo"];
-    let foreached = foreacharray.forEach((item) => console.log("Hi I am "+item));
-    console.log(foreached);
-    console.log(foreacharray);
+    // let foreached = foreacharray.forEach((item) => console.log("Hi I am "+item));
+    // console.log(foreached);
+    // console.log(foreacharray);
 
 
     let reducearray = [3,2,5,6,10];
@@ -146,11 +146,77 @@ const Wordofwisdomdisplay = (props) =>{
         introduction: function(){console.log(`Hi My name is ${this.name} and I am ${this.age}`)}
     }
 
-    employeeA.introduction();
+    // employeeA.introduction();
 
 
+    function Gamescore(){
+        let thescore = 0;
+
+        function increasescore(score){
+            thescore+=score;
+            console.log(`increase by: ${score}`);
+        }
+
+        function decreasescore(score){
+            thescore-=score;
+            console.log(`decrease by: ${score}`);
+        }
+
+        function totalscore(){
+            return thescore;
+        }
+
+        return {increasescore, decreasescore, totalscore};
+    }
+
+    // let gameA = Gamescore();
+
+    // gameA.increasescore(6);
+    // gameA.decreasescore(3);
+    // gameA.totalscore();
+
+    class Seacreature{
+        constructor(name, species){
+            this.name = name;
+            this.species = species;
+        }
+
+        makeSound(){
+            console.log(`${this.name} the ${this.species} makes a sound.`);
+        }
+    }
+
+    let seacreatureA = new Seacreature("Jacob", "Seal");
+
+    // seacreatureA.makeSound();
 
 
+    class Usercount{
+
+        static count=0;
+        constructor(username){
+            this.username=username;
+            Usercount.count=Usercount.count+1;
+        }
+
+    }
+
+    let userA = new Usercount("Jeanne");
+    let userB = new Usercount("Jim");
+    let userC = new Usercount("Jasmine");
+
+    // console.log(`User Count: ${Usercount.count}`);
+
+    function vehicle(brand, model){
+        this.brand=brand;
+        // this.brand=brand;
+        // this.model=model
+    }
+
+    let carA = new vehicle("Toyota", "Camry");
+    // let carB = new Car("Honda","Freed");
+
+    console.log(`CarA is a ${carA.brand} `);
 
 
 
