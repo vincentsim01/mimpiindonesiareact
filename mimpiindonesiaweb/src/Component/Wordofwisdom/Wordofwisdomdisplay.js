@@ -349,9 +349,57 @@ const Wordofwisdomdisplay = (props) =>{
 
 
     const arrayforeach = ["Linda","Rose","Claire","Minna"];
-    arrayforeach.forEach((item,index)=>{
-        console.log(`This is the item from index ${index} = ${item}`);
+    // arrayforeach.forEach((item,index)=>{
+    //     console.log(`This is the item from index ${index} = ${item}`);
+    // });
+
+
+    const arraymap = arrayforeach.map((item)=>{
+        return(`Miss ${item.toUpperCase()}`);
+    })
+
+    // console.log(arraymap);
+
+
+    const forfilterarray = [
+        {name:"John",contribution:"Beat Thanos"},
+        {name:"James",contribution:"Beat Darkseid"},
+        {name:"John",contribution:"Beat Yaldabaoth"},
+        {name:"George",contribution:"Beat Honda"}
+    ];
+
+    const thefilteredarray = forfilterarray.filter((item)=>{
+        return(item.name=="John");
     });
+
+    // console.log(thefilteredarray);
+    const simplenumber = [5,4,2,7,4,2,2,1];
+    const somearray = simplenumber.some((item)=>item<=0);
+    // console.log(somearray);
+    const everyarray = simplenumber.every((item)=>item>10);
+    // console.log(everyarray);
+
+    const forfilterarray2 = [
+        {name:"John",contribution:"Beat Thanos"},
+        {name:"James",contribution:"Beat Darkseid"},
+        {name:"John",contribution:"Beat Yaldabaoth"},
+        {name:"George",contribution:"Beat Honda"}
+    ];
+
+    const findjohn = forfilterarray2.find((item)=>item.name==="John");
+    // console.log(findjohn);
+
+    const personobject = {
+        name:"Johnatan"
+    }
+
+    personobject.name="Marlon";
+
+    const copypersonobject = Object.assign({},personobject,{name:"Budiman",age:22});
+
+    console.log(personobject);
+
+    console.log(copypersonobject);
 
     // for (const obj of objectifin) {
     //     for (const key in obj) {
