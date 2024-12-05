@@ -258,7 +258,42 @@ const Wordofwisdomdisplay = (props) =>{
     let arcstudentA = new arcstudent("John", "ABC School", "Strong");
     let arcstudentB = new arcstudent("Jonathan", "DEF School", "telekinesis");
 
-    console.log(arcstudentB.kekuatan);
+    // console.log(arcstudentB.kekuatan);
+
+    let objek = {
+        name:"John",
+        age:22,
+        hobby: "surfing"
+    }
+
+    // console.log(objek);
+
+    class animal{
+        constructor(name,species){
+            this.name=name;
+            this.species=species;
+        }
+
+        move(speed){
+            console.log(`${this.name} the ${this.species} is moving at ${speed} mph.`);
+        }
+    }
+
+    class tortoise extends animal{
+        constructor(name, species, walkspeed){
+            super(name, species);
+            this.walkspeed=walkspeed;
+        }
+
+        canwalk(){
+            console.log(`${this.name} the ${this.species} can walk at a speed of ${this.walkspeed} km/h.`);
+            console.log(super.move(this.walkspeed));
+        }
+    }
+
+    let squirtle = new tortoise("squirtle","water",12);
+
+    squirtle.canwalk();
 
 
 
