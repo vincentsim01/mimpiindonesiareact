@@ -293,9 +293,42 @@ const Wordofwisdomdisplay = (props) =>{
 
     let squirtle = new tortoise("squirtle","water",12);
 
-    squirtle.canwalk();
+    // squirtle.canwalk();
+
+    let employeeD={
+        name: "John Doe",
+        age: 30,
+        hobbies: ["reading", "painting", "cooking"],
+        introduction: function(){console.log(`Hi My name is ${this.name} and I am ${this.age}`)}
+    }
+
+    const thekey=Object.keys(employeeD);
+    const thevalue=Object.values(employeeD);
+    const theentries=Object.entries(employeeD);
+
+    // console.log(thekey, thevalue, theentries);
+
+    // for (const [key,value] of Object.entries(employeeD)){
+    //     console.log(`This is the key ${key}`);
+    //     console.log(`This is the value ${value}`)
+    // }
 
 
+    const employeearray = [
+        "Luke","Mario","Kenneth","Nathaniel"
+    ];
+
+    const employeearray2=["Desiree","Martha","Jessica","Joanne"]
+    const employeearray3=["Liv","Mal"];
+
+    // console.log(employeearray.join(" &*(%)"));
+
+    const employeeconcat=employeearray.concat(employeearray2,employeearray3)
+
+    // console.log(employeeconcat);
+
+    employeearray.splice(0,1,"Lucas");
+    console.log(employeearray);
 
     // for (const obj of objectifin) {
     //     for (const key in obj) {
