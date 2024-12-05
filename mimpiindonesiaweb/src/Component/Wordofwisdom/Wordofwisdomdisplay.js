@@ -328,11 +328,34 @@ const Wordofwisdomdisplay = (props) =>{
     // console.log(employeeconcat);
 
     employeearray.splice(0,1,"Lucas");
-    console.log(employeearray);
+    // console.log(employeearray);
+
+    let nathanielarray  = ["Nathaniel"];
+
+    const copyemployeearray=[...employeearray,...nathanielarray];
+
+    // console.log(`This is copyemployeearray ${copyemployeearray}`);
+
+    const indexnathaniel = copyemployeearray.indexOf("Nathaniel");
+    const lastindexnathaniel = copyemployeearray.lastIndexOf("Nathaniel");
+    // console.log(`This is indexnathaniel ${indexnathaniel}`,`This is lastindexnathaniel ${lastindexnathaniel}`);
+
+
+    const numarray = [1,2,3,[4,5,6],[[7,8],[9,10]],[11,12,13]];
+
+    const flattenedarray = numarray.flat();
+
+    // console.log(`This is flattened array ${flattenedarray}`);
+
+
+    const arrayforeach = ["Linda","Rose","Claire","Minna"];
+    arrayforeach.forEach((item,index)=>{
+        console.log(`This is the item from index ${index} = ${item}`);
+    });
 
     // for (const obj of objectifin) {
     //     for (const key in obj) {
-    //       objectify4.push(`${obj[key]}`); // Log each key-value pair
+        //   objectify4.push( // Log each key-value pair
     //     }
     //   }
 
@@ -342,7 +365,7 @@ const Wordofwisdomdisplay = (props) =>{
 
     for (var obj of objectify){
         for (var key in obj){
-            objectify2.push(`${key}, ${obj[key]}`);
+            // objectify2.push
         }
     }
 
