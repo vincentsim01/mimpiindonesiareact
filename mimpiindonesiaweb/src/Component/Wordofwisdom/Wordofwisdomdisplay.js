@@ -513,14 +513,19 @@ const Wordofwisdomdisplay = (props) =>{
         }
     })
 
-    promiseresultagain
-    .then((data)=>{
-        console.log(`I am so happy it was a successful event. ${data}`);
-    })
-    .catch((error)=>{
-        console.error(`I am so sad it was an unsuccessful event. ${error}`);
-    })
-    
+    // promiseresultagain
+    // .then((data)=>{
+    //     console.log(`I am so happy it was a successful event. ${data}`);
+    // })
+    // .catch((error)=>{
+    //     console.error(`I am so sad it was an unsuccessful event. ${error}`);
+    // })
+
+    async function f() {
+        return 1;
+      }
+      
+    //   f().then(alert); // 1
 
 
 
