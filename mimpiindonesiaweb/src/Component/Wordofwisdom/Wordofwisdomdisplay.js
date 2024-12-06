@@ -392,14 +392,43 @@ const Wordofwisdomdisplay = (props) =>{
     const personobject = {
         name:"Johnatan"
     }
+    
+    const personobject2 = {...personobject};
 
+    // console.log(`spread operator ${personobject2.name}`);
     personobject.name="Marlon";
 
     const copypersonobject = Object.assign({},personobject,{name:"Budiman",age:22});
 
-    console.log(personobject);
+    // console.log(personobject);
 
-    console.log(copypersonobject);
+    // console.log(copypersonobject);
+
+    const object22 = {
+        name:"Johnatan",
+        age:22,
+        hobbies:["reading", "painting", "cooking"]
+        
+    }
+
+    Object.defineProperty(object22,"friend", {value:"Renaldi",writable:true});
+
+    object22.friend="Theo";
+
+    // console.log(object22);
+
+    const object23 = Object.entries(object22);
+
+    // console.log(object23);
+
+
+    const entryarray = [["brand","apple"],["model","iphone10"]];
+
+    const objectentry = Object.fromEntries(entryarray);
+
+    console.log(objectentry);
+
+
 
     // for (const obj of objectifin) {
     //     for (const key in obj) {
