@@ -460,8 +460,66 @@ const Wordofwisdomdisplay = (props) =>{
         },2000)
     }
 
-    createpost({title:'Post Three', body:'This is post three'},getpost);
+    // createpost({title:'Post Three', body:'This is post three'},getpost);
 
+    async function doesitreal(){
+        const thetruth = true;
+        try{
+            const data = thetruth;
+            console.log(`it is real cause it is ${data}`);
+        } catch(error){
+            console.error('Error:', error);
+        }
+    }
+
+    // doesitreal();
+
+    function findlocation(location){
+        return new Promise((resolve,reject)=>{
+            if(location==="London"){
+                resolve("Location is in London");
+            }else if(location!==""){
+                resolve("Location Exist")
+            }else{
+                reject("Location does not exist");
+            }
+        })
+    }
+
+    // findlocation("").then((result)=>{
+    //     console.log(result);
+    // }).catch((error)=>{
+    //     console.error(error);
+    // });
+
+    let promiseresult = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            resolve("Data Received");
+        },2000);
+        
+    });
+
+    // promiseresult.then((data)=>{
+    //     console.log(`I am so happy it was a successful event. ${data}`);
+    // })
+
+
+    let promiseresultagain = new Promise((resolve,reject)=>{
+        let a=1+4;
+        if(a==2){
+            resolve("The answer was successful");
+        }else{
+            reject("The answer was unsuccessful");
+        }
+    })
+
+    promiseresultagain
+    .then((data)=>{
+        console.log(`I am so happy it was a successful event. ${data}`);
+    })
+    .catch((error)=>{
+        console.error(`I am so sad it was an unsuccessful event. ${error}`);
+    })
     
 
 
