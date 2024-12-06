@@ -426,7 +426,43 @@ const Wordofwisdomdisplay = (props) =>{
 
     const objectentry = Object.fromEntries(entryarray);
 
-    console.log(objectentry);
+    // console.log(objectentry);
+
+    const theageobject = {
+        name:"Theo",
+        age:23,
+        burst: function(){console.log(`this is the burst from ${this.name}`)}
+    }
+
+    // theageobject.burst();
+
+    const callbackarray = [
+        {name:"Alan", age:23},
+        {name:"Bob", age:25}
+    ];
+
+    function getpost(){
+        let output='';
+        setTimeout(callbackarray.forEach((item,index)=>{
+            console.log(item);
+            
+
+        }
+    ),1000);
+    }
+
+    function createpost(post, callback){
+        setTimeout(()=>{
+            callbackarray.push(post);    
+
+            callback();
+
+        },2000)
+    }
+
+    createpost({title:'Post Three', body:'This is post three'},getpost);
+
+    
 
 
 
