@@ -545,6 +545,19 @@ const Wordofwisdomdisplay = (props) =>{
         }
     }
 
+
+    let letterz = "Robbie";
+
+    // console.log(letterz(3));
+
+
+    let a=2;
+    let b=5;
+
+    [a,b]=[b,a]
+    console.log(a);
+    console.log(b);
+
     const renderdata = ({listData}) => {
         if(listData.length>0){
         return listData.map((item)=>{
