@@ -42,6 +42,7 @@ import CharacterDetailName from './CharacterDetailName/CharacterDetailName';
 import ActionDetailName from './ActionDetailName/ActionDetailName';
 import TriviaDetailName from './TriviaDetailName/TriviaDetailName';
 import MoneyDetailName from './MoneyDetailName/MoneyDetailName';
+import FocusComponent from './useRef/useRef';
 import './Routing.css';
 
 
@@ -88,6 +89,7 @@ const Routing = ()=>{
             <Route path="fanletter" element={<Fanletter/>}/>
             <Route path="blog" element={<Blog/>}/>
             <Route path="wordofwisdom" element={<Wordofwisdom/>}/>
+            <Route path="useRef" element={<FocusComponent/>}/>
             <Route path="eventdetailname/:eventname" element={<EventDetailName/>}/>
             <Route path="dreamdetailname/:dreamname" element={<DreamDetailName/>}/>
             <Route path="characterdetailname/:charactername" element={<CharacterDetailName/>}/>

@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from 'react';
+import React, { useState,useEffect,useRef } from 'react';
 import {useNavigate,Link} from 'react-router-dom';
 
 const baseUrl = "http://localhost:9120";
@@ -504,14 +504,14 @@ const Wordofwisdomdisplay = (props) =>{
     // })
 
 
-    let promiseresultagain = new Promise((resolve,reject)=>{
-        let a=1+4;
-        if(a==2){
-            resolve("The answer was successful");
-        }else{
-            reject("The answer was unsuccessful");
-        }
-    })
+    // let promiseresultagain = new Promise((resolve,reject)=>{
+    //     let a=1+4;
+    //     if(a==2){
+    //         resolve("The answer was successful");
+    //     }else{
+    //         reject("The answer was unsuccessful");
+    //     }
+    // })
 
     // promiseresultagain
     // .then((data)=>{
@@ -521,9 +521,9 @@ const Wordofwisdomdisplay = (props) =>{
     //     console.error(`I am so sad it was an unsuccessful event. ${error}`);
     // })
 
-    async function f() {
-        return 1;
-      }
+    // async function f() {
+    //     return 1;
+    //   }
       
     //   f().then(alert); // 1
 
@@ -537,26 +537,26 @@ const Wordofwisdomdisplay = (props) =>{
 
     //   console.log(objectify4);
 
-    let objectify2=[];
+    // let objectify2=[];
 
-    for (var obj of objectify){
-        for (var key in obj){
-            // objectify2.push
-        }
-    }
+    // for (var obj of objectify){
+    //     for (var key in obj){
+    //         // objectify2.push
+    //     }
+    // }
 
 
-    let letterz = "Robbie";
+    // let letterz = "Robbie";
 
     // console.log(letterz(3));
 
 
-    let a=2;
-    let b=5;
+    // let a=2;
+    // let b=5;
 
-    [a,b]=[b,a]
-    console.log(a);
-    console.log(b);
+    // [a,b]=[b,a]
+    // console.log(a);
+    // console.log(b);
 
     const renderdata = ({listData}) => {
         if(listData.length>0){
