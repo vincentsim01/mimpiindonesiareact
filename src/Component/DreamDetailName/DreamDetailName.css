@@ -1,0 +1,183 @@
+.dreamdetailcontainer{
+    margin-top:30px;
+    margin-bottom:90px;
+
+
+    text-align:center;
+
+    padding:40px;
+    position:relative;
+}
+
+.previousbuttondream{
+    position:absolute;
+    left:5%;
+    top:40%;
+    display:inline-block;
+    width:100px;
+    height:500px;
+    top:100px;
+
+
+}
+
+.nextbuttondream{
+    position:absolute;
+    right:5%;
+    top:40%;
+    display:inline-block;
+    width:100px;
+    height:500px;
+    top:100px;
+    cursor:pointer;
+
+
+}
+
+.previousbuttoncontainerdream{
+    position:absolute;
+    left:5%;
+    top:40%;
+    display:inline-block;
+    width:100px;
+    height:500px;
+    top:100px;
+
+    cursor:pointer;
+}
+
+.previousbuttoncontainerdream:hover{
+    transform:scale(1.05);
+    transition-duration:0.5s;
+    background: rgb(87,128,247);
+    background: radial-gradient(circle, rgba(87,128,247,1) 1%, rgba(0,212,255,1) 23%, rgba(255,255,255,1) 81%);
+    opacity:0.9;
+}
+
+.nextbuttoncontainerdream{
+
+    position:absolute;
+    right:5%;
+    top:40%;
+    display:inline-block;
+    width:100px;
+    height:500px;
+    top:100px;
+    cursor:pointer;
+}
+
+.nextbuttoncontainerdream:hover{
+    transform:scale(1.05);
+    transition-duration:0.5s;
+    opacity:0.9;
+    background: rgb(87,128,247);
+    background: radial-gradient(circle, rgba(87,128,247,1) 1%, rgba(0,212,255,1) 23%, rgba(255,255,255,1) 81%);
+}
+
+.bgimagedreamdetailcontainer{
+    position:absolute;
+    border:1px solid black;
+    display:inline;
+    z-index: -1;
+    left:0px;
+    top:-20px;
+    opacity:0.1;
+
+}
+
+.bgimagedreamdetailcontainer:hover{
+    animation-name: glimmering2;
+    animation-duration: 5s;
+    animation-iteration-count:  infinite;
+}
+
+.bgimagedreamdetail{
+    display:inline-block;
+    width:1450px;
+    height:900px;
+    border-radius:50px;
+    
+}
+
+.bgimagedreamdetail:hover{
+    animation-name: glimmering2;
+    animation-duration: 5s;
+    animation-iteration-count:  infinite;
+}
+
+.dreamsmalldetail{
+    border:solid 1px black;
+    display:inline-block;
+    width:80%;
+    border-radius:20px;
+}
+
+.dreamsmalldetail:hover{
+    transform:scale(1.05);
+    transition-duration:0.5s;
+}
+
+.dreamdetailreviewcontainer{
+
+    text-align:center;
+}
+
+.dreamdetailcontent{
+
+
+    margin:5px;
+}
+
+.dreamdetailimage:hover{
+    animation-name: glimmering2;
+    animation-duration: 5s;
+    animation-iteration-count:  infinite;
+
+}
+
+
+
+@keyframes glimmering2{
+    0%{
+        position:relative;
+        top:-25px;
+        right:-25px;
+    }
+    15%{
+        position:relative;
+        top: -0px;
+        right:-25px;
+    }
+    30%{
+        position:relative;
+        top:-25px;
+        right:-25px;
+
+    }
+    45%{
+        position:relative;
+        top:-0px;
+        right:-25px;
+    }
+    60%{
+        position:relative;
+        top:-25px;
+        right:-25px;
+
+    }
+    75%{
+        position:relative;
+        top:-0px;
+        right:-25px;
+    }
+    100%{
+        position:relative;
+        top:-25px;
+        right:-25px;
+    }
+  
+
+
+}
+
+

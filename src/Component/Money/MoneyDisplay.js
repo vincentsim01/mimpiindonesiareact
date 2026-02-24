@@ -1,0 +1,63 @@
+import React from 'react';
+import {Link} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
+
+const MoneyDisplay = (props) =>{
+    const MoneyList = ({themoney}) =>{
+
+        let navigate = useNavigate();
+
+
+
+        if (themoney){
+            return themoney.map((item) => {
+
+                const savemoneydetail= () => {
+                    sessionStorage.setItem('cardmoneydetail',JSON.stringify(item.id2));
+                    console.log(sessionStorage.getItem('cardmoneydetail'));
+        
+            
+                }
+
+
+                const savesession = () => {
+                    sessionStorage.setItem('cardname',JSON.stringify(item.name));
+                    navigate('/pickfavcard');
+    
+            
+                }
+                return (
+                    // <div className="moneytopcontainer">
+                    <Link to={`/moneydetail/${item.id2}`} key={item.id2}>
+                    <div className="moneycontainer" onClick={savemoneydetail}>
+                        <div className="moneyindividual" onClick={savemoneydetail}>
+                            <div className="moneyname" onClick={savemoneydetail}><h5>{item.id}</h5><br></br></div>
+                            <img className="imagemoney" onClick={savemoneydetail} src={item.image}/>
+                            <button className="btn btn-primary" onClick={savesession}>Add as Favorite</button>   
+                        </div>
+                    
+                    </div>
+                    </Link>
+                    // </div>
+                )
+            })
+        }
+    }
+
+    return(
+
+        <>
+        
+        {MoneyList(props)}
+        
+        
+        </>
+    )
+
+
+
+
+}
+
+export default MoneyDisplay;

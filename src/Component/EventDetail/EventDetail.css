@@ -1,0 +1,203 @@
+.eventdisplaybigcontainer2{
+    display:block;
+
+    padding:20px;
+    border-radius:20px;
+
+}
+
+.eventdetaildisplay{
+    display:inline-block;
+    width:95%;
+    position:relative;
+
+
+}
+
+.eventdisplaybg{
+    position: absolute;
+    z-index:-1;
+    width:100%;
+    text-align: center;
+    top:-30px;
+
+
+
+}
+
+.eventdisplaybgimg{
+    display:inline-block;
+    width:1450px;
+    height:900px;
+    border-radius:50px;
+    opacity:0.1;
+
+
+
+}
+
+.eventdisplayname2{
+    text-align:center;
+
+}
+
+.eventdisplayimagecontainer2{
+    text-align:center;
+
+}
+
+.eventdisplayimage2{
+    text-align:center;
+    width:70%;
+}
+
+.effecttypedisplaycontainer2{
+    margin:5px;
+    display:inline;
+    
+}
+
+.effecttypedisplaycontainer2:hover{
+    transform:scale(1.05);
+}
+
+.eventeffectcontent{
+    display:inline-block;
+    width:20%;
+}
+
+.eventdetailcontainer{
+    text-align:center;
+    align-items: center;
+    padding-bottom:10%;
+    padding-top:10%;
+    vertical-align: middle;
+    position:relative;
+    border-radius:20px;
+    margin:10px;
+}
+
+
+
+
+.twobuttons{
+    position:relative;
+}
+
+.eventdisplayeffect2{
+    display:inline-block;
+    margin-right:10px;
+    width:90%;   
+    border:1px solid black;
+    border-radius:20px;
+
+
+}
+
+.eventtype2{
+    display:inline-block;
+    margin-left:10px;
+    width:20%;
+}
+
+.eventdisplaycontainerinside{
+    /* border: solid 1px black; */
+
+
+}
+
+.eventimage2:hover{
+    animation-name: glimmering2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+.buttoncontainer2{
+    text-align:center;
+}
+
+.previousbuttoncontainerevent{
+    position:absolute;
+    left:5%;
+    top:40%;
+    display:inline-block;
+    width:100px;
+    height:500px;
+    top:100px;
+    cursor:pointer;
+
+}
+
+.previousbuttoncontainerevent:hover{
+    transform:scale(1.05);
+    transition-duration:0.5s;
+    background: rgb(87,128,247);
+    background: radial-gradient(circle, rgba(87,128,247,1) 1%, rgba(0,212,255,1) 23%, rgba(255,255,255,1) 81%);
+    opacity:0.9;
+
+}
+
+
+.nextbuttoncontainerevent{
+    position:absolute;
+    right:5%;
+    top:40%;
+    display:inline-block;
+    width:100px;
+    height:500px;
+    top:100px;
+    cursor:pointer;
+}
+
+.nextbuttoncontainerevent:hover{
+    transform:scale(1.05);
+    transition-duration:0.5s;
+    opacity:0.9;
+    background: rgb(87,128,247);
+    background: radial-gradient(circle, rgba(87,128,247,1) 1%, rgba(0,212,255,1) 23%, rgba(255,255,255,1) 81%);
+}
+
+
+@keyframes glimmering2{
+    0%{
+        position:relative;
+        top:-25px;
+        right:-25px;
+    }
+    15%{
+        position:relative;
+        top: -0px;
+        right:-25px;
+    }
+    30%{
+        position:relative;
+        top:-25px;
+        right:-25px;
+
+    }
+    45%{
+        position:relative;
+        top:-0px;
+        right:-25px;
+    }
+    60%{
+        position:relative;
+        top:-25px;
+        right:-25px;
+
+    }
+    75%{
+        position:relative;
+        top:-0px;
+        right:-25px;
+    }
+    100%{
+        position:relative;
+        top:-25px;
+        right:-25px;
+    }
+  
+
+
+}

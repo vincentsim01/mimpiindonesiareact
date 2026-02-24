@@ -1,0 +1,59 @@
+.themainActionContainer{
+    border: solid 3px blue;
+    padding:25px;
+    display:block;
+    width:100%;
+}
+
+.theActionFilterContainer{
+    font-family:arial;
+    display:block;
+    border:1px solid black;
+    text-align:center;
+
+}
+
+
+.filterValue{
+    padding-left:20px;
+}
+
+.rowi{
+    display:inline;
+    text-align:center;
+}
+
+.actioncontent{
+    text-align:center;
+    width:30%;
+    display:inline-block;
+
+    margin:30px;
+    border: solid 1px black;
+
+    font-size: 10px;
+
+}
+
+.imageAction{
+    width:40%;
+    display:inline-block;
+
+}
+
+.effectAction{
+    margin:2px;
+    font-family:arial;
+    height:80px;
+    overflow: scroll;
+
+    display:block;
+}
+
+.Filter{
+    margin:10px;
+    border:1px solid black;
+    display:inline-block;
+    width:20%;
+}
+

@@ -1,0 +1,17 @@
+.carousel-item{
+
+    text-align:center;
+    display:inline-block;
+
+}
+
+.carousel-inner{
+    text-align:center;
+}
+
+.carousel{
+    text-align: center;
+    display:block;
+    width:100%;
+    padding:35px;
+}

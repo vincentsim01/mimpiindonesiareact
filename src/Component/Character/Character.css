@@ -1,0 +1,42 @@
+.charactercontainer{
+    display:inline;
+    text-align:center;
+    padding-bottom:10px;
+}
+
+.characterindividual{
+    display: inline-block;
+    width:30%;
+    text-align:center;
+    margin:10px;
+    border:1px solid black;
+}
+
+.imagecharacter{
+    width:100%;
+    display:inline-block;
+    border:solid 1px black;
+    text-align:center;
+}
+
+#characterbannercontainer{
+    text-align:center;
+    background-image:url('https://i.ibb.co/rFZpKrH/output.jpg');
+    opacity:0.8;
+    background-size:cover;
+    background-repeat:none;
+    border-radius:20px;
+    background:lightblue;
+    display:block;
+}
+
+#bgimagecharacter{
+    display:inline-block;
+    width:100%;
+    height:500px;
+    border-radius:20px;
+    background-image:url('https://i.ibb.co/rFZpKrH/output.jpg');
+    background-size:cover;
+    background-repeat:none;
+}
+

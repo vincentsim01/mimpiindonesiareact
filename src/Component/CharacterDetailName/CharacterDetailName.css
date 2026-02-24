@@ -1,0 +1,189 @@
+.characterdetailcontainer{
+    position:relative;
+}
+
+
+
+.nextbutton{
+    display:inline-block;
+    height:600px;
+    position:absolute;
+    right:0px;
+    border:1px solid black;
+}
+
+.nextbuttonins{
+    cursor:pointer;
+    opacity:0.6;
+    position:absolute;
+    top:-800px;
+    right:0px;
+    vertical-align: middle;
+    display:inline-block;
+    height:600px;
+
+    border-radius:20px;
+}
+
+.nextbuttonins:hover{
+    transform:scale(1.1);
+    transition-duration: 500ms;
+    background: rgb(87,128,247);
+    background: radial-gradient(circle, rgba(87,128,247,1) 1%, rgba(0,212,255,1) 23%, rgba(255,255,255,1) 81%);
+    opacity:0.9;
+}
+
+.nextchevronimg{
+    width:100px;
+    display:inline-block;
+    vertical-align: middle;
+}
+
+
+.previousbuttonins{
+    cursor:pointer;
+    opacity:0.6;
+    position:absolute;
+    top:-800px;
+    left:0px;
+    vertical-align: middle;
+    display:inline-block;
+    height:600px;
+    border-radius:20px;
+}
+
+.previousbuttonins:hover{
+    transform:scale(1.1);
+    transition-duration: 500ms;
+    background: rgb(87,128,247);
+    background: radial-gradient(circle, rgba(87,128,247,1) 1%, rgba(0,212,255,1) 23%, rgba(255,255,255,1) 81%);
+    opacity:0.9;
+}
+
+.previouschevronimg{
+    width:100px;
+    display:inline-block;
+    vertical-align: middle;
+}
+
+
+
+
+
+
+.CharacterDetailDisplayContainer{
+    text-align: center;
+    border:1px solid black;
+    border-radius:20px;
+    margin-bottom:60px;
+    margin-top:60px;
+    padding:40px;
+}
+
+.characterimage{
+
+}
+
+.characterimage:hover{
+    animation:glimmering2;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+
+
+
+}
+
+.characterdisplaytext{
+    border:solid 1px black;
+    margin-bottom:10px;
+    display:block;
+    margin-top:20px;
+    border-radius:20px;
+}
+
+.characterdisplaytext:hover{
+    transform:scale(1.05);
+    transition-duration: 500ms;
+
+}
+
+
+.characterdisplaytext2{
+    display:inline;
+
+}
+
+
+.characterdetaildisplaycontent{
+
+    margin:5px;
+    padding:5px;
+    display:inline-block;
+    width:20%;
+
+
+
+
+
+
+}
+
+/* .characterNIK{
+    display:inline-block;
+    width:25%;
+    border:solid 1px black;
+}
+
+.charactergaji{
+    display:inline-block;
+    width:25%;
+    border:solid 1px black;
+
+
+} */
+
+
+
+
+@keyframes glimmering2{
+    0%{
+        position:relative;
+        top:-25px;
+        right:-25px;
+    }
+    15%{
+        position:relative;
+        top: -0px;
+        right:-25px;
+    }
+    30%{
+        position:relative;
+        top:-25px;
+        right:-25px;
+
+    }
+    45%{
+        position:relative;
+        top:-0px;
+        right:-25px;
+    }
+    60%{
+        position:relative;
+        top:-25px;
+        right:-25px;
+
+    }
+    75%{
+        position:relative;
+        top:-0px;
+        right:-25px;
+    }
+    100%{
+        position:relative;
+        top:-25px;
+        right:-25px;
+    }
+  
+
+
+}

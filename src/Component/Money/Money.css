@@ -1,0 +1,42 @@
+.moneytopcontainer{
+
+}
+
+.moneycontainer{
+    display:inline;
+
+    text-align:center;
+
+
+}
+
+.moneyindividual{
+    display: inline-block;
+    width:30%;
+    text-align:center;
+    margin:10px;
+    border:1px solid black;
+
+
+
+}
+
+.moneyname{
+    display:block;
+
+    text-align:center;
+
+
+
+
+}
+
+.imagemoney{
+    display: inline-block;
+    width:100%;
+    text-align:center;
+
+
+}
+
+

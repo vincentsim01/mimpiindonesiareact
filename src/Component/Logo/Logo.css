@@ -1,0 +1,24 @@
+.LogoContainer{
+
+    display:inline;
+
+
+
+}
+
+.LogoImage{
+    width:200px;
+    display:inline-block;
+
+}
+
+.LogoImage:hover{
+    animation-name: yrotate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes yrotate{
+
+
+}

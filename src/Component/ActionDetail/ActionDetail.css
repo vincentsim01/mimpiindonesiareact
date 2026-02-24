@@ -1,0 +1,327 @@
+.ActionDetailContainer{
+    position:relative;      
+}
+
+/* .PreviousButtonContainer{
+    position:absolute;
+    left:5%;
+    top:40%;
+} */
+
+.PreviousButtonContainerAction{
+
+
+}
+
+.NextButtonContainerAction{
+
+
+}
+
+
+.nextbuttoncontaineraction{
+    position:absolute;
+    right:5%;
+    top:40%;
+    display:inline-block;
+    width:100px;
+    height:500px;
+    top:100px;
+    cursor:pointer;
+
+}
+
+.nextbuttoncontaineraction:hover{
+    transform:scale(1.05);
+    transition-duration:0.5s;
+    opacity:0.9;
+    background: rgb(87,128,247);
+    background: radial-gradient(circle, rgba(87,128,247,1) 1%, rgba(0,212,255,1) 23%, rgba(255,255,255,1) 81%);
+}
+
+
+.nextchevronimg{
+    display:inline-block;
+    width:100%;
+}
+
+.previousbuttoncontaineraction{
+    position:absolute;
+    left:5%;
+    top:40%;
+    display:inline-block;
+    width:100px;
+    height:500px;
+    top:100px;
+
+    cursor:pointer;
+
+}
+
+.previousbuttoncontaineraction:hover{
+    transform:scale(1.05);
+    transition-duration:0.5s;
+    background: rgb(87,128,247);
+    background: radial-gradient(circle, rgba(87,128,247,1) 1%, rgba(0,212,255,1) 23%, rgba(255,255,255,1) 81%);
+    opacity:0.9;
+}
+
+.previouschevronimg{
+    display:inline-block;
+    width:100%;
+}
+
+
+.buttoncontainer{
+    display:block;
+}
+
+
+
+
+
+
+
+
+.ActionDetailDisplayContainer{
+    text-align:center;
+    position:relative;
+    border-radius:20px;
+    padding:20px;
+    align-items: center;
+    margin-bottom:60px;
+    margin-top:60px;
+    padding:40px;
+}
+
+.imgbgcontainer{
+    position: absolute;
+    z-index: -1;
+    opacity:0.2;
+    text-align:center;
+}
+
+
+.imgbg{
+    display: inline-block;
+    position: absolute;
+    width:900px;
+    height:500px;
+}
+
+.bgimage{
+    display:inline-block;
+    width:1600px;
+    height:950px;
+    position:absolute;
+    top:-100px;
+    left:-80px
+}
+
+.ActionDetailDisplayName{
+    display:inline-block;
+    width:100%;
+}
+
+.ActionDetailDisplayImage{
+    display:inline-block;
+    width:30%;
+}
+
+.ActionDetailDisplayImage:hover{
+    animation-name: glimmering2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+
+
+.ActionDetailDisplayEffect{
+
+    text-align:center;
+    border:solid 1px black;
+    display:inline-block;
+    width:70%;
+    height:40%;
+    overflow: scroll;
+    border-radius:20px;
+
+}
+
+.ActionDetailDisplayEffect:hover{
+    transform:scale(1.05);
+    transition: 2s;
+}
+
+
+
+.ActionDetailDisplayImageContainer{
+    display:inline-block;
+    text-align:center;
+    width:80%;
+}
+
+
+
+@keyframes effective{
+    0%{
+        font-size: 20px;
+    }
+    30%{
+        font-size:50px;
+    }
+    60%{
+        font-size:70px;
+    }
+    100%{
+        font-size:100px;
+    }
+}
+
+@keyframes glimmering{
+    0%{
+        position:relative;
+        top:15px;
+        right:14px;
+    }
+    5%{
+        position:relative;
+        top:-17px;
+        right:-16px;
+    }
+    10%{
+        position:relative;
+        bottom:20px;
+        right:16px;
+
+    }
+    15%{
+        position:relative;
+        top:-4px;
+        right:-6px;
+    }
+    20%{
+        position:relative;
+        bottom:16px;
+        left:18px;
+
+    }
+    25%{
+        position:relative;
+        top:-15px;
+        left:-12px;
+    }
+    30%{
+        position:relative;
+        top:16px;
+        left:17px;
+    }
+    35%{    
+        position:relative;
+        top:-3px;
+        left:-5px;
+    }
+    40%{
+        position:relative;
+        top:24px;
+        right:16px;
+    }
+    45%{
+        position:relative;
+        top:-16px;
+        right:-26px;
+    }
+    50%{
+        position:relative;
+        bottom:-2px;
+        right:3px;
+
+    }
+    55%{
+        position:relative;
+        bottom:-22px;
+        left:19px;
+    }
+    60%{
+        position:relative;
+        top:1px;
+        right:1px;
+    }
+    75%{
+        position:relative;
+        top:-16px;
+        right:-17px;
+    }
+    80%{
+        position:relative;
+        bottom:19px;
+        right:18px;
+
+    }
+    85%{
+        position:relative;
+        top:2px;
+        right:-4px;
+    }
+    90%{
+        position:relative;
+        bottom:18px;
+        left:19px;
+
+    }
+    95%{
+        position:relative;
+        top:-19px;
+        left:-21px;
+    }
+    100%{
+        position:relative;
+        top:0px;
+        left:0px;
+    }
+
+
+}
+
+@keyframes glimmering2{
+    0%{
+        position:relative;
+        top:-25px;
+        right:-25px;
+    }
+    15%{
+        position:relative;
+        top: -0px;
+        right:-25px;
+    }
+    30%{
+        position:relative;
+        top:-25px;
+        right:-25px;
+
+    }
+    45%{
+        position:relative;
+        top:-0px;
+        right:-25px;
+    }
+    60%{
+        position:relative;
+        top:-25px;
+        right:-25px;
+
+    }
+    75%{
+        position:relative;
+        top:-0px;
+        right:-25px;
+    }
+    100%{
+        position:relative;
+        top:-25px;
+        right:-25px;
+    }
+  
+
+
+}

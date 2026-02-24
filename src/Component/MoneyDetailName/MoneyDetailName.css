@@ -1,0 +1,96 @@
+.moneydetailcontainer{
+    position:relative;
+    text-align:center;
+
+}
+
+.previousbuttoncontainer{
+    position:absolute;
+    left:5%;
+    display:inline-block;
+
+}
+
+.nextbuttoncontainer{
+    position:absolute;
+    right:5%;    
+    display:inline-block;
+
+}
+
+.previousbuttoncontainermoney{
+    position:absolute;
+    left:5%;
+    top:40%;
+    display:inline-block;
+    width:100px;
+    height:500px;
+    top:100px;
+    cursor:pointer;
+}
+
+.previousbuttoncontainermoney:hover {
+    transform:scale(1.05);
+    transition-duration:0.5s;
+    background: rgb(87,128,247);
+    background: radial-gradient(circle, rgba(87,128,247,1) 1%, rgba(0,212,255,1) 23%, rgba(255,255,255,1) 81%);
+    opacity:0.9;
+}
+
+.nextbuttoncontainermoney{
+    position:absolute;
+    right:5%;
+    top:40%;
+    display:inline-block;
+    width:100px;
+    height:500px;
+    top:100px;
+    cursor:pointer;
+}
+
+.nextbuttoncontainermoney:hover {
+    transform:scale(1.05);
+    transition-duration:0.5s;
+    opacity:0.9;
+    background: rgb(87,128,247);
+    background: radial-gradient(circle, rgba(87,128,247,1) 1%, rgba(0,212,255,1) 23%, rgba(255,255,255,1) 81%);
+}
+
+.moneyDetailDisplayContainer{
+
+    display:inline-block;
+    text-align:center;
+
+    
+}
+
+
+
+.moneydetaildisplaycontainer1{
+    /* position:relative; */
+    text-align:center;
+}
+
+.moneydetailname{
+    display:block;
+
+}
+
+.moneydetailimage{
+    display:inline-block;
+    position:relative;
+    width:60%;
+    text-align:center;
+}
+.moneydetailbuttoncontainer{
+    text-align:center;
+
+
+}
+
+.moneybutton{
+    display:inline-block;
+    border:1px solid black;
+    padding:5px 10px;margin:10px;
+    width:40%;
+}
